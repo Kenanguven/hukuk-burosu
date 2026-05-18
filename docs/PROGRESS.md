@@ -18,6 +18,19 @@ Bugünkü görev: kullanıcı tarafından ana klasöre eklenen SVG logo aktif lo
 - `npm.cmd run lint`: geçti.
 - `npm.cmd run build`: geçti (30/30 statik sayfa, `/icon.svg` dahil).
 
+### KARDAK Marka Yazımı
+
+- Kullanıcı talebiyle görünen marka metinlerinde soyad vurgusu `Kardak` yerine `KARDAK` olarak güncellendi.
+- `lib/site.ts` içinde `site.name`, `site.shortName`, `site.owner` ve açıklama metni `KARDAK` yazımına çekildi.
+- Blog yazar adları, blog/hizmetler/hakkımızda/iletişim metadata açıklamaları, ekip bio'su, SSS metni, navbar/hero aria ve hero kart yazısı güncellendi.
+- README içindeki marka bilgileri de `KARDAK` yazımıyla eşitlendi.
+- URL, e-posta, slug ve dosya yolu gibi teknik küçük harfli değerler (`kardakhukuk.com`, `mahmut-kardak`, `/kardak-hukuk.svg`) bozulmaması için değiştirilmedi.
+- SVG dosyasının içindeki path'e dönüşmüş küçük yazı metin olarak değiştirilemediği için sitede görünen alanlarda SVG'nin amblem kısmı kullanıldı; marka yazısı HTML metni olarak `KARDAK` biçiminde gösteriliyor.
+- Ana sayfa, hakkımızda ve blog HTML kontrollerinde görünen `Kardak` metni kalmadığı doğrulandı.
+- Chrome CDP 390px mobil runtime kontrolünde H1 `KARDAK Hukuk Bürosu`, navbar `KARDAK Hukuk`; error overlay yok ve yatay taşma yok.
+- `npm.cmd run lint`: geçti.
+- `npm.cmd run build`: geçti (30/30 statik sayfa).
+
 ## 2026-05-13
 
 Bugünkü görev: logo yenilemesi yapıldı.

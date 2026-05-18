@@ -42,13 +42,13 @@ export const offices: Office[] = [
 ];
 
 export const site = {
-  name: "Kardak Hukuk Bürosu",
-  shortName: "Kardak Hukuk",
-  owner: "Mahmut Kardak",
+  name: "KARDAK Hukuk Bürosu",
+  shortName: "KARDAK Hukuk",
+  owner: "Mahmut KARDAK",
   ownerTitle: "Kurucu Avukat",
   tagline: "Stratejik, sakin ve güçlü hukuki temsil.",
   description:
-    "Ankara (Bilkent) ve İstanbul (Beşiktaş) ofisleriyle Kardak Hukuk Bürosu; kurucu avukat Mahmut Kardak liderliğinde ceza, aile, iş, ticaret, gayrimenkul, miras, icra-iflas ve idare hukuku alanlarında bireylere ve şirketlere stratejik hukuki temsil ve danışmanlık sunar.",
+    "Ankara (Bilkent) ve İstanbul (Beşiktaş) ofisleriyle KARDAK Hukuk Bürosu; kurucu avukat Mahmut KARDAK liderliğinde ceza, aile, iş, ticaret, gayrimenkul, miras, icra-iflas ve idare hukuku alanlarında bireylere ve şirketlere stratejik hukuki temsil ve danışmanlık sunar.",
   url: "https://kardakhukuk.com",
   founded: 2012,
   cities: ["Ankara", "İstanbul"] as const,

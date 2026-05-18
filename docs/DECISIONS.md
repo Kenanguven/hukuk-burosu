@@ -71,6 +71,13 @@
 - Dar alanlarda SVG'nin amblem bölümü kompakt marka işareti olarak kırpılacak; hero kartı gibi geniş alanlarda tam lockup gösterilecek.
 - JSON-LD `Organization.logo` SVG dosyasını işaret edecek.
 
+## 2026-05-18 KARDAK Yazım Kararı
+
+- Görünen marka metinlerinde soyad `KARDAK` olarak büyük harfle yazılacak.
+- Kişi adı `Mahmut KARDAK`, firma adı `KARDAK Hukuk Bürosu`, kısa marka adı `KARDAK Hukuk` olarak kullanılacak.
+- URL, e-posta, slug ve dosya yolları gibi teknik değerlerde küçük harfli `kardak` korunacak.
+- SVG logo içindeki path'e dönüşmüş yazı düzenlenemediği için küçük alanlarda amblem kırpması kullanılacak; marka yazısı HTML metniyle `KARDAK` biçiminde gösterilecek.
+
 ## 2026-05-13 Ofis WhatsApp Kararları
 
 - `/iletisim` ofis kartlarında ayrı telefon satırı gösterilmeyecek; ofis kartları WhatsApp Web üzerinden aksiyon alacak.

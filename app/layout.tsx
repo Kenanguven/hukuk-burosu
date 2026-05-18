@@ -58,8 +58,8 @@ export const metadata: Metadata = {
     "şirket kurulumu İstanbul",
     "tapu iptal davası Ankara",
     "tapu iptal davası İstanbul",
-    "Kardak Hukuk Bürosu",
-    "Mahmut Kardak avukat",
+    "KARDAK Hukuk Bürosu",
+    "Mahmut KARDAK avukat",
   ],
   alternates: {
     canonical: site.url,

@@ -10,9 +10,9 @@ export type Member = {
 export const team: Member[] = [
   {
     slug: "mahmut-kardak",
-    name: "Av. Mahmut Kardak",
+    name: "Av. Mahmut KARDAK",
     title: "Kurucu Avukat",
-    bio: "Kardak Hukuk Bürosu'nun kurucusu. Dosya stratejisini sade, öngörülebilir ve müvekkille sürekli temas hâlinde ilerleyen bir çalışma anlayışıyla yönetir.",
+    bio: "KARDAK Hukuk Bürosu'nun kurucusu. Dosya stratejisini sade, öngörülebilir ve müvekkille sürekli temas hâlinde ilerleyen bir çalışma anlayışıyla yönetir.",
     focus: ["Ceza Hukuku", "Aile Hukuku", "Danışmanlık"],
     initials: "MK",
   },

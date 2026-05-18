@@ -1,11 +1,11 @@
-# Kardak Hukuk Bürosu
+# KARDAK Hukuk Bürosu
 
-Kardak Hukuk Bürosu için kurumsal hukuk bürosu tanıtım sitesi. Proje; ana sayfa, hakkımızda, hizmetler, blog, SSS, iletişim, KVKK ve gizlilik sayfalarından oluşan bir Next.js App Router uygulamasıdır.
+KARDAK Hukuk Bürosu için kurumsal hukuk bürosu tanıtım sitesi. Proje; ana sayfa, hakkımızda, hizmetler, blog, SSS, iletişim, KVKK ve gizlilik sayfalarından oluşan bir Next.js App Router uygulamasıdır.
 
 Güncel marka bilgileri:
 
-- Firma: Kardak Hukuk Bürosu
-- Kurucu/Sahip: Mahmut Kardak
+- Firma: KARDAK Hukuk Bürosu
+- Kurucu/Sahip: Mahmut KARDAK
 - Telefon: 0553 612 24 56
 - WhatsApp Web: `https://wa.me/905536122456`
 

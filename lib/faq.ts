@@ -18,7 +18,7 @@ export const faqs: Faq[] = [
   },
   {
     q: "Hangi şehirlerde ofisiniz var?",
-    a: "Kardak Hukuk Bürosu'nun Ankara'da Bilkent ve İstanbul'da Beşiktaş olmak üzere iki ofisi bulunmaktadır. Her iki ofis de aynı çalışma anlayışıyla; ceza, aile, iş, ticaret, gayrimenkul, miras, icra-iflas ve idare hukuku alanlarında hizmet vermektedir.",
+    a: "KARDAK Hukuk Bürosu'nun Ankara'da Bilkent ve İstanbul'da Beşiktaş olmak üzere iki ofisi bulunmaktadır. Her iki ofis de aynı çalışma anlayışıyla; ceza, aile, iş, ticaret, gayrimenkul, miras, icra-iflas ve idare hukuku alanlarında hizmet vermektedir.",
   },
   {
     q: "Ankara'daki müvekkilim, İstanbul'daki bir davayı sizin üzerinizden takip edebilir mi?",

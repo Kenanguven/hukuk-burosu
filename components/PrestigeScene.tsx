@@ -80,11 +80,11 @@ export function PrestigeScene() {
           transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
           className="depth-44 absolute inset-x-5 top-[20%] rounded-[2rem] border border-cream-soft/24 bg-graphite/36 p-6 text-cream shadow-[0_38px_90px_-54px_rgba(17,16,15,0.85)] backdrop-blur-xl md:inset-x-8 md:p-8"
         >
-          <div className="mx-auto grid h-40 w-40 place-items-center rounded-[2rem] bg-cream-soft/95 p-2 shadow-[0_28px_80px_-44px_rgba(255,244,207,0.8)] ring-1 ring-cream-soft/60 md:h-44 md:w-44">
-            <Logo mode="lockup" size={160} className="rounded-[1.55rem]" />
+          <div className="mx-auto grid h-32 w-32 place-items-center rounded-[2rem] bg-cream-soft/95 p-2 shadow-[0_28px_80px_-44px_rgba(255,244,207,0.8)] ring-1 ring-cream-soft/60 md:h-36 md:w-36">
+            <Logo variant="gold" size={104} className="rounded-[1.55rem]" />
           </div>
           <p className="mt-6 text-center text-xs font-semibold uppercase tracking-[0.22em] text-cream-soft/78">
-            Kardak Hukuk Bürosu
+            KARDAK Hukuk Bürosu
           </p>
         </motion.div>
 

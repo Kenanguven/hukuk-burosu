@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "İletişim — Ankara (Bilkent) ve İstanbul (Beşiktaş) Ofisleri",
-  description: `Kardak Hukuk Bürosu Ankara (Bilkent) ve İstanbul (Beşiktaş) ofislerine ulaşın. WhatsApp Web, e-posta ve online randevu formu üzerinden ${site.owner} ve ekibine her iki şehirden de erişebilirsiniz.`,
+  description: `KARDAK Hukuk Bürosu Ankara (Bilkent) ve İstanbul (Beşiktaş) ofislerine ulaşın. WhatsApp Web, e-posta ve online randevu formu üzerinden ${site.owner} ve ekibine her iki şehirden de erişebilirsiniz.`,
   alternates: { canonical: `${site.url}/iletisim` },
   openGraph: {
     title: `İletişim — Ankara & İstanbul Avukat | ${site.shortName}`,

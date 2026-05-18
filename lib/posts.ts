@@ -16,7 +16,7 @@ export const posts: Post[] = [
     excerpt:
       "İstanbul Avrupa ve Anadolu Yakası Aile Mahkemelerinde boşanma davası açarken yetki kuralları, anlaşmalı ve çekişmeli süreçler, nafaka, velayet, mal rejimi ve ortalama süreler üzerine pratik bir İstanbul boşanma avukatı rehberi.",
     category: "Aile Hukuku",
-    author: "Av. Mahmut Kardak",
+    author: "Av. Mahmut KARDAK",
     date: "2026-05-12",
     readMinutes: 10,
     body: [
@@ -31,7 +31,7 @@ export const posts: Post[] = [
       "İstanbul Aile Mahkemelerinde çekişmeli boşanma davaları; delil toplama, tanık dinleme, bilirkişi raporu ve istinaf süreçleri nedeniyle ortalama 14-26 ay sürebilmektedir. Yurt dışı boyutlu ve yüksek değerli mal rejimi içeren dosyalarda bu süre daha da uzayabilir.",
       "Stratejik hatalar bakımından en sık karşılaşılanlar; sosyal medyada karşı tarafa zarar verecek paylaşımlar yapmak, hukuka aykırı delil sunmak, gereksiz tanık listesi vermek ve müzakere zeminini erkenden kaybetmektir.",
       "İstanbul'da çekişmeli sürecin orta vadede anlaşmalıya dönüştürülmesi yargılama açısından lehe sonuçlar üretebilir. İyi hazırlanmış bir protokol taslağı, sürecin her aşamasında uzlaşma kapısını açık tutar.",
-      "Kardak Hukuk Bürosu'nun Beşiktaş ofisi olarak İstanbul Avrupa ve Anadolu Yakası Aile Mahkemelerinde boşanma davalarını; delil disiplini, müvekkil iletişimi ve mümkün olduğunda uzlaşma odaklı stratejilerle yönetiyoruz. Ankara Bilkent ofisimizle birlikte iki şehri kapsayan tek hat dosya yönetimi sağlıyoruz.",
+      "KARDAK Hukuk Bürosu'nun Beşiktaş ofisi olarak İstanbul Avrupa ve Anadolu Yakası Aile Mahkemelerinde boşanma davalarını; delil disiplini, müvekkil iletişimi ve mümkün olduğunda uzlaşma odaklı stratejilerle yönetiyoruz. Ankara Bilkent ofisimizle birlikte iki şehri kapsayan tek hat dosya yönetimi sağlıyoruz.",
     ],
   },
   {
@@ -40,7 +40,7 @@ export const posts: Post[] = [
     excerpt:
       "İstanbul'da şüpheli ya da sanık sıfatıyla yer alınan ceza dosyalarında ifade, tutuklama, adli kontrol, kovuşturma, istinaf ve infaz aşamalarında bir İstanbul ceza avukatının rolü ve kritik hakların pratik anlatımı.",
     category: "Ceza Hukuku",
-    author: "Av. Mahmut Kardak",
+    author: "Av. Mahmut KARDAK",
     date: "2026-05-11",
     readMinutes: 9,
     body: [
@@ -55,7 +55,7 @@ export const posts: Post[] = [
       "Karar verildikten sonra istinaf yolu açıktır. İstanbul Bölge Adliye Mahkemesi Ceza Daireleri istinaf incelemesi yapar; istinaf kararına karşı bazı dosyalarda Yargıtay'a temyiz yolu açıktır. Bu aşamalarda sürelerin titiz takibi büyük önem taşır.",
       "İnfaz süreci ise kararın kesinleşmesinden sonra başlar. Denetimli serbestlik, koşullu salıverilme, açık ceza infaz kurumuna ayrılma gibi pek çok kurum infaz hukukunun kapsamındadır. Hatalı infaz hesapları için İstanbul İnfaz Hakimliklerine itiraz yolu açıktır.",
       "Beşiktaş ofisimiz İstanbul Avrupa Yakası adliyelerine yakınlığıyla ifade ve duruşma takibinde hız sağlamaktadır. Anadolu Yakası dosyalarında Kartal Adliyesi süreçleri de aynı ekip tarafından yönetilmektedir.",
-      "Kardak Hukuk Bürosu olarak İstanbul'da ceza dosyalarını; soruşturmanın ilk dakikasından infaza kadar her aşamada müvekkilin haklarını korumak temel anlayışıyla yürütüyor, ölçülü ve delile dayalı bir savunma diliyle çalışıyoruz.",
+      "KARDAK Hukuk Bürosu olarak İstanbul'da ceza dosyalarını; soruşturmanın ilk dakikasından infaza kadar her aşamada müvekkilin haklarını korumak temel anlayışıyla yürütüyor, ölçülü ve delile dayalı bir savunma diliyle çalışıyoruz.",
     ],
   },
   {
@@ -64,7 +64,7 @@ export const posts: Post[] = [
     excerpt:
       "İstanbul Sulh Hukuk Mahkemelerinde veraset ilamı, mirasın reddi, tenkis davası, muris muvazaası ve ortaklığın giderilmesi süreçlerini Avrupa ve Anadolu Yakası uygulaması üzerinden anlatan bir İstanbul miras avukatı rehberi.",
     category: "Miras Hukuku",
-    author: "Av. Mahmut Kardak",
+    author: "Av. Mahmut KARDAK",
     date: "2026-05-09",
     readMinutes: 9,
     body: [
@@ -79,7 +79,7 @@ export const posts: Post[] = [
       "Mirastan feragat sözleşmesi, muris sağlığında bir mirasçının ileride doğacak miras hakkından feragat etmesini sağlar. Bu sözleşme noter huzurunda resmi şekilde yapılmadığı sürece geçerli değildir; karşılıklı veya tek taraflı olabilir.",
       "İstanbul Sulh Hukuk Mahkemelerinde miras davalarının ortalama süresi; uyuşmazlığın niteliğine göre 10-20 ay arasında değişebilmektedir. Bilirkişi gerektiren karmaşık tereke incelemelerinde süre daha da uzayabilir.",
       "Pratik bir öneri olarak; mirasçılar muris öldükten sonra hızlıca veraset ilamı çıkarmalı, banka ve tapu kayıtlarını dondurmak için tedbir talep etmeli ve tereke borcu varsa mirasın reddi süresini kaçırmamalıdır. İstanbul gibi yüksek değerli mal varlığına sahip dosyalarda profesyonel destek almak süreci kısaltır.",
-      "Kardak Hukuk Bürosu'nun Beşiktaş ofisi olarak İstanbul'da miras davalarını Ankara Bilkent ofisimizle birlikte tek hat üzerinden yönetiyor; tereke tespiti, mirasın reddi, tenkis, muvazaa ve ortaklığın giderilmesi süreçlerinde mirasçıların menfaatlerini dengeli biçimde gözetiyoruz.",
+      "KARDAK Hukuk Bürosu'nun Beşiktaş ofisi olarak İstanbul'da miras davalarını Ankara Bilkent ofisimizle birlikte tek hat üzerinden yönetiyor; tereke tespiti, mirasın reddi, tenkis, muvazaa ve ortaklığın giderilmesi süreçlerinde mirasçıların menfaatlerini dengeli biçimde gözetiyoruz.",
     ],
   },
   {
@@ -102,7 +102,7 @@ export const posts: Post[] = [
       "İşveren işçiyi tekrar işe başlatmazsa, mahkemece belirlenen 4 ile 8 aylık ücret tutarındaki işe başlatmama tazminatı ile boşta geçen sürenin en çok dört aylık ücret tutarı işçiye ödenmek zorundadır. Bu hakların talep edilebilmesi için işçinin süresi içinde işverene başvurmuş olması şarttır.",
       "İşe iade davası ile birlikte ödenmemiş kıdem ve ihbar tazminatı, fazla mesai, hafta tatili ve genel tatil ücreti gibi işçilik alacakları ayrı bir davayla veya birleştirilerek talep edilebilir. İstanbul'da bu davalar çoğunlukla aynı iş mahkemesinde görülür.",
       "İşveren tarafının dikkat etmesi gereken nokta ise fesih sürecini yazılı belgelerle desteklemek, savunma almayı ihmal etmemek ve performans uyarılarını dosyaya işlemektir. İstanbul İş Mahkemelerinin yerleşik içtihatları savunma alınmamış fesihleri büyük ölçüde geçersiz kabul etmektedir.",
-      "Kardak Hukuk Bürosu'nun Beşiktaş ofisi olarak İstanbul İş Mahkemelerinde işe iade davalarını; sürelerin titiz takibi, delil hazırlığı ve müvekkilin işletmeyle ilişkisinin korunması ekseninde stratejik biçimde yönetiyoruz.",
+      "KARDAK Hukuk Bürosu'nun Beşiktaş ofisi olarak İstanbul İş Mahkemelerinde işe iade davalarını; sürelerin titiz takibi, delil hazırlığı ve müvekkilin işletmeyle ilişkisinin korunması ekseninde stratejik biçimde yönetiyoruz.",
     ],
   },
   {
@@ -126,7 +126,7 @@ export const posts: Post[] = [
       "İmar uygulamalarından doğan ihtilaflar idari yargının görev alanındadır. İstanbul'da imar planı değişiklikleri, parselasyon işlemleri ve kamulaştırma kararlarına karşı İstanbul İdare Mahkemelerine başvurulur. Sürelerin titiz takibi şarttır; iptal davası süresi tebliğden itibaren altmış gündür.",
       "Pratik bir öneri olarak; İstanbul'da gayrimenkul almadan önce tapu sorgusu, imar durumu sorgulaması, varsa şerh ve haciz kayıtlarının incelenmesi, kat mülkiyeti durumunun değerlendirilmesi ve yapı kullanma izninin var olduğunun teyit edilmesi sonradan açılacak davaların büyük çoğunluğunu önler.",
       "Yargılama süreleri açısından, tapu iptal davaları İstanbul'da bilirkişi gerektirmesi nedeniyle ortalama 16-26 ay sürmektedir. İstinaf ve Yargıtay aşamalarıyla birlikte toplam süre üç yılı aşabilmektedir.",
-      "Kardak Hukuk Bürosu'nun Beşiktaş ofisi olarak İstanbul'da gayrimenkul davalarını; alım öncesi due diligence çalışmasından tapu iptal, tahliye, kat mülkiyeti ve imar süreçlerine kadar her aşamada müvekkillerimizle birlikte yürütüyoruz.",
+      "KARDAK Hukuk Bürosu'nun Beşiktaş ofisi olarak İstanbul'da gayrimenkul davalarını; alım öncesi due diligence çalışmasından tapu iptal, tahliye, kat mülkiyeti ve imar süreçlerine kadar her aşamada müvekkillerimizle birlikte yürütüyoruz.",
     ],
   },
   {
@@ -135,7 +135,7 @@ export const posts: Post[] = [
     excerpt:
       "Ankara'da bir hukuki süreçte yanınızda olacak avukatı seçerken bakmanız gereken sekiz temel kriter: uzmanlık, baro kaydı, iletişim ritmi, şeffaf ücretlendirme, yazılı sözleşme ve daha fazlası.",
     category: "Rehber",
-    author: "Av. Mahmut Kardak",
+    author: "Av. Mahmut KARDAK",
     date: "2026-05-12",
     readMinutes: 8,
     body: [
@@ -149,7 +149,7 @@ export const posts: Post[] = [
       "Yedinci kriter: gizlilik ve veri güvenliği. Avukatlık Kanunu kapsamındaki sır saklama yükümlülüğüne ek olarak KVKK uyum süreçleri, dijital iletişim güvenliği ve dosya saklama disipliniyle ilgili sorular sormaktan çekinmeyin.",
       "Sekizinci kriter: ön görüşme niteliği. İyi bir Ankara avukatı, ilk görüşmede size pazarlama yapmak yerine; dosyanızın gerçek risklerini, alternatif çözüm yollarını, mahkeme süreçlerinin ortalama sürelerini ve maliyet aralığını net biçimde anlatır.",
       "Seçim sürecinde dikkat edilmesi gereken bir başka husus; tavsiye edilen avukatın gerçekten konuya hakim olup olmadığıdır. Yakınınıza birinin önermesi tek başına yeterli değildir; uzmanlık alanı uyuşmazlığınızla örtüşmüyorsa süreç beklediğinizden farklı şekilde ilerleyebilir.",
-      "Kardak Hukuk Bürosu olarak Ankara'da hukuki destek arayan bireylere ve şirketlere; sade bir iletişim, yazılı sözleşme ile şeffaf ücretlendirme, dosya başına ayrılmış zaman ve düzenli bilgi notu pratiği sunuyoruz. Ön görüşme her zaman ücretsizdir.",
+      "KARDAK Hukuk Bürosu olarak Ankara'da hukuki destek arayan bireylere ve şirketlere; sade bir iletişim, yazılı sözleşme ile şeffaf ücretlendirme, dosya başına ayrılmış zaman ve düzenli bilgi notu pratiği sunuyoruz. Ön görüşme her zaman ücretsizdir.",
     ],
   },
   {
@@ -158,7 +158,7 @@ export const posts: Post[] = [
     excerpt:
       "Ankara Aile Mahkemelerinde çekişmeli boşanma davası açarken bilmeniz gereken yetki kuralları, boşanma sebepleri, delil disiplini, nafaka, velayet, tazminat ve sık yapılan stratejik hatalar.",
     category: "Aile Hukuku",
-    author: "Av. Mahmut Kardak",
+    author: "Av. Mahmut KARDAK",
     date: "2026-05-10",
     readMinutes: 10,
     body: [
@@ -173,7 +173,7 @@ export const posts: Post[] = [
       "Stratejik hatalar bakımından en sık görülenler; gereksiz tanık listesi vermek, hukuka aykırı delil sunmak, sosyal medyada karşı tarafa zarar verecek paylaşımlar yapmak ve ön görüşmede konuşulanları yazılı bir protokole bağlamadan adımlar atmaktır.",
       "Ankara'da çekişmeli boşanma davaları; delil toplama, tanık dinleme, bilirkişi raporu ve istinaf süreçleri nedeniyle ortalama 12-24 ay sürmektedir. Karmaşık mal rejimi içeren ya da yurt dışı boyutlu dosyalarda bu süre daha da uzayabilir.",
       "Çekişmeli süreci kısaltmanın en sağlıklı yolu; süreç içinde anlaşmalı boşanmaya geçiş kapısını açık tutmak ve bunun için iyi hazırlanmış bir protokol taslağı bulundurmaktır. Ankara Aile Mahkemelerinin çoğu, hâlâ uzlaşma sağlanabilen dosyaları takdirle değerlendirmektedir.",
-      "Kardak Hukuk Bürosu olarak Ankara'da çekişmeli boşanma davalarını; delil disiplini, müvekkil iletişimi ve mümkün olduğunda uzlaşma odaklı stratejilerle yönetiyor; her dosyada ölçülü ve sakin bir temsil sunuyoruz.",
+      "KARDAK Hukuk Bürosu olarak Ankara'da çekişmeli boşanma davalarını; delil disiplini, müvekkil iletişimi ve mümkün olduğunda uzlaşma odaklı stratejilerle yönetiyor; her dosyada ölçülü ve sakin bir temsil sunuyoruz.",
     ],
   },
   {
@@ -182,7 +182,7 @@ export const posts: Post[] = [
     excerpt:
       "Ankara'da şüpheli ya da sanık sıfatıyla yer alınan ceza dosyalarında ifade, tutuklama, adli kontrol, kovuşturma, istinaf ve infaz aşamalarında bir Ankara ceza avukatının rolü ve kritik hakların pratik anlatımı.",
     category: "Ceza Hukuku",
-    author: "Av. Mahmut Kardak",
+    author: "Av. Mahmut KARDAK",
     date: "2026-05-08",
     readMinutes: 9,
     body: [
@@ -196,7 +196,7 @@ export const posts: Post[] = [
       "Mağdur ve katılan vekilliği de ceza avukatlığının önemli bir parçasıdır. Mağdurun zararlarının tespit edilmesi, suçtan zarar gören sıfatıyla davaya katılma talebi ve maddi-manevi tazminat hakları stratejik biçimde takip edilir.",
       "Karar verildikten sonra istinaf yolu açıktır. Ankara Bölge Adliye Mahkemesi Ceza Daireleri istinaf incelemesi yapar; istinaf kararına karşı bazı dosyalarda Yargıtay'a temyiz yolu açıktır. Bu aşamalarda sürelerin titiz takibi büyük önem taşır.",
       "İnfaz süreci ise kararın kesinleşmesinden sonra başlar. Denetimli serbestlik, koşullu salıverilme, açık ceza infaz kurumuna ayrılma gibi pek çok kurum infaz hukukunun kapsamındadır. Hatalı infaz hesapları için Ankara İnfaz Hakimliklerine itiraz yolu açıktır.",
-      "Kardak Hukuk Bürosu olarak Ankara'da ceza dosyalarını; soruşturmanın ilk dakikasından infaza kadar her aşamada müvekkilin haklarını korumak temel anlayışıyla yürütüyor, ölçülü ve delile dayalı bir savunma diliyle çalışıyoruz.",
+      "KARDAK Hukuk Bürosu olarak Ankara'da ceza dosyalarını; soruşturmanın ilk dakikasından infaza kadar her aşamada müvekkilin haklarını korumak temel anlayışıyla yürütüyor, ölçülü ve delile dayalı bir savunma diliyle çalışıyoruz.",
     ],
   },
   {
@@ -205,7 +205,7 @@ export const posts: Post[] = [
     excerpt:
       "Ankara Aile Mahkemelerinde anlaşmalı boşanma davası açmak için gerekli protokol, yetkili mahkeme, evraklar, ortalama süreler ve süreçte bir Ankara boşanma avukatının rolüne dair pratik bir rehber.",
     category: "Aile Hukuku",
-    author: "Av. Mahmut Kardak",
+    author: "Av. Mahmut KARDAK",
     date: "2026-05-06",
     readMinutes: 7,
     body: [
@@ -219,7 +219,7 @@ export const posts: Post[] = [
       "Velayet kendisine bırakılmayan eş için belirlenen kişisel ilişki günleri; çocuğun yaşına, eğitim hayatına ve özel günlerine göre düzenlenmelidir. Yarıyıl, yaz tatili ve resmi bayramların kapsayıcı şekilde protokole yansıtılması ileride çıkabilecek tartışmaları engeller.",
       "Boşanmayla birlikte yasal mal rejimi olan edinilmiş mallara katılma rejimi tasfiye edilir. Anlaşmalı süreçte mal paylaşımı protokole net biçimde işlenebileceği gibi taraflar isterse mal rejimi tasfiyesini ayrı bir davaya bırakabilirler.",
       "Ankara Aile Mahkemelerinde anlaşmalı boşanmada yaşanan sık sorunlardan biri, tarafların protokolü duruşma günü değiştirmek istemesidir. Bu durumda mahkeme, anlaşmanın bozulduğunu kabul ederek davayı çekişmeliye dönüştürebilir.",
-      "Kardak Hukuk Bürosu olarak Ankara'da anlaşmalı boşanma süreçlerinde; protokolün dikkatle hazırlanması, eksik belgelerin önlenmesi ve duruşma sürecinin sade biçimde yönetilmesi için müvekkillerimize uçtan uca destek sağlıyoruz.",
+      "KARDAK Hukuk Bürosu olarak Ankara'da anlaşmalı boşanma süreçlerinde; protokolün dikkatle hazırlanması, eksik belgelerin önlenmesi ve duruşma sürecinin sade biçimde yönetilmesi için müvekkillerimize uçtan uca destek sağlıyoruz.",
     ],
   },
   {
@@ -228,7 +228,7 @@ export const posts: Post[] = [
     excerpt:
       "Ankara Sulh Hukuk Mahkemelerinde veraset ilamı, mirasın reddi, terekenin tespiti, tenkis davası, muris muvazaası ve ortaklığın giderilmesi süreçlerini uygulama örnekleriyle anlatan kapsamlı bir Ankara miras avukatı rehberi.",
     category: "Miras Hukuku",
-    author: "Av. Mahmut Kardak",
+    author: "Av. Mahmut KARDAK",
     date: "2026-05-04",
     readMinutes: 9,
     body: [
@@ -243,7 +243,7 @@ export const posts: Post[] = [
       "Mirastan feragat sözleşmesi, muris sağlığında bir mirasçının ileride doğacak miras hakkından feragat etmesini sağlar. Bu sözleşme, noter huzurunda resmi şekilde yapılmadığı sürece geçerli değildir. Karşılıklı veya tek taraflı olarak düzenlenebilir.",
       "Ankara Sulh Hukuk Mahkemelerinde miras davalarının ortalama süresi; uyuşmazlığın niteliğine göre 8-18 ay arasında değişebilmektedir. Bilirkişi gerektiren karmaşık tereke incelemelerinde süre daha da uzayabilir.",
       "Pratik bir öneri olarak; mirasçılara muris öldükten sonra hızlıca veraset ilamı çıkarmak, banka ve tapu kayıtlarını dondurmak için tedbir talep etmek ve tereke borcu varsa mirasın reddi süresini kaçırmamak için ilk haftada bir Ankara miras avukatıyla görüşmek gerekir.",
-      "Kardak Hukuk Bürosu olarak Ankara'da miras dosyalarını; tereke tespiti, mirasın reddi, tenkis, muvazaa ve ortaklığın giderilmesi süreçlerinde mirasçıların menfaatlerini dengeli biçimde gözeterek yönetiyoruz.",
+      "KARDAK Hukuk Bürosu olarak Ankara'da miras dosyalarını; tereke tespiti, mirasın reddi, tenkis, muvazaa ve ortaklığın giderilmesi süreçlerinde mirasçıların menfaatlerini dengeli biçimde gözeterek yönetiyoruz.",
     ],
   },
   {
@@ -267,7 +267,7 @@ export const posts: Post[] = [
       "Birleşme ve devralma süreçlerinde due diligence (hukuki inceleme), şirketin gerçek değerinin ortaya çıkarılması açısından kritiktir. Vergi, iş hukuku, sözleşme ve sermaye yapısı boyutlarında incelenmeyen şirketler ileride hedef alıcısı için ciddi sürprizler doğurabilir.",
       "Ortaklık uyuşmazlıkları, küçük şirketler için en yıpratıcı dosyalardan biridir. Ankara Asliye Ticaret Mahkemelerinde görülen bu davalarda pay devri, kâr dağıtımı ve yönetimden çıkarma süreçleri esas sözleşmedeki düzenlemeler ışığında değerlendirilir.",
       "Şirket ortakları için pratik bir öneri; ortaklık ilişkisinin başında hissedarlar sözleşmesi yapmak ve çıkış senaryolarını, pay devri kısıtlamalarını, drag-along ve tag-along haklarını yazılı belirlemektir. Sözleşmesiz başlayan ortaklıklar ileride ciddi hukuki maliyetlere yol açabilmektedir.",
-      "Kardak Hukuk Bürosu olarak Ankara'da şirket kuruluşu, esas sözleşme tasarımı, ticari sözleşmeler ve birleşme-devralma süreçlerinde KOBİ'lerden ölçekli şirketlere kadar geniş bir yelpazeye uzun soluklu hukuki destek sunuyoruz.",
+      "KARDAK Hukuk Bürosu olarak Ankara'da şirket kuruluşu, esas sözleşme tasarımı, ticari sözleşmeler ve birleşme-devralma süreçlerinde KOBİ'lerden ölçekli şirketlere kadar geniş bir yelpazeye uzun soluklu hukuki destek sunuyoruz.",
     ],
   },
   {
@@ -291,7 +291,7 @@ export const posts: Post[] = [
       "İmar uygulamalarından doğan ihtilaflar ise idari yargının görev alanındadır. Ankara'da imar planı değişiklikleri, parselasyon işlemleri ve kamulaştırma kararlarına karşı Ankara İdare Mahkemelerine başvurulur. Sürelerin titiz takibi şarttır; iptal davası süresi tebliğden itibaren altmış gündür.",
       "Pratik bir öneri olarak; Ankara'da gayrimenkul almadan önce tapu sorgusu, imar durumu sorgulaması, varsa şerh ve haciz kayıtlarının incelenmesi, kat mülkiyeti durumunun değerlendirilmesi ve yapı kullanma izninin var olduğunun teyit edilmesi sonradan açılacak davaların büyük çoğunluğunu önler.",
       "Yargılama süreleri açısından, tapu iptal davaları Ankara'da bilirkişi gerektirmesi nedeniyle ortalama 14-22 ay sürmektedir. İstinaf ve Yargıtay aşamalarıyla birlikte toplam süre üç yılı bulabilmektedir.",
-      "Kardak Hukuk Bürosu olarak Ankara'da gayrimenkul davalarını; alım öncesi due diligence çalışmasından tapu iptal, tahliye, kat mülkiyeti ve imar süreçlerine kadar her aşamada müvekkillerimizle birlikte yürütüyoruz.",
+      "KARDAK Hukuk Bürosu olarak Ankara'da gayrimenkul davalarını; alım öncesi due diligence çalışmasından tapu iptal, tahliye, kat mülkiyeti ve imar süreçlerine kadar her aşamada müvekkillerimizle birlikte yürütüyoruz.",
     ],
   },
   {
@@ -314,7 +314,7 @@ export const posts: Post[] = [
       "İşveren işçiyi tekrar işe başlatmazsa, mahkemece belirlenen 4 ile 8 aylık ücret tutarındaki işe başlatmama tazminatı ile boşta geçen sürenin en çok dört aylık ücret tutarı işçiye ödenmek zorundadır. Bu hakların talep edilebilmesi için işçinin süresi içinde işverene başvurmuş olması şarttır.",
       "İşe iade davası ile birlikte ödenmemiş kıdem ve ihbar tazminatı, fazla mesai, hafta tatili ve genel tatil ücreti gibi işçilik alacakları ayrı bir davayla veya birleştirilerek talep edilebilir. Ankara'da bu davalar çoğunlukla aynı iş mahkemesinde görülür.",
       "İşveren tarafının dikkat etmesi gereken nokta ise fesih sürecini yazılı belgelerle desteklemek, savunma almayı ihmal etmemek ve performans uyarılarını dosyaya işlemektir. Aksi hâlde feshin geçersizliği yüksek olasılıktır.",
-      "Kardak Hukuk Bürosu olarak Ankara İş Mahkemelerinde işe iade davalarını; sürelerin titiz takibi, delil hazırlığı ve müvekkilin işletmeyle ilişkisinin korunması ekseninde stratejik biçimde yönetiyoruz.",
+      "KARDAK Hukuk Bürosu olarak Ankara İş Mahkemelerinde işe iade davalarını; sürelerin titiz takibi, delil hazırlığı ve müvekkilin işletmeyle ilişkisinin korunması ekseninde stratejik biçimde yönetiyoruz.",
     ],
   },
   {
@@ -339,7 +339,7 @@ export const posts: Post[] = [
       "İstihkak davası ise haczedilen malın üçüncü kişiye ait olduğu iddiasıyla açılır. Borçlunun yanında oturan akrabaların eşyalarının hatalı haczedilmesi gibi durumlarda gündeme gelir ve Ankara İcra Hukuk Mahkemesinin görev alanındadır.",
       "Konkordato süreçleri, borca batık durumdaki şirketlerin iflasını öteleyerek borçlarını yeniden yapılandırmasına olanak sağlar. Konkordato başvurusu Ankara Asliye Ticaret Mahkemesine yapılır ve geçici mühlet, kesin mühlet ve komiser atanması gibi aşamalardan oluşur.",
       "Pratik öneri olarak; alacaklıların icra takibi başlatmadan önce ihtarname göndererek müzakere zemini araması, borçluların ise tebliğ aldıkları her ödeme emrini titizlikle takip ederek itiraz süresini kaçırmaması esastır. Yedi günlük itiraz süresi tüm sürecin seyrini belirler.",
-      "Kardak Hukuk Bürosu olarak Ankara'da icra takiplerini, itirazın kaldırılması, menfi tespit, istihkak, ihalenin feshi ve konkordato dosyalarını; hızlı işlem disipliniyle ve müvekkilin ticari ilişkilerini koruyacak biçimde yönetiyoruz.",
+      "KARDAK Hukuk Bürosu olarak Ankara'da icra takiplerini, itirazın kaldırılması, menfi tespit, istihkak, ihalenin feshi ve konkordato dosyalarını; hızlı işlem disipliniyle ve müvekkilin ticari ilişkilerini koruyacak biçimde yönetiyoruz.",
     ],
   },
   {
@@ -362,7 +362,7 @@ export const posts: Post[] = [
       "Ankara'da kira uyarlama davaları, mahkemelerin iş yoğunluğu ve bilirkişi raporlarının teslim süresine bağlı olarak ortalama 8-14 ay sürmektedir. İstinaf sürecinin de eklenmesi durumunda toplam süre 18 ayı aşabilmektedir.",
       "Önemli bir husus; kira uyarlama davası kira sözleşmesini sona erdirmez. Yalnızca kira bedelini yeniden belirler. Tahliye gibi sonuçlar isteniyorsa ayrı bir tahliye davası açılması gerekir.",
       "Kiraya veren açısından önemli ipucu, sözleşmeyi düzenlerken artış hükmünü Türk Borçlar Kanunu'nun 344. maddesine uygun ve tüketici endeksine endeksli biçimde belirlemektir. Bu şekilde olağan koşullarda artış otomatik olarak gerçekleşir ve uyarlama davasına gerek kalmaz.",
-      "Kardak Hukuk Bürosu olarak Ankara'da kira uyarlama ve tahliye davalarını; sözleşme analizinden bilirkişi sürecine kadar her aşamada müvekkillerimizle birlikte yürütüyor, mümkün olduğunda öncelikle müzakere zemini kuruyoruz.",
+      "KARDAK Hukuk Bürosu olarak Ankara'da kira uyarlama ve tahliye davalarını; sözleşme analizinden bilirkişi sürecine kadar her aşamada müvekkillerimizle birlikte yürütüyor, mümkün olduğunda öncelikle müzakere zemini kuruyoruz.",
     ],
   },
   {
@@ -371,7 +371,7 @@ export const posts: Post[] = [
     excerpt:
       "Tenkis, mirasın reddi, muris muvazaası, saklı pay, veraset ilamı… Ankara'da miras paylaşımı süreçlerinde mirasçıların bilmesi gereken temel kavramlar ve kritik süreler.",
     category: "Miras Hukuku",
-    author: "Av. Mahmut Kardak",
+    author: "Av. Mahmut KARDAK",
     date: "2026-03-15",
     readMinutes: 9,
     body: [
@@ -385,7 +385,7 @@ export const posts: Post[] = [
       "Murisin sağlığında yaptığı bağışlamaların büyük bir kısmının mirastan kaçırma amacıyla yapıldığı iddia ediliyorsa muris muvazaası davası açılabilir. Yargıtay'ın yerleşik içtihatları; özellikle sırf saklı pay sahibi mirasçıyı mirastan mahrum bırakma kastıyla yapılan satışları muvazaalı kabul etmektedir.",
       "Vasiyetname düzenlenmesi, miras paylaşımında ileride çıkacak uyuşmazlıkları büyük ölçüde önler. Resmi vasiyetname noter huzurunda düzenlenir; el yazılı vasiyetnamede tarih, imza ve içerik tamamen muris tarafından yazılmalıdır. Sözlü vasiyetname ise yalnızca olağanüstü koşullarda geçerlidir.",
       "Sürelerin titiz takibi miras süreçlerinin en kritik noktasıdır. Mirasın reddi için üç ay, tenkis davası için on yıllık zamanaşımı, muris muvazaası davasında zamanaşımı sınırlaması bulunmaması gibi sürelerin doğru değerlendirilmesi avukatın temel görevidir.",
-      "Kardak Hukuk Bürosu olarak Ankara'da miras davalarını; tereke tespiti, veraset ilamı, mirasın reddi, tenkis ve ortaklığın giderilmesi süreçlerinde uçtan uca yönetiyor; gerektiğinde tarafları arabuluculuk yoluyla anlaşmaya yönlendirebiliyoruz.",
+      "KARDAK Hukuk Bürosu olarak Ankara'da miras davalarını; tereke tespiti, veraset ilamı, mirasın reddi, tenkis ve ortaklığın giderilmesi süreçlerinde uçtan uca yönetiyor; gerektiğinde tarafları arabuluculuk yoluyla anlaşmaya yönlendirebiliyoruz.",
     ],
   },
 ];

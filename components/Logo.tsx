@@ -18,7 +18,7 @@ export function Logo({
   mode = "mark",
   size = 40,
   className = "",
-  ariaLabel = "Kardak Hukuk Bürosu",
+  ariaLabel = "KARDAK Hukuk Bürosu",
 }: LogoProps) {
   if (mode === "lockup") {
     return (

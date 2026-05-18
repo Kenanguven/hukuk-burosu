@@ -9,7 +9,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Hukuk Blog — Ankara & İstanbul Avukat Makaleleri",
   description:
-    "Ankara ve İstanbul ofisleriyle Kardak Hukuk Bürosu avukatlarından boşanma, miras, iş, ticaret, gayrimenkul ve ceza hukukuna dair güncel rehberler ve uygulamadan pratik bilgiler.",
+    "Ankara ve İstanbul ofisleriyle KARDAK Hukuk Bürosu avukatlarından boşanma, miras, iş, ticaret, gayrimenkul ve ceza hukukuna dair güncel rehberler ve uygulamadan pratik bilgiler.",
   alternates: { canonical: `${site.url}/blog` },
   openGraph: {
     title: `Hukuk Blog — Ankara & İstanbul Avukat | ${site.shortName}`,

@@ -8,12 +8,12 @@ import { team } from "@/lib/team";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Hakkımızda — Ankara & İstanbul'da Kardak Hukuk Bürosu",
+  title: "Hakkımızda — Ankara & İstanbul'da KARDAK Hukuk Bürosu",
   description: `Ankara (Bilkent) ve İstanbul (Beşiktaş) ofisleriyle ${site.name}: kurucu avukat ${site.owner} liderliğinde değerlerimiz, çalışma anlayışımız ve avukat ekibimiz hakkında detaylı bilgi.`,
   alternates: { canonical: `${site.url}/hakkimizda` },
   openGraph: {
     title: `Hakkımızda — Ankara & İstanbul Avukat | ${site.name}`,
-    description: `Ankara ve İstanbul ofisleriyle ${site.owner} liderliğinde çalışan Kardak Hukuk Bürosu'nun değerleri, çalışma anlayışı ve ekip yapısı.`,
+    description: `Ankara ve İstanbul ofisleriyle ${site.owner} liderliğinde çalışan KARDAK Hukuk Bürosu'nun değerleri, çalışma anlayışı ve ekip yapısı.`,
     url: `${site.url}/hakkimizda`,
     type: "website",
   },

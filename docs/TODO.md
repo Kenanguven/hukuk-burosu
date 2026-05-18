@@ -59,6 +59,8 @@
 - [x] Ana klasöre eklenen `Kardak Hukuk.svg` aktif logo kaynağına alındı.
 - [x] SVG logo `public/kardak-hukuk.svg` ve `app/icon.svg` olarak servis edilecek şekilde eklendi; eski aktif PNG favicon kaldırıldı.
 - [x] SVG logo geçişi sonrası `npm.cmd run lint`, `npm.cmd run build`, HTTP kontrolü, mobil CDP runtime kontrolü ve desktop Chrome headless görsel kontrol yapıldı.
+- [x] Görünen marka metinlerinde `Kardak` yazımı `KARDAK` olarak güncellendi; URL/e-posta/slug/dosya yolu teknik değerleri korunarak bırakıldı.
+- [x] KARDAK yazımı sonrası `npm.cmd run lint`, `npm.cmd run build` ve mobil CDP runtime kontrolü yapıldı.
 
 ## Sıradaki İşler
 
