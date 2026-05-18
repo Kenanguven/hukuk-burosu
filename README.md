@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kardak Hukuk Bürosu
 
-## Getting Started
+Kardak Hukuk Bürosu için kurumsal hukuk bürosu tanıtım sitesi. Proje; ana sayfa, hakkımızda, hizmetler, blog, SSS, iletişim, KVKK ve gizlilik sayfalarından oluşan bir Next.js App Router uygulamasıdır.
 
-First, run the development server:
+Güncel marka bilgileri:
+
+- Firma: Kardak Hukuk Bürosu
+- Kurucu/Sahip: Mahmut Kardak
+- Telefon: 0553 612 24 56
+- WhatsApp Web: `https://wa.me/905536122456`
+
+## Kullanılan Teknolojiler
+
+- Next.js 16.2.6
+- React 19.2.4
+- TypeScript
+- Tailwind CSS v4
+- Framer Motion
+- lucide-react
+- Resend
+- ESLint
+
+## Kurulum
+
+Bağımlılıklar yüklü değilse:
+
+```bash
+npm install
+```
+
+Geliştirme sunucusu:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tarayıcıda [http://localhost:3000](http://localhost:3000) adresini aç.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Komutlar
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run dev
+npm run lint
+npm run build
+npm run start
+```
 
-## Learn More
+## Ortam Değişkenleri
 
-To learn more about Next.js, take a look at the following resources:
+İletişim formu Resend ile e-posta gönderebilir. Örnek değerler `.env.local.example` içinde bulunur.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+RESEND_API_KEY=
+CONTACT_INBOX=
+CONTACT_FROM=
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+`RESEND_API_KEY` tanımlı değilse form kalıcı kayıt yapmaz ve e-posta göndermez; route handler sınırlı bilgiyi sunucu konsoluna yazar.
 
-## Deploy on Vercel
+## Vercel Deploy Notu
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Proje Vercel deploy için uygundur. Vercel Next.js'i otomatik algılar. Production ortamında iletişim formunun çalışması için Resend ortam değişkenleri Vercel panelinde tanımlanmalıdır.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ChatGPT ile Çalışma Düzeni
+
+Bu repo uzun süre ChatGPT / GPT-5.5 ile geliştirilecek şekilde proje hafızası içerir. Yeni oturumlarda önce şu dosyalar okunmalıdır:
+
+1. `AGENTS.md`
+2. `docs/PROJECT_BRIEF.md`
+3. `docs/PROGRESS.md`
+4. `docs/TODO.md`
+5. `docs/DECISIONS.md`
+6. `docs/BUGS.md`
+
+Çalışma sırasında eski chat geçmişine güvenilmemeli; güncel durum repo içindeki docs dosyalarından öğrenilmelidir. İş bittikten sonra `docs/PROGRESS.md` ve gerekiyorsa `docs/TODO.md`, `docs/DECISIONS.md`, `docs/BUGS.md` güncellenmelidir.
+
+## Proje Hafızası
+
+- `docs/PROJECT_BRIEF.md`: Projenin amacı ve kapsamı.
+- `docs/ARCHITECTURE.md`: Klasör, sayfa, component ve data yapısı.
+- `docs/TODO.md`: Sıradaki işler.
+- `docs/PROGRESS.md`: Güncel durum ve yapılan işler.
+- `docs/DECISIONS.md`: Alınan teknik/ürün kararları.
+- `docs/BUGS.md`: Hatalar, riskler ve bilinmeyenler.
+
+## Faydalı Dokümanlar
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Vercel Deployment](https://nextjs.org/docs/app/building-your-application/deploying)

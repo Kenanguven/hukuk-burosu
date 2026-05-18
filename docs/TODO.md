@@ -1,0 +1,76 @@
+# TODO
+
+## Tamamlananlar
+
+- [x] Proje kökü ve package yapılandırması incelendi.
+- [x] Proje hafızası için `AGENTS.md` ve `docs` dosyaları oluşturuldu.
+- [x] Mevcut README proje gerçeklerine göre güncellendi.
+- [x] `npm.cmd run lint` çalıştırıldı ve geçti.
+- [x] `npm.cmd run build` çalıştırıldı ve geçti.
+- [x] Mobil görünüm ana sayfa, menü, hizmetler ve iletişim formu özelinde kontrol edildi.
+- [x] Marka bilgileri kaynak dosyalarda tarandı; placeholder/generic görünen değerler not edildi.
+- [x] `UI UX Pro Max Skill` Claude kaynaklarından Codex global skill klasörüne kopyalandı.
+- [x] Python 3.12 kuruldu ve `ui-ux-pro-max` scriptleri tam Python yolu ile doğrulandı.
+- [x] `ui-ux-pro-max` önerilerine göre küçük güven/otorite efektleri eklendi.
+- [x] `ui-ux-pro-max` referansıyla mevcut tasarım Apple esintili premium, cam yüzeyli ve daha profesyonel bir dile rafine edildi.
+- [x] Apple UI/UX rafinesi sonrası `npm.cmd run lint`, `npm.cmd run build` ve mobil/desktop Chrome headless kontrolü yapıldı.
+- [x] Marka adı Kardak Hukuk Bürosu olarak güncellendi.
+- [x] Kurucu/sahip bilgisi Mahmut Kardak olarak eklendi.
+- [x] Telefon ve WhatsApp Web linki merkezi site bilgilerine eklendi.
+- [x] Ana sayfaya paket eklemeden premium CSS 3D hero sahnesi eklendi.
+- [x] Eski Mercan marka kalıntıları uygulama kodundan temizlendi.
+- [x] Mobil grid kırpılmaları için `grid-cols-1` ve container box model düzeltmeleri yapıldı.
+- [x] 3D/premium UI sonrası `npm.cmd run lint`, `npm.cmd run build` ve Chrome headless mobil kontrolü yapıldı.
+- [x] `/hizmetler` üst kategori şeridi `premium-glass` cam panel + ikonlu altın foil çiplerle yeniden inşa edildi.
+- [x] `app/globals.css` içine `.chip-premium`, `.chip-dot`, `.btn-soft` yardımcı sınıfları eklendi ve reduce-motion davranışı korundu.
+- [x] Ana sayfa alt CTA, `/hizmetler` "Bize Ulaşın" ve `PrestigeScene` WhatsApp/Ara pill butonları premium dile harmonize edildi.
+- [x] Premium çip/buton rafinesi sonrası `npm.cmd run lint` ve `npm.cmd run build` yeniden çalıştırıldı.
+- [x] Hero altındaki `tel:` butonu kaldırıldı; WhatsApp Web aynı numarayı zaten taşıyor.
+- [x] PrestigeScene içindeki "Strateji" cam rozeti kaldırıldı.
+- [x] `/hizmetler` kategori şeridi gold-foil dilden Apple-minimal hairline + nötr ikon yuvasına çekildi.
+- [x] Ekip Mahmut Kardak + Servet Ağcakaya + Berk Erdem Işık olarak güncellendi (yer tutucu üyeler ve fake credentialler temizlendi).
+- [x] Blog yazıları gerçek ekip üyelerine yeniden atandı.
+- [x] Hero avatar yığını gerçek üye baş harflerine (MK, SA, Bİ) çekildi; Hakkımızda ekip grid'i 3 üyeye uygun düzenlendi.
+- [x] Layout metadata + JSON-LD (LegalService + Organization + WebSite) Ankara odaklı yerel SEO için yeniden yazıldı.
+- [x] SSS sayfasına FAQPage, blog detayına Article JSON-LD eklendi.
+- [x] Tüm üst seviye sayfa metadata'larına Ankara anahtar kelimesi, canonical ve openGraph alanları yerleştirildi.
+- [x] Blog 11 yazıya çıkarıldı: 4 mevcut yazı Ankara odaklı yenilendi + 7 yeni uzun-form SEO yazısı eklendi (avukat seçimi, çekişmeli boşanma, ceza avukatı, miras davası, şirket kuruluşu, gayrimenkul tapu iptal, icra takibi).
+- [x] SEO çalışması sonrası `npm.cmd run lint` ve `npm.cmd run build` çalıştırıldı.
+- [x] Çift şehir yapısı: `lib/site.ts` `offices` array'ine geçirildi (Ankara Bilkent + İstanbul Beşiktaş).
+- [x] Layout metadata + JSON-LD çift şehir SEO için yenilendi (Organization + iki LegalService + WebSite).
+- [x] Footer ve iletişim sayfası iki ofis bloku ile yeniden düzenlendi; Hero ve PrestigeScene rozetleri çift şehir vurgusu aldı.
+- [x] SSS'ye iki yeni Ankara-İstanbul maddesi eklendi; "Hangi şehir" maddesi yenilendi.
+- [x] Blog 16'ya çıkarıldı: 5 yeni İstanbul odaklı uzun-form yazı (boşanma/ceza/miras/işe iade/tapu iptal) eklendi.
+- [x] Çift şehir SEO sonrası `npm.cmd run lint` ve `npm.cmd run build` çalıştırıldı (30 statik sayfa).
+- [x] Markaya özel K monogramı + denge çubuğu logosu `components/Logo.tsx` olarak tasarlandı (gold/dark/mono varyantları).
+- [x] Navbar ve Footer'daki Scale lucide ikonu yeni Logo ile değiştirildi; Scale importları temizlendi.
+- [x] Favicon olarak `app/icon.svg` eklendi; default Next.js scaffolding `app/favicon.ico` (Vercel logosu) kaldırıldı.
+- [x] Logo + favicon çalışması sonrası `npm.cmd run lint` ve `npm.cmd run build` çalıştırıldı (`/icon.svg` route'u oluştu).
+- [x] Yeni logo daha premium koyu emaye + altın K monogramı diline güncellendi; hero kartı ve favicon aynı logo sistemiyle senkronlandı.
+- [x] Logo yenilemesi sonrası `npm.cmd run lint`, `npm.cmd run build` ve desktop/mobile Chrome headless görsel kontrolü yapıldı.
+- [x] Kullanıcının eklediği PNG logo `components/Logo.tsx` içine entegre edildi; navbar/footer kompakt amblem, hero kartı tam lockup kullanıyor.
+- [x] Favicon PNG logoya geçirildi (`app/icon.png`); eski `app/icon.svg` kaldırıldı.
+- [x] PNG logo entegrasyonu sonrası `npm.cmd run lint`, `npm.cmd run build` ve desktop/mobile CDP runtime kontrolü yapıldı.
+- [x] PNG logo 800x800'den 1920x1920 Full HD kare PNG'ye yükseltildi; orijinal 800px sürüm yedeklendi.
+- [x] Full HD logo sonrası `app/icon.png` aynı dosyayla eşitlendi, `npm.cmd run lint`, `npm.cmd run build` ve mobil CDP runtime kontrolü yapıldı.
+- [x] `/iletisim` ofis kartlarından telefon satırı kaldırıldı; iki kartta yalnız WhatsApp Web satırı kaldı.
+- [x] Beşiktaş / İstanbul ofisi için WhatsApp Web numarası `0545 724 42 88` olarak eklendi.
+- [x] İletişim ofis kartları güncellemesi sonrası `npm.cmd run lint`, `npm.cmd run build` ve mobil CDP runtime kontrolü yapıldı.
+- [x] Ana klasöre eklenen `Kardak Hukuk.svg` aktif logo kaynağına alındı.
+- [x] SVG logo `public/kardak-hukuk.svg` ve `app/icon.svg` olarak servis edilecek şekilde eklendi; eski aktif PNG favicon kaldırıldı.
+- [x] SVG logo geçişi sonrası `npm.cmd run lint`, `npm.cmd run build`, HTTP kontrolü, mobil CDP runtime kontrolü ve desktop Chrome headless görsel kontrol yapıldı.
+
+## Sıradaki İşler
+
+- [ ] Gerçek e-posta, adres, sosyal medya ve domain değerleri marka sahibi tarafından doğrulanacak.
+- [ ] `site.founded`, 500+ müvekkil ve sonuçlandırılan dosya gibi sayısal güven metrikleri gerçek değerlerle doğrulanacak veya kaldırılacak.
+- [ ] Kullanıcının sağladığı SVG logo marka sahibi tarafından son kez onaylanacak; gerçek ofis/fotoğraf dili veya kurumsal görsel seti netleşirse hero ve alt sayfa görsel dili bu materyallere göre tekrar değerlendirilecek.
+- [ ] Resend production ortam değişkenleri Vercel üzerinde tanımlanacak.
+- [ ] İletişim formu production benzeri ortamda uçtan uca test edilecek.
+- [ ] Blog yazıları hukuki doğruluk, tarih ve mevzuat güncelliği açısından avukat tarafından gözden geçirilecek.
+- [ ] KVKK ve gizlilik metinleri gerçek veri işleme süreçlerine göre hukukçu tarafından onaylanacak.
+- [ ] SEO metadata, sitemap ve robots dosyaları gerçek domain ile tekrar kontrol edilecek.
+- [ ] `public/` klasöründeki varsayılan Next/Vercel SVG dosyalarının kullanılıp kullanılmadığı kontrol edilecek.
+- [ ] `components/*.original.tsx` yedek dosyalarının saklanıp saklanmayacağına karar verilecek.
+- [ ] Vercel preview deploy sonrası smoke test yapılacak.
+- [ ] Gelecek değişikliklerden sonra build veya lint hatası çıkarsa giderilecek.
