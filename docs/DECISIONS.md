@@ -8,6 +8,8 @@
 - Ana sayfada müvekkil yorumu/testimonial bölümü kullanılmayacak; hukuki hizmet sitesinde daha kontrollü ve doğrulanabilir bir iletişim dili tercih edilecek.
 - İletişim dilinde iki ayrı `ofis` vurgusu yerine randevulu görüşme, WhatsApp Web ve randevu noktası dili kullanılacak.
 - Menüde `Hizmetler` yerine `Çalışma Alanları`, `Blog` yerine `Yayınlar` etiketi kullanılacak.
+- İletişim sayfasında harita kullanılacaksa açık adres kesinleşene kadar Google Maps embed yalnızca randevu bölgesi olarak gösterilecek; tam konumun WhatsApp Web üzerinden paylaşılacağı metni korunacak.
+- Çalışma alanlarında gerçek fotoğraf seti sağlanana kadar lisans riski taşımayan lokal/temsili görsel kapaklar kullanılacak.
 
 ## 2026-05-12 Başlangıç Kararları
 

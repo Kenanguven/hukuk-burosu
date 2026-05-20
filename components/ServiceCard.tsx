@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { ServiceVisual } from "@/components/ServiceVisual";
 import type { Service } from "@/lib/services";
 
 export function ServiceCard({
@@ -9,12 +10,10 @@ export function ServiceCard({
   service: Service;
   index?: number;
 }) {
-  const Icon = service.icon;
-
   return (
     <Link
       href={`/hizmetler#${service.slug}`}
-      className="trust-sheen premium-card group relative flex h-full min-h-[22rem] flex-col overflow-hidden rounded-[1.65rem] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-coffee/25 hover:shadow-[var(--shadow-warm-lg)] md:p-8"
+      className="premium-card group relative flex h-full min-h-[29rem] flex-col overflow-hidden rounded-[1.65rem] transition-all duration-300 hover:-translate-y-1 hover:border-coffee/25 hover:shadow-[var(--shadow-warm-lg)]"
     >
       <span
         aria-hidden
@@ -25,26 +24,22 @@ export function ServiceCard({
         }}
       />
 
-      <p className="mb-7 font-mono text-xs tracking-wider text-ink-mute">
-        {String(index + 1).padStart(2, "0")}
-      </p>
+      <ServiceVisual service={service} index={index} />
 
-      <span className="grid h-14 w-14 place-items-center rounded-[1.2rem] bg-cream-warm/70 text-coffee-dark ring-1 ring-coffee/10 transition-colors duration-300 group-hover:bg-champagne/70">
-        <Icon className="w-6 h-6" strokeWidth={1.6} />
-      </span>
+      <div className="flex flex-1 flex-col p-7 md:p-8">
+        <h3 className="font-serif text-xl text-coffee-deep transition-colors duration-300 group-hover:text-coffee">
+          {service.title}
+        </h3>
 
-      <h3 className="mt-6 font-serif text-xl text-coffee-deep transition-colors duration-300 group-hover:text-coffee">
-        {service.title}
-      </h3>
+        <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-soft">
+          {service.short}
+        </p>
 
-      <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-soft">
-        {service.short}
-      </p>
-
-      <span className="mt-auto inline-flex items-center gap-1.5 pt-6 text-sm font-medium text-coffee-deep">
-        Detay
-        <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-      </span>
+        <span className="mt-auto inline-flex items-center gap-1.5 pt-6 text-sm font-medium text-coffee-deep">
+          Detay
+          <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+        </span>
+      </div>
     </Link>
   );
 }

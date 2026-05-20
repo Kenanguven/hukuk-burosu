@@ -68,6 +68,9 @@
 - [x] SSS içinden `Hangi şehirlerde ofisiniz var?` maddesi kaldırıldı; iletişim dili randevu/WhatsApp Web odağıyla tekilleştirildi.
 - [x] Ana sayfaya `Yayınlar` önizleme bölümü eklendi.
 - [x] Hibrit ana sayfa revizyonu sonrasında `npm.cmd run lint`, `npm.cmd run build` ve 390px mobil CDP kontrolü yapıldı.
+- [x] `/iletisim` sayfası geniş Google Maps embed, dört eşit iletişim kartı, randevu noktaları ve mesaj formu düzenine taşındı.
+- [x] Çalışma alanı kartlarına ve `/hizmetler` detay bloklarına konuya özel temsili görsel kapaklar eklendi.
+- [x] Harita ve çalışma alanı görselleri sonrasında `npm.cmd run lint`, `npm.cmd run build` ve `/iletisim` + `/hizmetler` 390px mobil CDP kontrolü yapıldı.
 
 ## Sıradaki İşler
 

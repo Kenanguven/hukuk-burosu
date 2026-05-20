@@ -59,8 +59,8 @@ export function PageHero({
         </motion.span>
 
         <motion.h1
-          initial={{ opacity: 0, y: 18, filter: "blur(8px)" }}
-          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          initial={{ opacity: 0, y: 18 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.15, ease }}
           className="mt-4 max-w-4xl font-serif text-4xl leading-[1.04] text-coffee-deep md:text-6xl"
         >

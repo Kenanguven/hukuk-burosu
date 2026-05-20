@@ -24,10 +24,21 @@ Bugünkü görev: Aslan Hukuk Danışmanlık ve Tahancı Avukatlık Bürosu refe
 - SSS, randevu planlama, şehir dışı dosya takibi, çevrimiçi görüşme ve gizlilik odaklı daha tekil bir dile taşındı.
 - Navbar menüsünde `Hizmetler` etiketi `Çalışma Alanları`, `Blog` etiketi `Yayınlar` olarak güncellendi.
 
+### İletişim Harita ve Görsel Çalışma Alanları
+
+- Kullanıcı referans ekran görüntüsüne göre `/iletisim` sayfası üstte geniş harita, altında dört eşit iletişim kartı ve devamında randevu noktaları + mesaj formu düzenine taşındı.
+- Gerçek açık adres henüz verilmediği için Google Maps embed `Bilkent, Ankara` randevu bölgesi sorgusuyla kullanıldı; tam konum bilgisinin WhatsApp Web üzerinden paylaşılacağı dili korundu.
+- İki WhatsApp Web hattı korundu: Ankara için `0553 612 24 56`, İstanbul/Beşiktaş için `0545 724 42 88`.
+- Çalışma alanı kartlarına konuya özel premium görsel kapaklar eklendi.
+- `/hizmetler` detay bloklarında her hizmet için görsel kapak + madde listesi düzeni kullanıldı.
+- Stok fotoğraf lisans riski oluşturmamak için görseller lokal, kod tabanlı ve konuya özel temsili kapaklar olarak üretildi; gerçek ofis/fotoğraf seti gelirse aynı alanlar kolayca değiştirilebilir.
+
 ### Son Kontrol
 
 - `npm.cmd run lint`: geçti.
 - `npm.cmd run build`: geçti (30/30 statik sayfa).
+- Harita ve çalışma alanı görselleri eklendikten sonra `npm.cmd run lint` ve `npm.cmd run build` tekrar geçti.
+- Chrome CDP ile `/iletisim` ve `/hizmetler` 390px mobil viewport kontrol edildi; her iki sayfada da `documentElement.scrollWidth` ve `body.scrollWidth` 390px, yatay scroll yok. Taşma adayları dekoratif blur/harita çizgi katmanlarıyla sınırlı.
 - `http://localhost:3003/` üzerinde ana sayfa HTML kontrolünde `500+`, `1200`, `14+`, `Ücretsiz Ön Görüşme`, `Hangi şehirlerde ofisiniz var` ve `Ofislerimiz` metinleri bulunmadı.
 - Chrome DevTools Protocol ile 390px mobil viewport kontrol edildi; `documentElement.scrollWidth` ve `body.scrollWidth` 390px, yatay scroll yok. Görünen taşma adayları yalnızca `overflow-hidden` içindeki dekoratif blur katmanları.
 

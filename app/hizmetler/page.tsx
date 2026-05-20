@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { FadeIn, Stagger, StaggerItem } from "@/components/MotionWrapper";
+import { ServiceVisual } from "@/components/ServiceVisual";
 import { services } from "@/lib/services";
 import { site } from "@/lib/site";
 
@@ -77,7 +78,7 @@ export default function ServicesPage() {
               >
                 <article
                   id={s.slug}
-                  className={`grid grid-cols-1 md:grid-cols-12 gap-8 items-center rounded-3xl p-8 md:p-12 ${
+                  className={`grid grid-cols-1 items-start gap-8 rounded-3xl p-8 md:grid-cols-12 md:p-12 ${
                     idx % 2 === 0 ? "bg-cream-soft" : "bg-cream-warm/70"
                   } border border-coffee/10`}
                 >
@@ -91,19 +92,22 @@ export default function ServicesPage() {
                     <p className="text-ink-soft leading-relaxed">{s.long}</p>
                   </div>
 
-                  <Stagger className={`md:col-span-5 grid grid-cols-1 gap-2.5 ${reverse ? "md:order-1" : ""}`}>
-                    {s.bullets.map((b) => (
-                      <StaggerItem
-                        key={b}
-                        className="flex items-start gap-3 bg-cream rounded-xl px-4 py-3.5 border border-coffee/10"
-                      >
-                        <span className="grid place-items-center w-6 h-6 rounded-full bg-gold/30 text-coffee-deep shrink-0 mt-0.5">
-                          <Check className="w-3.5 h-3.5" strokeWidth={2.5} />
-                        </span>
-                        <span className="text-sm text-ink-soft leading-snug">{b}</span>
-                      </StaggerItem>
-                    ))}
-                  </Stagger>
+                  <div className={`md:col-span-5 ${reverse ? "md:order-1" : ""}`}>
+                    <ServiceVisual service={s} index={idx} variant="wide" />
+                    <Stagger className="mt-4 grid grid-cols-1 gap-2.5">
+                      {s.bullets.map((b) => (
+                        <StaggerItem
+                          key={b}
+                          className="flex items-start gap-3 rounded-xl border border-coffee/10 bg-cream px-4 py-3.5"
+                        >
+                          <span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-gold/30 text-coffee-deep">
+                            <Check className="h-3.5 w-3.5" strokeWidth={2.5} />
+                          </span>
+                          <span className="text-sm leading-snug text-ink-soft">{b}</span>
+                        </StaggerItem>
+                      ))}
+                    </Stagger>
+                  </div>
                 </article>
               </FadeIn>
             );
