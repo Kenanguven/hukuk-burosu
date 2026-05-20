@@ -14,7 +14,7 @@ export function ServiceCard({
   return (
     <Link
       href={`/hizmetler#${service.slug}`}
-      className="trust-sheen premium-card group relative block overflow-hidden rounded-[1.65rem] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-coffee/25 hover:shadow-[var(--shadow-warm-lg)] md:p-8"
+      className="trust-sheen premium-card group relative flex h-full min-h-[22rem] flex-col overflow-hidden rounded-[1.65rem] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-coffee/25 hover:shadow-[var(--shadow-warm-lg)] md:p-8"
     >
       <span
         aria-hidden
@@ -37,11 +37,11 @@ export function ServiceCard({
         {service.title}
       </h3>
 
-      <p className="mt-3 text-sm leading-relaxed text-ink-soft">
+      <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-soft">
         {service.short}
       </p>
 
-      <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-coffee-deep">
+      <span className="mt-auto inline-flex items-center gap-1.5 pt-6 text-sm font-medium text-coffee-deep">
         Detay
         <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
       </span>

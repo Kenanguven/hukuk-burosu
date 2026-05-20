@@ -61,11 +61,17 @@
 - [x] SVG logo geçişi sonrası `npm.cmd run lint`, `npm.cmd run build`, HTTP kontrolü, mobil CDP runtime kontrolü ve desktop Chrome headless görsel kontrol yapıldı.
 - [x] Görünen marka metinlerinde `Kardak` yazımı `KARDAK` olarak güncellendi; URL/e-posta/slug/dosya yolu teknik değerleri korunarak bırakıldı.
 - [x] KARDAK yazımı sonrası `npm.cmd run lint`, `npm.cmd run build` ve mobil CDP runtime kontrolü yapıldı.
+- [x] Ana sayfadaki `500+ müvekkil`, `14+ yıllık deneyim`, `1200+ dosya` gibi doğrulanmamış sayısal güven metrikleri görünür arayüzden kaldırıldı.
+- [x] Stat bandı sayısız süreç ilkeleriyle revize edildi.
+- [x] Hizmet kartları eşit yükseklik ve alt hizalı `Detay` linkleriyle düzenlendi.
+- [x] Ana sayfadaki koyu `Ücretsiz Ön Görüşme` CTA bandı ve yorum/testimonial bölümü kaldırıldı.
+- [x] SSS içinden `Hangi şehirlerde ofisiniz var?` maddesi kaldırıldı; iletişim dili randevu/WhatsApp Web odağıyla tekilleştirildi.
+- [x] Ana sayfaya `Yayınlar` önizleme bölümü eklendi.
+- [x] Hibrit ana sayfa revizyonu sonrasında `npm.cmd run lint`, `npm.cmd run build` ve 390px mobil CDP kontrolü yapıldı.
 
 ## Sıradaki İşler
 
 - [ ] Gerçek e-posta, adres, sosyal medya ve domain değerleri marka sahibi tarafından doğrulanacak.
-- [ ] `site.founded`, 500+ müvekkil ve sonuçlandırılan dosya gibi sayısal güven metrikleri gerçek değerlerle doğrulanacak veya kaldırılacak.
 - [ ] Kullanıcının sağladığı SVG logo marka sahibi tarafından son kez onaylanacak; gerçek ofis/fotoğraf dili veya kurumsal görsel seti netleşirse hero ve alt sayfa görsel dili bu materyallere göre tekrar değerlendirilecek.
 - [ ] Resend production ortam değişkenleri Vercel üzerinde tanımlanacak.
 - [ ] İletişim formu production benzeri ortamda uçtan uca test edilecek.

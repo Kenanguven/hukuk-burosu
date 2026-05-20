@@ -6,50 +6,42 @@ export type Faq = {
 export const faqs: Faq[] = [
   {
     q: "İlk görüşme ücretli mi?",
-    a: "Telefon ya da e-posta üzerinden yapılan ön değerlendirme görüşmesi ücretsizdir. Yüz yüze yapılan ve dosyanızın detaylı incelenmesini gerektiren danışmanlık görüşmesi için Türkiye Barolar Birliği'nin asgari ücret tarifesi esas alınarak şeffaf bir ücret bildirilir.",
+    a: "Telefon, WhatsApp Web ya da e-posta üzerinden yapılan ilk ön değerlendirmede dosyanızın genel çerçevesini dinleriz. Yüz yüze veya kapsamlı belge incelemesi gerektiren danışmanlık görüşmelerinde Türkiye Barolar Birliği'nin asgari ücret tarifesi dikkate alınarak şeffaf bir ücret bilgisi paylaşılır.",
   },
   {
     q: "Avukatlık ücretiniz nasıl belirleniyor?",
-    a: "Ücretlerimiz dosyanın niteliği, uyuşmazlığın değeri, beklenen iş yoğunluğu ve süresine göre belirlenir. Her dosya için yazılı bir avukatlık sözleşmesi düzenlenir; sürpriz ek ücret talep etmiyoruz.",
+    a: "Ücret; dosyanın niteliği, uyuşmazlığın değeri, beklenen iş yoğunluğu ve süresine göre belirlenir. Her dosya için yazılı avukatlık sözleşmesi düzenlenir; kapsam ve ödeme planı görüşmenin başında netleştirilir.",
   },
   {
     q: "Davam ne kadar sürer?",
-    a: "Dava süresi; uyuşmazlığın türüne, mahkemenin iş yoğunluğuna, delil durumuna ve tarafların tutumuna göre değişkenlik gösterir. Görüşme sırasında benzer dosyalardaki ortalama süreler hakkında size bilgi veriyoruz.",
+    a: "Dava süresi; uyuşmazlığın türüne, mahkemenin iş yoğunluğuna, delil durumuna ve tarafların tutumuna göre değişir. Görüşme sırasında dosyanıza benzer süreçlerde karşılaşılan ortalama takvim hakkında gerçekçi bilgi verilir.",
   },
   {
-    q: "Hangi şehirlerde ofisiniz var?",
-    a: "KARDAK Hukuk Bürosu'nun Ankara'da Bilkent ve İstanbul'da Beşiktaş olmak üzere iki ofisi bulunmaktadır. Her iki ofis de aynı çalışma anlayışıyla; ceza, aile, iş, ticaret, gayrimenkul, miras, icra-iflas ve idare hukuku alanlarında hizmet vermektedir.",
+    q: "Randevu nasıl planlanıyor?",
+    a: "Randevu talebinizi WhatsApp Web, e-posta veya iletişim formu üzerinden iletebilirsiniz. Dosyanızın niteliğine göre çevrimiçi görüşme ya da randevulu yüz yüze görüşme planlanır; tam konum bilgisi görüşme kesinleştiğinde paylaşılır.",
   },
   {
-    q: "Ankara'daki müvekkilim, İstanbul'daki bir davayı sizin üzerinizden takip edebilir mi?",
-    a: "Evet. Ankara ofisimize gelerek görüşme yaptığınız bir müvekkilimiz, İstanbul'daki bir dosyasını da bizim üzerinden yönetebilir. Ofisler arası dosya akışı tek elden yürütülür ve duruşmalara hangi şehirden olursa olsun büromuz adına katılırız.",
-  },
-  {
-    q: "Şehir dışındaki davalarımı takip edebiliyor musunuz?",
-    a: "Evet. Ankara (Bilkent) ve İstanbul (Beşiktaş) ofislerimiz dışında Türkiye genelinde davaları takip ediyoruz. Uzak şehirlerdeki duruşmalar için gerektiğinde güvendiğimiz meslektaşlarımızla ikame ilişkisi kuruyoruz; süreç boyunca dosyanız yine bizim tarafımızdan yönetilir.",
+    q: "Şehir dışındaki davaları takip edebiliyor musunuz?",
+    a: "Evet. Türkiye genelindeki dosyalar için dava takibi ve danışmanlık hizmeti sunuyoruz. Uzak şehirlerdeki duruşmalar için gerektiğinde güvendiğimiz meslektaşlarımızla ikame ilişkisi kurulur; strateji ve dosya yönetimi büromuz tarafından takip edilir.",
   },
   {
     q: "Çevrimiçi görüşme yapıyor musunuz?",
-    a: "Evet. Talep etmeniz halinde Zoom veya Google Meet üzerinden çevrimiçi görüşme planlıyor; gerekli belgeleri e-imzalı ya da KEP ile güvenli bir şekilde paylaşıyoruz.",
+    a: "Evet. Talep etmeniz halinde Zoom veya Google Meet üzerinden çevrimiçi görüşme planlanabilir. Gerekli belgeler güvenli kanallar üzerinden paylaşılır; vekalet ve imza süreçleri ayrıca açıklanır.",
   },
   {
     q: "Vekaletname nasıl çıkarılır?",
-    a: "Vekaletname herhangi bir notere giderek çıkarılabilir. Görüşmemizin ardından size avukat adı, T.C. kimlik numarası ve vekaletname kapsamını içeren bir bilgi notu gönderiyoruz; bu notu notere ibraz etmeniz yeterlidir.",
+    a: "Vekaletname herhangi bir notere giderek çıkarılabilir. Görüşmemizin ardından size avukat adı, T.C. kimlik numarası ve vekaletname kapsamını içeren bilgi notu gönderilir; bu notu notere ibraz etmeniz yeterlidir.",
   },
   {
     q: "Anlaşmalı boşanma kaç günde sonuçlanır?",
-    a: "Tarafların ortak ve eksiksiz bir protokol sunması, mahkemenin yoğunluğu ve duruşma takvimi belirleyicidir. Genellikle tek celse ile, başvurudan itibaren 4-8 hafta içinde karar verilebilmektedir.",
+    a: "Tarafların ortak ve eksiksiz bir protokol sunması, mahkemenin yoğunluğu ve duruşma takvimi belirleyicidir. Çoğu dosyada tek celse ile karar verilebilir; kesin süre dosyanın koşullarına göre değerlendirilir.",
   },
   {
     q: "Müvekkil bilgileri ne kadar güvende?",
-    a: "Tüm müvekkil bilgileri Avukatlık Kanunu kapsamındaki sır saklama yükümlülüğü çerçevesinde korunur. Ayrıca 6698 sayılı KVKK uyarınca veri işleme süreçlerimiz aydınlatma metnimizde şeffaf biçimde açıklanmıştır.",
-  },
-  {
-    q: "Merkez büronuz hangi şehirde?",
-    a: "Ankara (Bilkent) ve İstanbul (Beşiktaş) olmak üzere iki ofisimiz var. Türkiye genelinde davaları takip ediyor ve çevrimiçi danışmanlık veriyoruz. Yurt dışında ikamet eden müvekkillerimize KEP ve e-imza ile uzaktan vekalet düzenleme konusunda da destek sağlıyoruz.",
+    a: "Tüm müvekkil bilgileri Avukatlık Kanunu kapsamındaki sır saklama yükümlülüğü çerçevesinde korunur. Ayrıca 6698 sayılı KVKK uyarınca veri işleme süreçleri aydınlatma metnimizde açıklanır.",
   },
   {
     q: "Dosyamın gelişmelerini nasıl takip edebilirim?",
-    a: "Her dosya için size özel bir avukat atanır ve düzenli aralıklarla yazılı bilgi notu paylaşırız. Önemli gelişmelerde aynı gün içinde telefonla bilgilendirme yapılır.",
+    a: "Her dosya için düzenli bilgilendirme yapılır. Önemli gelişmelerde WhatsApp Web, telefon veya e-posta üzerinden size ulaşılır; gerekli durumlarda yazılı bilgi notu paylaşılır.",
   },
 ];

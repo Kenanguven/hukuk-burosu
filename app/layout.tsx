@@ -21,8 +21,8 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `Ankara & İstanbul Avukat · ${site.shortName} — Ceza, Aile, İş ve Ticaret Hukuku`,
-    template: `%s · Ankara & İstanbul Avukat | ${site.shortName}`,
+    default: `${site.name} · Ceza, Aile, İş ve Ticaret Hukuku`,
+    template: `%s | ${site.shortName}`,
   },
   description: site.description,
   keywords: [
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     canonical: site.url,
   },
   openGraph: {
-    title: `${site.name} — Ankara & İstanbul Avukat`,
+    title: `${site.name} — Stratejik Hukuki Temsil`,
     description: site.description,
     url: site.url,
     siteName: site.name,
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} — Ankara & İstanbul Avukat`,
+    title: `${site.name} — Stratejik Hukuki Temsil`,
     description: site.description,
   },
   robots: {
@@ -129,9 +129,9 @@ const officeJsonLd = offices.map((office) => ({
   "@context": "https://schema.org",
   "@type": "LegalService",
   "@id": `${site.url}#office-${office.slug}`,
-  name: `${site.name} — ${office.city} Ofisi`,
+  name: `${site.name} — ${office.city} Randevu Noktası`,
   alternateName: `${site.shortName} ${office.city}`,
-  description: `${office.city} (${office.district}) ofisinde ${site.name}; ceza, aile, iş, ticaret, gayrimenkul, miras, icra-iflas ve idare hukuku alanlarında bireylere ve şirketlere stratejik hukuki temsil sunar.`,
+  description: `${office.city} (${office.district}) randevu akışıyla ${site.name}; ceza, aile, iş, ticaret, gayrimenkul, miras, icra-iflas ve idare hukuku alanlarında bireylere ve şirketlere stratejik hukuki temsil sunar.`,
   url: `${site.url}/iletisim#${office.slug}`,
   email: site.email,
   telephone: office.whatsappRaw,
@@ -162,7 +162,6 @@ const organizationJsonLd = {
   url: site.url,
   logo: `${site.url}/kardak-hukuk.svg`,
   description: site.description,
-  foundingDate: String(site.founded),
   founder: {
     "@type": "Person",
     name: `Av. ${site.owner}`,
@@ -171,7 +170,7 @@ const organizationJsonLd = {
   location: offices.map((office) => ({
     "@type": "Place",
     "@id": `${site.url}#office-${office.slug}`,
-    name: `${site.name} — ${office.city} Ofisi`,
+    name: `${site.name} — ${office.city} Randevu Noktası`,
     address: {
       "@type": "PostalAddress",
       addressLocality: office.district,

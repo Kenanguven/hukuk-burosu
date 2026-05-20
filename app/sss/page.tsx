@@ -8,14 +8,14 @@ import { faqs } from "@/lib/faq";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Sık Sorulan Sorular — Ankara & İstanbul Avukat",
+  title: "Sık Sorulan Sorular — KARDAK Hukuk Bürosu",
   description:
-    "Ankara ve İstanbul'da avukatlık hizmeti alırken aklınıza takılan sık sorulan sorular: ücretlendirme, dava süreleri, vekaletname, çevrimiçi görüşme, şehirler arası dosya takibi ve gizlilik.",
+    "KARDAK Hukuk Bürosu'nda ücretlendirme, dava süreleri, vekaletname, çevrimiçi görüşme, randevu planlama ve gizlilik hakkında sık sorulan sorular.",
   alternates: { canonical: `${site.url}/sss` },
   openGraph: {
-    title: `Sık Sorulan Sorular — Ankara & İstanbul Avukat | ${site.shortName}`,
+    title: `Sık Sorulan Sorular | ${site.shortName}`,
     description:
-      "Ankara ve İstanbul ofislerimizdeki avukat hizmetleri, ücretlendirme, dava süreleri ve çalışma anlayışımız hakkında en sık sorulan sorular ve cevaplar.",
+      "Avukatlık hizmetleri, ücretlendirme, dava süreleri ve çalışma anlayışımız hakkında en sık sorulan sorular ve cevaplar.",
     url: `${site.url}/sss`,
     type: "website",
   },

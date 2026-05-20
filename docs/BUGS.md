@@ -6,6 +6,7 @@ Aktif doğrulanmış hata yok.
 
 ## Giderilenler
 
+- 2026-05-20: Ana sayfadaki doğrulanmamış `500+ müvekkil`, `1200+ dosya` ve `14+ yıllık deneyim` metrikleri görünür arayüzden kaldırıldı. Stat bandı sayısız süreç ilkelerine dönüştürüldü.
 - 2026-05-12: İlk lint çalıştırmasında `react/no-unescaped-entities` hataları görüldü. JSX içindeki düz tırnak/apostrof karakterleri güvenli entity biçimine çevrildi.
 - 2026-05-12: İlk lint çalıştırmasında `react-hooks/set-state-in-effect` hataları görüldü. `CookieBanner` state güncellemesi async callback içine alındı, `Navbar` mobil menü kapatma davranışı link tıklamalarına taşındı.
 - 2026-05-12: Düzeltmelerden sonra `npm.cmd run lint` ve `npm.cmd run build` başarıyla geçti.
@@ -25,7 +26,7 @@ Aktif doğrulanmış hata yok.
 - `lib/site.ts` içindeki telefon ve WhatsApp değeri kullanıcı tarafından verildiği için güncellendi.
 - `lib/site.ts` içindeki e-posta ve domain marka adına göre düzenlendi ancak gerçek production değeri ayrıca doğrulanmalı.
 - Gerçek adres ve sosyal medya değerleri henüz verilmedi. Sahte/generic değerler kaldırıldı; adres yerine randevu sırasında WhatsApp üzerinden konum paylaşımı mesajı gösteriliyor.
-- `site.founded`, 500+ müvekkil, 1200+ dosya gibi sayısal güven metriklerinin gerçek değerler olup olmadığı bilinmiyor.
+- Sayısal güven metrikleri görünür arayüzden kaldırıldı; ileride gerçek ve belgelenebilir metrik kullanılacaksa avukat/marka sahibi tarafından ayrıca onaylanmalı.
 - Blog yazıları ve hukuki metinlerin gerçek hukuki danışmanlık açısından avukat tarafından onaylanıp onaylanmadığı bilinmiyor. 2026-05-12 SEO çalışmasıyla eklenen 7 yeni uzun-form yazı genel bilgilendirme amaçlı yazıldı; sürelere, görevli mahkeme bilgilerine ve yargısal pratiğe değinen kısımların avukat tarafından son okuması yapılmalı.
 - `site.url` "https://kardakhukuk.com" değeriyle JSON-LD ve canonical URL'lerde kullanılıyor. Gerçek domain başka olursa metadata + sitemap + JSON-LD doğru çalışsın diye yalnızca `site.url` güncellenmesi yeterli.
 - `public/` içindeki varsayılan Next/Vercel SVG dosyalarının kullanılma durumu doğrulanmadı.

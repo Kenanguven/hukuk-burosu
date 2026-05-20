@@ -5,7 +5,6 @@ import Link from "next/link";
 import {
   ArrowRight,
   MessageCircle,
-  Phone,
   Sparkles,
 } from "lucide-react";
 import {
@@ -56,7 +55,7 @@ export function PrestigeScene() {
     >
       <motion.div
         style={reduceMotion ? undefined : { rotateX, rotateY }}
-        className="scene-preserve-3d relative aspect-[0.86] min-h-[31rem] overflow-hidden rounded-[2.4rem] prestige-shell"
+        className="scene-preserve-3d relative aspect-[0.86] min-h-[27rem] w-full overflow-hidden rounded-[2.4rem] prestige-shell md:min-h-[31rem]"
       >
         <motion.div
           aria-hidden
@@ -67,7 +66,7 @@ export function PrestigeScene() {
 
         <div className="depth-12 absolute inset-x-4 top-5 flex items-center justify-between gap-2 md:inset-x-7 md:top-7">
           <div className="premium-glass rounded-full px-3 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-coffee-deep md:px-3.5 md:text-xs">
-            Ankara · İstanbul
+            Randevulu Görüşme
           </div>
           <div className="premium-glass hidden rounded-full px-3 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-coffee-deep md:block md:px-3.5 md:text-xs">
             <span className="md:hidden">Kurucu</span>
@@ -113,13 +112,13 @@ export function PrestigeScene() {
             <MessageCircle className="h-4 w-4 transition-transform group-hover:rotate-6" />
             WhatsApp
           </Link>
-          <a
-            href={`tel:${site.phoneRaw}`}
+          <Link
+            href="/iletisim"
             className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-cream/25 bg-cream/10 text-sm font-semibold text-cream backdrop-blur-md transition-colors duration-200 hover:border-aurum/55 hover:bg-cream/18"
           >
-            <Phone className="h-4 w-4 transition-transform group-hover:-rotate-12" />
-            Ara
-          </a>
+            Form
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+          </Link>
         </div>
 
         <div

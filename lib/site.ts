@@ -48,13 +48,12 @@ export const site = {
   ownerTitle: "Kurucu Avukat",
   tagline: "Stratejik, sakin ve güçlü hukuki temsil.",
   description:
-    "Ankara (Bilkent) ve İstanbul (Beşiktaş) ofisleriyle KARDAK Hukuk Bürosu; kurucu avukat Mahmut KARDAK liderliğinde ceza, aile, iş, ticaret, gayrimenkul, miras, icra-iflas ve idare hukuku alanlarında bireylere ve şirketlere stratejik hukuki temsil ve danışmanlık sunar.",
+    "KARDAK Hukuk Bürosu; kurucu avukat Mahmut KARDAK liderliğinde ceza, aile, iş, ticaret, gayrimenkul, miras, icra-iflas ve idare hukuku alanlarında bireylere ve şirketlere stratejik hukuki temsil ve danışmanlık sunar.",
   url: "https://kardakhukuk.com",
-  founded: 2012,
   cities: ["Ankara", "İstanbul"] as const,
   city: "Ankara",
   address:
-    "Ankara (Bilkent) ve İstanbul (Beşiktaş) ofislerimiz için tam konum bilgisi randevu sırasında WhatsApp üzerinden paylaşılır.",
+    "Randevulu görüşmeler için tam konum bilgisi WhatsApp Web üzerinden paylaşılır.",
   phone: "0553 612 24 56",
   phoneRaw: "+905536122456",
   whatsapp: "+905536122456",
@@ -72,8 +71,8 @@ export const site = {
 export const nav = [
   { href: "/", label: "Anasayfa" },
   { href: "/hakkimizda", label: "Hakkımızda" },
-  { href: "/hizmetler", label: "Hizmetler" },
-  { href: "/blog", label: "Blog" },
+  { href: "/hizmetler", label: "Çalışma Alanları" },
+  { href: "/blog", label: "Yayınlar" },
   { href: "/sss", label: "SSS" },
   { href: "/iletisim", label: "İletişim" },
 ] as const;

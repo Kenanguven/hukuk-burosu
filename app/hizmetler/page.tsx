@@ -7,14 +7,14 @@ import { services } from "@/lib/services";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Hizmetler — Ankara & İstanbul'da Hukuk Alanları",
+  title: "Çalışma Alanları — Hukuk Hizmetleri",
   description:
-    "Ankara (Bilkent) ve İstanbul (Beşiktaş) ofisleriyle KARDAK Hukuk Bürosu; ceza, aile, iş, ticaret, gayrimenkul, icra-iflas, idare-vergi hukuku ve sürekli hukuki danışmanlık alanlarında bireylere ve şirketlere stratejik hukuki temsil sunar.",
+    "KARDAK Hukuk Bürosu; ceza, aile, iş, ticaret, gayrimenkul, icra-iflas, idare-vergi hukuku ve sürekli hukuki danışmanlık alanlarında bireylere ve şirketlere stratejik hukuki temsil sunar.",
   alternates: { canonical: `${site.url}/hizmetler` },
   openGraph: {
-    title: "Hizmetler — Ankara & İstanbul Avukat | KARDAK Hukuk Bürosu",
+    title: "Çalışma Alanları | KARDAK Hukuk Bürosu",
     description:
-      "Ankara ve İstanbul'da hukuk hizmetlerimiz: ceza, aile, iş, ticaret, gayrimenkul, icra-iflas, idare-vergi ve sürekli danışmanlık.",
+      "Hukuk hizmetlerimiz: ceza, aile, iş, ticaret, gayrimenkul, icra-iflas, idare-vergi ve sürekli danışmanlık.",
     url: `${site.url}/hizmetler`,
     type: "website",
   },

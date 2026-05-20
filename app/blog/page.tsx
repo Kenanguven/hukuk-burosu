@@ -7,14 +7,14 @@ import { posts } from "@/lib/posts";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Hukuk Blog — Ankara & İstanbul Avukat Makaleleri",
+  title: "Yayınlar — Hukuk Makaleleri",
   description:
-    "Ankara ve İstanbul ofisleriyle KARDAK Hukuk Bürosu avukatlarından boşanma, miras, iş, ticaret, gayrimenkul ve ceza hukukuna dair güncel rehberler ve uygulamadan pratik bilgiler.",
+    "KARDAK Hukuk Bürosu avukatlarından boşanma, miras, iş, ticaret, gayrimenkul ve ceza hukukuna dair güncel rehberler ve uygulamadan pratik bilgiler.",
   alternates: { canonical: `${site.url}/blog` },
   openGraph: {
-    title: `Hukuk Blog — Ankara & İstanbul Avukat | ${site.shortName}`,
+    title: `Yayınlar — Hukuk Makaleleri | ${site.shortName}`,
     description:
-      "Ankara ve İstanbul'da hukuki süreçlere dair güncel makaleler, dava rehberleri ve avukat görüşleri.",
+      "Hukuki süreçlere dair güncel makaleler, dava rehberleri ve avukat görüşleri.",
     url: `${site.url}/blog`,
     type: "website",
   },
@@ -30,7 +30,7 @@ export default function BlogPage() {
   return (
     <>
       <PageHero
-        eyebrow="Blog"
+        eyebrow="Yayınlar"
         title={
           <>
             Hukuku <span className="italic text-coffee">anlaşılır</span> bir dille.

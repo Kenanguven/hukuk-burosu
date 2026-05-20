@@ -78,7 +78,7 @@ export function Footer() {
 
         <div className="md:col-span-5 space-y-5">
           <h3 className="text-sm font-semibold uppercase tracking-widest text-cream">
-            Ofislerimiz
+            Randevu Noktaları
           </h3>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {site.offices.map((office) => (

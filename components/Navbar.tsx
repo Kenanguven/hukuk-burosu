@@ -30,11 +30,15 @@ export function Navbar() {
         }`}
       >
         <div className="premium-glass flex items-center justify-between rounded-full px-3.5 py-3 md:px-4">
-          <Link href="/" onClick={() => setOpen(false)} className="flex items-center gap-2.5 group">
+          <Link
+            href="/"
+            onClick={() => setOpen(false)}
+            className="group flex min-w-0 items-center gap-2.5"
+          >
             <span className="block transition-transform duration-300 group-hover:-rotate-3">
               <Logo variant="gold" size={40} />
             </span>
-            <span className="font-serif text-xl text-coffee-deep tracking-tight">
+            <span className="truncate font-serif text-xl tracking-tight text-coffee-deep">
               {site.shortName}
             </span>
           </Link>

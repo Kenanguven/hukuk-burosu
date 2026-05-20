@@ -39,7 +39,7 @@ export function CookieBanner() {
               <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-graphite text-cream shadow-[inset_0_1px_0_rgba(255,255,255,0.18)]">
                 <Cookie className="h-5 w-5" />
               </span>
-              <div className="space-y-2">
+              <div className="min-w-0 space-y-2">
                 <p className="text-sm font-medium leading-relaxed text-ink-soft">
                   Sitemizin işleyişi için zorunlu çerezleri kullanıyoruz. Detaylar
                   için{" "}

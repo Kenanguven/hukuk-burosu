@@ -6,12 +6,12 @@ import { FadeIn } from "@/components/MotionWrapper";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "İletişim — Ankara (Bilkent) ve İstanbul (Beşiktaş) Ofisleri",
-  description: `KARDAK Hukuk Bürosu Ankara (Bilkent) ve İstanbul (Beşiktaş) ofislerine ulaşın. WhatsApp Web, e-posta ve online randevu formu üzerinden ${site.owner} ve ekibine her iki şehirden de erişebilirsiniz.`,
+  title: "İletişim — Randevu ve WhatsApp Web",
+  description: `KARDAK Hukuk Bürosu'na WhatsApp Web, e-posta ve online randevu formu üzerinden ulaşın. ${site.owner} ve ekibi dosyanız için en uygun dönüş kanalını belirlesin.`,
   alternates: { canonical: `${site.url}/iletisim` },
   openGraph: {
-    title: `İletişim — Ankara & İstanbul Avukat | ${site.shortName}`,
-    description: "Ankara Bilkent ve İstanbul Beşiktaş ofislerimize ulaşmak için WhatsApp Web, e-posta veya online form kullanabilirsiniz.",
+    title: `İletişim — Randevu ve WhatsApp Web | ${site.shortName}`,
+    description: "Randevu talebi, WhatsApp Web ve e-posta üzerinden KARDAK Hukuk Bürosu'na ulaşabilirsiniz.",
     url: `${site.url}/iletisim`,
     type: "website",
   },
@@ -24,11 +24,11 @@ export default function ContactPage() {
         eyebrow="İletişim"
         title={
           <>
-            Ankara ve İstanbul ofislerimiz <span className="italic text-coffee">bir konuşma</span>{" "}
-            uzaktayız.
+            Randevu ve iletişim için <span className="italic text-coffee">bir mesaj</span>{" "}
+            uzağınızdayız.
           </>
         }
-        description="Bilkent (Ankara) veya Beşiktaş (İstanbul) ofislerimizden hangisi size yakınsa randevu talep edebilir, dosyanızı paylaşabilirsiniz. En geç bir iş günü içinde dönüş yapıyoruz."
+        description="Dosyanız hakkında kısa bilgi paylaşabilir, WhatsApp Web ya da form üzerinden randevu talep edebilirsiniz. Tam konum bilgisi görüşme planlanırken paylaşılır."
       />
 
       <section className="pb-20">
@@ -43,7 +43,7 @@ export default function ContactPage() {
                 >
                   <div className="flex items-baseline justify-between gap-3">
                     <h2 className="font-serif text-2xl text-coffee-deep">
-                      {office.city} Ofisi
+                      {office.city} Randevu Noktası
                     </h2>
                     <span className="text-[0.68rem] uppercase tracking-[0.2em] text-coffee">
                       {office.barosu}
@@ -56,7 +56,7 @@ export default function ContactPage() {
                       </span>
                       <div className="min-w-0">
                         <p className="text-xs uppercase tracking-widest text-coffee mb-0.5">
-                          Adres
+                          Randevu Konumu
                         </p>
                         <p className="text-ink-soft leading-relaxed">{office.longAddress}</p>
                       </div>
@@ -125,8 +125,8 @@ export default function ContactPage() {
                   Konum bilgisi randevu sırasında paylaşılır.
                 </h2>
                 <p className="text-sm leading-relaxed text-cream-soft/82">
-                  Bilkent (Ankara) ve Beşiktaş (İstanbul) ofislerimiz için tam adres bilgisini
-                  WhatsApp Web üzerinden hızlıca paylaşıyoruz.
+                  Randevulu görüşmeler için tam adres bilgisini WhatsApp Web üzerinden
+                  hızlıca paylaşıyoruz.
                 </p>
                 <a
                   href={site.whatsappUrl}

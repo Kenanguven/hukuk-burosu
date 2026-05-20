@@ -7,7 +7,7 @@ const steps = [
   {
     icon: MessageCircle,
     title: "Tanışma",
-    text: "Ücretsiz ön görüşmede dosyanızı dinler, en uygun avukatı belirleriz.",
+    text: "İlk görüşmede dosyanızı dinler, en uygun çalışma yolunu birlikte belirleriz.",
   },
   {
     icon: Search,

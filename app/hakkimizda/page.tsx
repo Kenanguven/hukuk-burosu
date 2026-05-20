@@ -8,12 +8,12 @@ import { team } from "@/lib/team";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Hakkımızda — Ankara & İstanbul'da KARDAK Hukuk Bürosu",
-  description: `Ankara (Bilkent) ve İstanbul (Beşiktaş) ofisleriyle ${site.name}: kurucu avukat ${site.owner} liderliğinde değerlerimiz, çalışma anlayışımız ve avukat ekibimiz hakkında detaylı bilgi.`,
+  title: "Hakkımızda — KARDAK Hukuk Bürosu",
+  description: `${site.name}: kurucu avukat ${site.owner} liderliğinde değerlerimiz, çalışma anlayışımız ve avukat ekibimiz hakkında detaylı bilgi.`,
   alternates: { canonical: `${site.url}/hakkimizda` },
   openGraph: {
-    title: `Hakkımızda — Ankara & İstanbul Avukat | ${site.name}`,
-    description: `Ankara ve İstanbul ofisleriyle ${site.owner} liderliğinde çalışan KARDAK Hukuk Bürosu'nun değerleri, çalışma anlayışı ve ekip yapısı.`,
+    title: `Hakkımızda | ${site.name}`,
+    description: `${site.owner} liderliğinde çalışan KARDAK Hukuk Bürosu'nun değerleri, çalışma anlayışı ve ekip yapısı.`,
     url: `${site.url}/hakkimizda`,
     type: "website",
   },
@@ -67,10 +67,10 @@ export default function AboutPage() {
               adımda sade, ölçülü ve öngörülebilir bir çalışma düzeni hedeflenir.
             </p>
             <p>
-              Bugün Ankara&apos;da Bilkent ve İstanbul&apos;da Beşiktaş ofislerimizle iki
-              şehirde aynı çalışma diliyle hizmet veriyoruz. Türkiye genelindeki
-              dosyaları, hangi adliyede olursa olsun aynı titizlikle takip
-              edebiliyoruz.
+              Bugün randevulu görüşme, çevrimiçi danışmanlık ve WhatsApp Web
+              iletişimini aynı çalışma düzeni içinde kullanıyoruz. Türkiye
+              genelindeki dosyaları, hangi adliyede olursa olsun aynı titizlikle
+              takip edebiliyoruz.
             </p>
             <p>
               Ekibimiz her dosyayı kendine has bir hikâye olarak okuyor;
@@ -78,9 +78,9 @@ export default function AboutPage() {
               uygulamamızın temeli olarak kabul ediyor.
             </p>
             <p>
-              Müvekkillerimizin önemli bir kısmı, daha önceki müvekkillerimizin
-              tavsiyesiyle bize ulaşıyor. Bu güven ilişkisini en değerli ölçütümüz
-              olarak görüyoruz.
+              Her başvuruda güven ilişkisini en baştan kurmaya özen gösteriyoruz.
+              Açık iletişim, doğru beklenti yönetimi ve düzenli bilgilendirme bu
+              yaklaşımın merkezinde yer alıyor.
             </p>
           </FadeIn>
         </div>

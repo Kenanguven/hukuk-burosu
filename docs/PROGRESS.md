@@ -1,5 +1,36 @@
 # Progress
 
+## 2026-05-20
+
+Bugünkü görev: Aslan Hukuk Danışmanlık ve Tahancı Avukatlık Bürosu referansları incelenerek ana sayfa daha hibrit, mobil uyumlu ve doğrulanmamış iddialardan arındırılmış bir yapıya çekildi.
+
+### Hibrit Ana Sayfa Revizyonu
+
+- Aslan Hukuk tarafındaki koyu/kurumsal ilk ekran ve net WhatsApp/randevu odağı ile Tahancı tarafındaki çalışma alanları + yayınlar içerik mimarisi referans alındı.
+- Hero alanındaki `500+ müvekkilimizin güveni` satırı kaldırıldı.
+- `14+ yıllık deneyim`, `1200+ sonuçlandırılan dosya`, `500+ mutlu müvekkil` gibi doğrulanmamış sayısal metrikler görünür arayüzden kaldırıldı.
+- Stat bandı sayısal sayaç yerine `Dosya stratejisi`, `Yazılı süreç`, `Düzenli bilgilendirme`, `Gizlilik hassasiyeti` kartlarına dönüştürüldü.
+- Ana sayfadaki koyu `Ücretsiz Ön Görüşme` CTA bandı kaldırıldı.
+- Ana sayfadaki müvekkil yorumları/testimonial bölümü kaldırıldı; daha kontrollü bir güven dili tercih edildi.
+- Hizmet kartları eşit yüksekliğe ve alt hizalı `Detay` linklerine göre güncellendi.
+- Ana sayfaya Tahancı benzeri `Yayınlar` önizleme bölümü eklendi; ilk 3 blog yazısı kart olarak gösteriliyor.
+- Hero ve 3D sahnedeki telefon/ara aksiyonu yerine WhatsApp Web + iletişim formu akışı kullanıldı.
+
+### Tekil İletişim Dili
+
+- Görünür metinlerde `ofislerimiz`, `Ankara & İstanbul Avukat` ve iki ofis vurgusu azaltıldı.
+- İletişim sayfasında `Ofis` başlıkları `Randevu Noktası` diline çekildi.
+- SSS içindeki `Hangi şehirlerde ofisiniz var?` maddesi kaldırıldı.
+- SSS, randevu planlama, şehir dışı dosya takibi, çevrimiçi görüşme ve gizlilik odaklı daha tekil bir dile taşındı.
+- Navbar menüsünde `Hizmetler` etiketi `Çalışma Alanları`, `Blog` etiketi `Yayınlar` olarak güncellendi.
+
+### Son Kontrol
+
+- `npm.cmd run lint`: geçti.
+- `npm.cmd run build`: geçti (30/30 statik sayfa).
+- `http://localhost:3003/` üzerinde ana sayfa HTML kontrolünde `500+`, `1200`, `14+`, `Ücretsiz Ön Görüşme`, `Hangi şehirlerde ofisiniz var` ve `Ofislerimiz` metinleri bulunmadı.
+- Chrome DevTools Protocol ile 390px mobil viewport kontrol edildi; `documentElement.scrollWidth` ve `body.scrollWidth` 390px, yatay scroll yok. Görünen taşma adayları yalnızca `overflow-hidden` içindeki dekoratif blur katmanları.
+
 ## 2026-05-18
 
 Bugünkü görev: kullanıcı tarafından ana klasöre eklenen SVG logo aktif logo kaynağına alındı.

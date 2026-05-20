@@ -1,34 +1,30 @@
 "use client";
 
-import { motion, useInView, useMotionValue, useTransform, animate } from "framer-motion";
-import { useEffect, useRef } from "react";
-import { Briefcase, Users, Award, Clock3 } from "lucide-react";
-import { site } from "@/lib/site";
+import { motion } from "framer-motion";
+import { ClipboardCheck, FileCheck2, MessagesSquare, ShieldCheck } from "lucide-react";
 
-const years = new Date().getFullYear() - site.founded;
-
-const stats = [
-  { icon: Clock3, value: years, suffix: "+", label: "Yıllık deneyim" },
-  { icon: Briefcase, value: 1200, suffix: "+", label: "Sonuçlandırılan dosya" },
-  { icon: Users, value: 500, suffix: "+", label: "Mutlu müvekkil" },
-  { icon: Award, value: 8, suffix: "", label: "Uzmanlık alanı" },
+const assurances = [
+  {
+    icon: ClipboardCheck,
+    title: "Dosya stratejisi",
+    text: "İlk değerlendirmeden sonra uygulanabilir bir yol haritası çıkarılır.",
+  },
+  {
+    icon: FileCheck2,
+    title: "Yazılı süreç",
+    text: "Ücret, kapsam ve çalışma düzeni yazılı sözleşmeyle netleşir.",
+  },
+  {
+    icon: MessagesSquare,
+    title: "Düzenli bilgilendirme",
+    text: "Önemli gelişmeler sade bir dille ve zamanında paylaşılır.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Gizlilik hassasiyeti",
+    text: "Müvekkil bilgileri sır saklama yükümlülüğü ve KVKK kapsamında korunur.",
+  },
 ];
-
-function Counter({ to }: { to: number }) {
-  const ref = useRef<HTMLSpanElement>(null);
-  const inView = useInView(ref, { once: true, margin: "-60px" });
-  const count = useMotionValue(0);
-  const rounded = useTransform(count, (v) => Math.round(v).toLocaleString("tr-TR"));
-
-  useEffect(() => {
-    if (inView) {
-      const controls = animate(count, to, { duration: 1.6, ease: [0.22, 1, 0.36, 1] });
-      return controls.stop;
-    }
-  }, [inView, count, to]);
-
-  return <motion.span ref={ref}>{rounded}</motion.span>;
-}
 
 export function StatsBar() {
   return (
@@ -39,36 +35,30 @@ export function StatsBar() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="premium-card rounded-[2rem] p-5 md:p-8"
+          className="premium-card rounded-[2rem] p-5 md:p-7"
         >
-          <div className="grid grid-cols-2 gap-2 md:grid-cols-4">
-            {stats.map((s, idx) => {
-              const Icon = s.icon;
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {assurances.map((item, idx) => {
+              const Icon = item.icon;
               return (
                 <motion.div
-                  key={s.label}
+                  key={item.title}
                   initial={{ opacity: 0, y: 12 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: idx * 0.08, duration: 0.5 }}
                   whileHover={{ y: -2 }}
-                  className="trust-sheen flex items-center gap-4 rounded-[1.35rem] px-3 py-5 transition-colors duration-300 hover:bg-cream-soft/70 md:gap-5 md:px-5 md:py-5"
+                  className="trust-sheen flex h-full min-h-[9.5rem] flex-col rounded-[1.35rem] px-4 py-5 transition-colors duration-300 hover:bg-cream-soft/70"
                 >
-                  <motion.span
-                    className="trust-pulse grid h-14 w-14 shrink-0 place-items-center rounded-[1.1rem] bg-graphite text-cream transition-transform duration-300 group-hover:scale-110"
-                    whileHover={{ rotate: 8 }}
-                  >
-                    <Icon className="w-6 h-6" strokeWidth={1.5} />
-                  </motion.span>
-                  <div className="min-w-0">
-                    <p className="font-serif text-3xl leading-none text-coffee-deep md:text-4xl">
-                      <Counter to={s.value} />
-                      {s.suffix}
-                    </p>
-                    <p className="mt-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-ink-mute">
-                      {s.label}
-                    </p>
-                  </div>
+                  <span className="grid h-12 w-12 shrink-0 place-items-center rounded-[1rem] bg-graphite text-cream">
+                    <Icon className="h-5 w-5" strokeWidth={1.5} />
+                  </span>
+                  <h2 className="mt-4 font-serif text-xl leading-tight text-coffee-deep">
+                    {item.title}
+                  </h2>
+                  <p className="mt-2 text-sm leading-relaxed text-ink-soft">
+                    {item.text}
+                  </p>
                 </motion.div>
               );
             })}

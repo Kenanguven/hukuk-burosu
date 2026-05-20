@@ -1,18 +1,18 @@
 import Link from "next/link";
 import {
   ArrowRight,
+  ArrowUpRight,
   ShieldCheck,
   Clock3,
   Handshake,
   FileCheck2,
-  MessageCircle,
 } from "lucide-react";
 import { Hero } from "@/components/Hero";
 import { StatsBar } from "@/components/StatsBar";
 import { Process } from "@/components/Process";
-import { Testimonials } from "@/components/Testimonials";
 import { ServiceCard } from "@/components/ServiceCard";
 import { FadeIn, Stagger, StaggerItem } from "@/components/MotionWrapper";
+import { posts } from "@/lib/posts";
 import { services } from "@/lib/services";
 import { site } from "@/lib/site";
 
@@ -39,6 +39,8 @@ const principles = [
   },
 ];
 
+const featuredPosts = posts.slice(0, 3);
+
 export default function HomePage() {
   return (
     <>
@@ -57,10 +59,10 @@ export default function HomePage() {
 
           <FadeIn delay={0.1} className="md:col-span-7 space-y-5 text-ink-soft leading-relaxed">
             <p>
-              {site.shortName}; Ankara (Bilkent) ve İstanbul (Beşiktaş) ofisleriyle
-              bireylere ve şirketlere ceza, aile, iş, ticaret, gayrimenkul,
-              icra-iflas, miras ve idare hukuku alanlarında kapsamlı destek sunan
-              bir hukuk bürosudur.
+              {site.shortName}; bireylere ve şirketlere ceza, aile, iş, ticaret,
+              gayrimenkul, icra-iflas, miras ve idare hukuku alanlarında kapsamlı
+              destek sunan, randevulu görüşme ve WhatsApp Web akışını birlikte
+              kullanan bir hukuk bürosudur.
             </p>
             <p>
               İnsanların hukuki sürece dair en çok sorduğu soru &quot;şimdi ne olacak?&quot;
@@ -94,7 +96,7 @@ export default function HomePage() {
 
           <Stagger className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {services.map((service, idx) => (
-              <StaggerItem key={service.slug}>
+              <StaggerItem key={service.slug} className="h-full">
                 <ServiceCard service={service} index={idx} />
               </StaggerItem>
             ))}
@@ -110,6 +112,57 @@ export default function HomePage() {
       </section>
 
       <Process />
+
+      <section className="bg-cream-soft py-20 md:py-28">
+        <div className="container-prose">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-12 md:items-end">
+            <FadeIn className="md:col-span-8">
+              <span className="eyebrow">Yayınlar</span>
+              <h2 className="mt-4 font-serif text-3xl text-coffee-deep md:text-4xl">
+                Hukuki süreçleri anlaşılır kılan kısa rehberler.
+              </h2>
+              <p className="mt-4 max-w-2xl text-ink-soft">
+                Güncel uygulama, dava hazırlığı ve sık karşılaşılan hukuki
+                sorular için hazırladığımız yazılar.
+              </p>
+            </FadeIn>
+            <FadeIn delay={0.05} className="md:col-span-4 md:text-right">
+              <Link href="/blog" className="btn-ghost">
+                Tüm yayınlar
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </FadeIn>
+          </div>
+
+          <Stagger className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-3">
+            {featuredPosts.map((post) => (
+              <StaggerItem key={post.slug} className="h-full">
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="group flex h-full min-h-[18rem] flex-col rounded-[1.65rem] border border-coffee/10 bg-cream p-7 transition-all duration-300 hover:-translate-y-1 hover:bg-cream-warm/70 hover:shadow-[var(--shadow-warm)]"
+                >
+                  <div className="flex items-center justify-between gap-4">
+                    <span className="rounded-full border border-coffee/15 bg-cream-soft px-3 py-1 text-xs uppercase tracking-widest text-coffee">
+                      {post.category}
+                    </span>
+                    <ArrowUpRight className="h-5 w-5 -translate-x-1 text-ink-mute opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100" />
+                  </div>
+                  <h3 className="mt-5 font-serif text-2xl leading-tight text-coffee-deep">
+                    {post.title}
+                  </h3>
+                  <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-soft">
+                    {post.excerpt}
+                  </p>
+                  <span className="mt-auto inline-flex items-center gap-1.5 pt-6 text-sm font-medium text-coffee-deep">
+                    Yazıyı oku
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </span>
+                </Link>
+              </StaggerItem>
+            ))}
+          </Stagger>
+        </div>
+      </section>
 
       <section className="bg-cream py-20 md:py-28">
         <div className="container-prose grid grid-cols-1 md:grid-cols-12 gap-12">
@@ -146,45 +199,6 @@ export default function HomePage() {
               );
             })}
           </Stagger>
-        </div>
-      </section>
-
-      <Testimonials />
-
-      <section className="py-20 md:py-24">
-        <div className="container-prose">
-          <FadeIn className="relative overflow-hidden rounded-[2rem] bg-graphite text-cream p-10 shadow-[0_36px_90px_-54px_rgba(24,23,22,0.76)] md:p-16">
-            <div
-              aria-hidden
-              className="absolute -right-20 -top-20 h-80 w-80 rounded-[45%] blur-3xl opacity-30"
-              style={{ background: "linear-gradient(135deg, #c5a572 0%, transparent 70%)" }}
-            />
-            <div className="relative grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-              <div className="md:col-span-8 space-y-4">
-                <span className="text-gold uppercase tracking-[0.18em] text-xs font-semibold">
-                  Ücretsiz Ön Görüşme
-                </span>
-                <h2 className="font-serif text-3xl md:text-4xl text-cream leading-tight">
-                  Dosyanızı paylaşın, size en uygun yolu birlikte çizelim.
-                </h2>
-                <p className="text-cream-soft/80 max-w-xl">
-                  20 dakikalık ücretsiz ön değerlendirme görüşmesinde sürecinizi,
-                  beklenen süreyi ve tahmini maliyeti net bir biçimde konuşalım.
-                </p>
-              </div>
-              <div className="md:col-span-4 flex md:justify-end">
-                <Link
-                  href={site.whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-soft group"
-                >
-                  WhatsApp Web
-                  <MessageCircle className="w-4 h-4 transition-transform group-hover:rotate-6" />
-                </Link>
-              </div>
-            </div>
-          </FadeIn>
         </div>
       </section>
     </>

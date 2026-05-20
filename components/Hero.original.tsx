@@ -5,8 +5,6 @@ import { motion } from "framer-motion";
 import { ArrowRight, Phone, ShieldCheck, Star } from "lucide-react";
 import { site } from "@/lib/site";
 
-const years = new Date().getFullYear() - site.founded;
-
 export function Hero() {
   return (
     <section className="relative overflow-hidden">
@@ -43,7 +41,7 @@ export function Hero() {
               <ShieldCheck className="w-3.5 h-3.5" strokeWidth={2} />
             </span>
             <span className="text-coffee-deep font-medium">
-              {site.city} · {years}+ yıllık deneyim · Ankara Barosu
+              {site.owner} · Randevulu görüşme
             </span>
           </motion.div>
 
@@ -82,7 +80,7 @@ export function Hero() {
             className="flex flex-wrap items-center gap-3 pt-2"
           >
             <Link href="/iletisim" className="btn-primary group">
-              Ücretsiz Ön Görüşme
+              Ön Görüşme Formu
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
             </Link>
             <a href={`tel:${site.phoneRaw}`} className="btn-ghost group">
@@ -122,7 +120,7 @@ export function Hero() {
                 ))}
               </div>
               <p className="text-xs text-ink-soft mt-0.5">
-                <span className="font-semibold text-coffee-deep">500+</span> müvekkilimizin güveni
+                Düzenli bilgilendirme ve yazılı süreç takibi
               </p>
             </div>
           </motion.div>
@@ -192,9 +190,9 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.55 }}
             className="absolute -bottom-6 -left-8 bg-cream rounded-2xl shadow-[var(--shadow-warm-lg)] px-5 py-4 hidden md:block border border-coffee/10"
           >
-            <p className="text-3xl font-serif text-coffee-deep">{years}+</p>
+            <p className="text-3xl font-serif text-coffee-deep">KVKK</p>
             <p className="text-xs uppercase tracking-widest text-ink-soft mt-1">
-              yıllık deneyim
+              gizlilik hassasiyeti
             </p>
           </motion.div>
 

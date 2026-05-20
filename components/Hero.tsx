@@ -8,7 +8,6 @@ import {
   FileCheck2,
   MessageCircle,
   ShieldCheck,
-  Star,
 } from "lucide-react";
 import { PrestigeScene } from "@/components/PrestigeScene";
 import { site } from "@/lib/site";
@@ -66,13 +65,13 @@ export function Hero() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="trust-sheen premium-glass inline-flex items-center gap-3 rounded-full py-1.5 pl-1.5 pr-5 text-sm"
+            className="trust-sheen premium-glass inline-flex max-w-full items-center gap-3 rounded-[1.35rem] py-1.5 pl-1.5 pr-4 text-sm sm:rounded-full sm:pr-5"
           >
             <span className="trust-pulse grid place-items-center w-7 h-7 rounded-full bg-coffee-dark text-cream">
               <ShieldCheck className="w-3.5 h-3.5" strokeWidth={2} />
             </span>
-            <span className="text-coffee-deep font-medium">
-              {site.owner} · Ankara (Bilkent) & İstanbul (Beşiktaş)
+            <span className="min-w-0 text-coffee-deep font-medium leading-snug">
+              {site.owner} · Randevulu görüşme ve WhatsApp Web
             </span>
           </motion.div>
 
@@ -148,40 +147,6 @@ export function Hero() {
             </motion.div>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.52 }}
-            className="flex items-center gap-5 pt-4"
-          >
-            <div className="flex -space-x-2">
-              {["MK", "SA", "Bİ"].map((i, idx) => (
-                <span
-                  key={i}
-                  className="w-9 h-9 rounded-full grid place-items-center text-xs font-medium text-cream border-2 border-cream"
-                  style={{
-                    background: [
-                      "linear-gradient(140deg, #c5a572, #6b4423)",
-                      "linear-gradient(140deg, #a88968, #4e2f15)",
-                      "linear-gradient(140deg, #d9bf94, #8b6f47)",
-                    ][idx],
-                  }}
-                >
-                  {i}
-                </span>
-              ))}
-            </div>
-            <div>
-              <div className="flex items-center gap-0.5 text-gold">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className="w-3.5 h-3.5 fill-current" />
-                ))}
-              </div>
-              <p className="text-xs text-ink-soft mt-0.5">
-                <span className="font-semibold text-coffee-deep">500+</span> müvekkilimizin güveni
-              </p>
-            </div>
-          </motion.div>
         </div>
 
         <div className="min-w-0 md:col-span-5">

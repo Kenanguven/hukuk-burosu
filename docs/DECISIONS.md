@@ -1,5 +1,14 @@
 # Decisions
 
+## 2026-05-20 Hibrit Ana Sayfa ve Güven Dili Kararı
+
+- Aslan Hukuk Danışmanlık ve Tahancı Avukatlık Bürosu referansları birebir kopyalanmayacak; KARDAK Hukuk için kurumsal, sade, WhatsApp/randevu odaklı ve yayınlarla desteklenen hibrit bir yapı kullanılacak.
+- Görünür arayüzde doğrulanmamış sayısal güven metrikleri (`500+ müvekkil`, `1200+ dosya`, `14+ yıllık deneyim`) kullanılmayacak.
+- Güven anlatımı sayı yerine çalışma prensipleriyle verilecek: yazılı süreç, dosya stratejisi, düzenli bilgilendirme ve gizlilik hassasiyeti.
+- Ana sayfada müvekkil yorumu/testimonial bölümü kullanılmayacak; hukuki hizmet sitesinde daha kontrollü ve doğrulanabilir bir iletişim dili tercih edilecek.
+- İletişim dilinde iki ayrı `ofis` vurgusu yerine randevulu görüşme, WhatsApp Web ve randevu noktası dili kullanılacak.
+- Menüde `Hizmetler` yerine `Çalışma Alanları`, `Blog` yerine `Yayınlar` etiketi kullanılacak.
+
 ## 2026-05-12 Başlangıç Kararları
 
 - Mevcut framework korunacak.
