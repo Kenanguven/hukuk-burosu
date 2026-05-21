@@ -71,11 +71,13 @@
 - [x] `/iletisim` sayfası geniş Google Maps embed, dört eşit iletişim kartı, randevu noktaları ve mesaj formu düzenine taşındı.
 - [x] Çalışma alanı kartlarına ve `/hizmetler` detay bloklarına konuya özel temsili görsel kapaklar eklendi.
 - [x] Harita ve çalışma alanı görselleri sonrasında `npm.cmd run lint`, `npm.cmd run build` ve `/iletisim` + `/hizmetler` 390px mobil CDP kontrolü yapıldı.
+- [x] Çalışma alanı kapakları AI ile üretilmiş gerçekçi katalog fotoğraflarına taşındı; WebP olarak `public/service-images/` altında optimize edildi.
+- [x] AI katalog fotoğrafları sonrasında `npm.cmd run lint`, `npm.cmd run build` ve `/hizmetler` 390px mobil CDP kontrolü yapıldı.
 
 ## Sıradaki İşler
 
 - [ ] Gerçek e-posta, adres, sosyal medya ve domain değerleri marka sahibi tarafından doğrulanacak.
-- [ ] Kullanıcının sağladığı SVG logo marka sahibi tarafından son kez onaylanacak; gerçek ofis/fotoğraf dili veya kurumsal görsel seti netleşirse hero ve alt sayfa görsel dili bu materyallere göre tekrar değerlendirilecek.
+- [ ] Kullanıcının sağladığı SVG logo marka sahibi tarafından son kez onaylanacak; gerçek ofis/fotoğraf dili veya kurumsal görsel seti netleşirse AI katalog fotoğrafları ve hero/alt sayfa görsel dili bu materyallere göre tekrar değerlendirilecek.
 - [ ] Resend production ortam değişkenleri Vercel üzerinde tanımlanacak.
 - [ ] İletişim formu production benzeri ortamda uçtan uca test edilecek.
 - [ ] Blog yazıları hukuki doğruluk, tarih ve mevzuat güncelliği açısından avukat tarafından gözden geçirilecek.

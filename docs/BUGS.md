@@ -27,7 +27,7 @@ Aktif doğrulanmış hata yok.
 - `lib/site.ts` içindeki e-posta ve domain marka adına göre düzenlendi ancak gerçek production değeri ayrıca doğrulanmalı.
 - Gerçek adres ve sosyal medya değerleri henüz verilmedi. Sahte/generic değerler kaldırıldı; adres yerine randevu sırasında WhatsApp üzerinden konum paylaşımı mesajı gösteriliyor.
 - `/iletisim` sayfasındaki Google Maps embed, gerçek açık adres verilmediği için `Bilkent, Ankara` randevu bölgesi sorgusuyla çalışıyor. Açık adres kesinleşirse embed sorgusu güncellenmeli.
-- Çalışma alanı görselleri gerçek fotoğraf değil, lisans riski olmayan lokal temsili kapaklardır. Kurumsal fotoğraf/stock seti netleşirse ilgili kapaklar gerçek görsellerle değiştirilmeli.
+- Çalışma alanı görselleri gerçek ofis fotoğrafı değil, AI ile üretilmiş lisans riski düşük temsili katalog fotoğraflarıdır. Kurumsal fotoğraf/stock seti netleşirse ilgili kapaklar gerçek görsellerle değiştirilmeli.
 - Sayısal güven metrikleri görünür arayüzden kaldırıldı; ileride gerçek ve belgelenebilir metrik kullanılacaksa avukat/marka sahibi tarafından ayrıca onaylanmalı.
 - Blog yazıları ve hukuki metinlerin gerçek hukuki danışmanlık açısından avukat tarafından onaylanıp onaylanmadığı bilinmiyor. 2026-05-12 SEO çalışmasıyla eklenen 7 yeni uzun-form yazı genel bilgilendirme amaçlı yazıldı; sürelere, görevli mahkeme bilgilerine ve yargısal pratiğe değinen kısımların avukat tarafından son okuması yapılmalı.
 - `site.url` "https://kardakhukuk.com" değeriyle JSON-LD ve canonical URL'lerde kullanılıyor. Gerçek domain başka olursa metadata + sitemap + JSON-LD doğru çalışsın diye yalnızca `site.url` güncellenmesi yeterli.

@@ -1,5 +1,24 @@
 # Progress
 
+## 2026-05-21
+
+Bugünkü görev: çalışma alanı katalog kapakları daha gerçekçi görünecek şekilde AI ile üretilen yerel fotoğraf varlıklarına taşındı.
+
+### AI Katalog Fotoğraf Kapakları
+
+- Sekiz çalışma alanı için konuya özel, gerçekçi hukuk/ofis katalog fotoğrafları üretildi.
+- Görseller WebP olarak optimize edilip `public/service-images/` altında tutuldu.
+- `lib/services.ts` içine her hizmet için görsel yolu ve erişilebilir `alt` metni eklendi.
+- `components/ServiceVisual.tsx` soyut kod tabanlı kapaklardan Next Image tabanlı gerçekçi fotoğraf kapaklarına geçirildi.
+- Kart oranları sabit bırakıldı; başlık, sıra numarası ve ikon rozetleri fotoğraf üzerinde küçük cam yüzeyler olarak korundu.
+
+### Son Kontrol
+
+- `npm.cmd run lint`: geçti.
+- `npm.cmd run build`: geçti (30/30 statik sayfa).
+- Chrome DevTools Protocol ile `/hizmetler` sayfasında desktop ve 390px mobil kontrol yapıldı; görseller göründü, mobilde `documentElement.scrollWidth` ve `body.scrollWidth` 390px kaldı.
+- Bu görseller gerçek ofis fotoğrafı değil, AI ile üretilmiş temsili katalog fotoğraflarıdır; gerçek kurumsal fotoğraf seti gelirse aynı yapıdan kolayca değiştirilebilir.
+
 ## 2026-05-20
 
 Bugünkü görev: Aslan Hukuk Danışmanlık ve Tahancı Avukatlık Bürosu referansları incelenerek ana sayfa daha hibrit, mobil uyumlu ve doğrulanmamış iddialardan arındırılmış bir yapıya çekildi.

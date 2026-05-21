@@ -1,5 +1,13 @@
 # Decisions
 
+## 2026-05-21 AI Katalog Görsel Kararı
+
+- Çalışma alanı kartlarında gerçekçi görünüm için lokal AI üretimli katalog fotoğrafları kullanılacak.
+- Görseller `public/service-images/` altında WebP formatında tutulacak; harici stok fotoğraf bağlantısı veya yeni paket kullanılmayacak.
+- `lib/services.ts` her hizmetin görsel kaynağı ve erişilebilir alt metni için tek veri kaynağı olacak.
+- `components/ServiceVisual.tsx` aynı bileşen üzerinden hem ana sayfa kartlarında hem `/hizmetler` detay bloklarında bu görselleri gösterecek.
+- Bu görseller temsili kabul edilecek; gerçek ofis, ekip veya kurumsal fotoğraf çekimi geldiğinde aynı dosya/veri yapısı korunarak değiştirilecek.
+
 ## 2026-05-20 Hibrit Ana Sayfa ve Güven Dili Kararı
 
 - Aslan Hukuk Danışmanlık ve Tahancı Avukatlık Bürosu referansları birebir kopyalanmayacak; KARDAK Hukuk için kurumsal, sade, WhatsApp/randevu odaklı ve yayınlarla desteklenen hibrit bir yapı kullanılacak.
