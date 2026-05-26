@@ -73,10 +73,17 @@
 - [x] Harita ve çalışma alanı görselleri sonrasında `npm.cmd run lint`, `npm.cmd run build` ve `/iletisim` + `/hizmetler` 390px mobil CDP kontrolü yapıldı.
 - [x] Çalışma alanı kapakları AI ile üretilmiş gerçekçi katalog fotoğraflarına taşındı; WebP olarak `public/service-images/` altında optimize edildi.
 - [x] AI katalog fotoğrafları sonrasında `npm.cmd run lint`, `npm.cmd run build` ve `/hizmetler` 390px mobil CDP kontrolü yapıldı.
+- [x] Görünür avukat kadrosu şimdilik yalnızca Av. Mahmut KARDAK olacak şekilde sadeleştirildi.
+- [x] Blog yazarları, hakkımızda ekip bölümü ve çoğul ekip/avukat metinleri tek avukat diline güncellendi.
+- [x] Tek avukat görünümü sonrasında `npm.cmd run lint` ve `npm.cmd run build` çalıştırıldı.
+- [x] Ana sayfa hero sahnesindeki dekoratif `Premium` kartı ve tekrar eden `Randevu Akışına Geç` butonu kaldırıldı.
+- [x] Sahne içindeki aktif form aksiyonu `Randevu Formu` olarak netleştirildi; mobil kontrast, derinlik ve hero spacing düzenlendi.
+- [x] Hero sadeleştirmesi sonrasında `npm.cmd run lint`, `npm.cmd run build` ve desktop/390px mobil Chrome CDP kontrolü yapıldı.
 
 ## Sıradaki İşler
 
 - [ ] Gerçek e-posta, adres, sosyal medya ve domain değerleri marka sahibi tarafından doğrulanacak.
+- [ ] İleride yeni avukat eklenecekse `lib/team.ts`, blog yazar atamaları ve hakkımızda metinleri yeni kadroya göre tekrar açılacak.
 - [ ] Kullanıcının sağladığı SVG logo marka sahibi tarafından son kez onaylanacak; gerçek ofis/fotoğraf dili veya kurumsal görsel seti netleşirse AI katalog fotoğrafları ve hero/alt sayfa görsel dili bu materyallere göre tekrar değerlendirilecek.
 - [ ] Resend production ortam değişkenleri Vercel üzerinde tanımlanacak.
 - [ ] İletişim formu production benzeri ortamda uçtan uca test edilecek.

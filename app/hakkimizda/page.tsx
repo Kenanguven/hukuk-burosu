@@ -9,11 +9,11 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Hakkımızda — KARDAK Hukuk Bürosu",
-  description: `${site.name}: kurucu avukat ${site.owner} liderliğinde değerlerimiz, çalışma anlayışımız ve avukat ekibimiz hakkında detaylı bilgi.`,
+  description: `${site.name}: kurucu avukat ${site.owner} liderliğinde değerlerimiz, çalışma anlayışımız ve hukuki hizmet yaklaşımımız hakkında detaylı bilgi.`,
   alternates: { canonical: `${site.url}/hakkimizda` },
   openGraph: {
     title: `Hakkımızda | ${site.name}`,
-    description: `${site.owner} liderliğinde çalışan KARDAK Hukuk Bürosu'nun değerleri, çalışma anlayışı ve ekip yapısı.`,
+    description: `${site.owner} liderliğinde çalışan KARDAK Hukuk Bürosu'nun değerleri, çalışma anlayışı ve hukuki hizmet yaklaşımı.`,
     url: `${site.url}/hakkimizda`,
     type: "website",
   },
@@ -28,7 +28,7 @@ const values = [
   {
     icon: BookOpen,
     title: "Sürekli öğrenen",
-    text: "Mevzuat ve içtihat değişikliklerini düzenli olarak takip eden, kendini geliştiren bir ekip kültürü.",
+    text: "Mevzuat ve içtihat değişikliklerini düzenli olarak takip eden, kendini geliştiren bir büro kültürü.",
   },
   {
     icon: Sparkles,
@@ -73,7 +73,7 @@ export default function AboutPage() {
               takip edebiliyoruz.
             </p>
             <p>
-              Ekibimiz her dosyayı kendine has bir hikâye olarak okuyor;
+              Her dosyayı kendine has bir hikâye olarak okuyor;
               karşılıklı güven, açık iletişim ve titiz dosya hazırlığını
               uygulamamızın temeli olarak kabul ediyor.
             </p>
@@ -122,18 +122,18 @@ export default function AboutPage() {
       <section className="py-16 md:py-24 bg-cream-soft">
         <div className="container-prose">
           <FadeIn className="max-w-2xl">
-            <span className="eyebrow">Ekibimiz</span>
+            <span className="eyebrow">Avukatımız</span>
             <h2 className="mt-4 font-serif text-3xl md:text-4xl text-coffee-deep">
-              Sizinle aynı sorulara cevap arayan avukatlar.
+              Dosyanızı doğrudan takip eden kurucu avukat.
             </h2>
             <p className="mt-4 text-ink-soft">
-              Her dosyada size atanan avukat, sürecinizin başından sonuna kadar
-              muhatabınızdır. Tarafsız bir ofis aracısı değil; sürecinizi yöneten
-              ortaktır.
+              Şimdilik görünür avukat kadrosunda yalnızca Av. {site.owner} yer
+              alıyor. Başvurular doğrudan kurucu avukat yaklaşımıyla
+              değerlendiriliyor.
             </p>
           </FadeIn>
 
-          <Stagger className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <Stagger className="mt-12 grid max-w-md grid-cols-1 gap-5">
             {team.map((m, idx) => (
               <StaggerItem key={m.slug}>
                 <TeamCard member={m} index={idx} />

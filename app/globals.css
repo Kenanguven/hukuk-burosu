@@ -82,20 +82,18 @@ body {
   transform-style: preserve-3d;
 }
 
-.depth-12 {
-  transform: translateZ(12px);
-}
-
-.depth-28 {
-  transform: translateZ(28px);
-}
-
-.depth-44 {
-  transform: translateZ(44px);
-}
-
 .depth-back {
   transform: translateZ(-24px);
+}
+
+@media (min-width: 768px) {
+  .depth-md-12 {
+    transform: translateZ(12px);
+  }
+
+  .depth-md-44 {
+    transform: translateZ(44px);
+  }
 }
 
 .prestige-shell {
@@ -316,7 +314,7 @@ h1, h2, h3, h4, h5 {
   color: var(--color-coffee-deep);
   font-size: 0.82rem;
   font-weight: 500;
-  letter-spacing: -0.005em;
+  letter-spacing: 0;
   -webkit-backdrop-filter: blur(20px) saturate(1.1);
   backdrop-filter: blur(20px) saturate(1.1);
   transition: background 220ms ease, border-color 220ms ease, transform 220ms ease;

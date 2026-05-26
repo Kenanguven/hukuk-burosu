@@ -15,7 +15,7 @@ import { site } from "@/lib/site";
 const trustBadges = [
   { icon: FileCheck2, label: "Yazılı sözleşme" },
   { icon: ShieldCheck, label: "KVKK süreçleri" },
-  { icon: Clock3, label: "Hızlı dönüş" },
+  { icon: Clock3, label: "Düzenli bilgilendirme" },
 ];
 
 export function Hero() {
@@ -59,7 +59,7 @@ export function Hero() {
         />
       </div>
 
-      <div className="container-prose grid grid-cols-1 items-center gap-12 pb-28 pt-20 md:grid-cols-12 md:pb-36 md:pt-28">
+      <div className="container-prose grid grid-cols-1 items-center gap-10 pb-20 pt-14 md:grid-cols-12 md:gap-10 md:pb-24 md:pt-20">
         <div className="min-w-0 space-y-7 md:col-span-7">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -71,7 +71,7 @@ export function Hero() {
               <ShieldCheck className="w-3.5 h-3.5" strokeWidth={2} />
             </span>
             <span className="min-w-0 text-coffee-deep font-medium leading-snug">
-              {site.owner} · Randevulu görüşme ve WhatsApp Web
+              Av. {site.owner} · Kurucu Avukat
             </span>
           </motion.div>
 

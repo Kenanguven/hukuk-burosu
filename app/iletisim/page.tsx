@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "İletişim — Randevu ve WhatsApp Web",
-  description: `KARDAK Hukuk Bürosu'na WhatsApp Web, e-posta ve online randevu formu üzerinden ulaşın. ${site.owner} ve ekibi dosyanız için en uygun dönüş kanalını belirlesin.`,
+  description: `KARDAK Hukuk Bürosu'na WhatsApp Web, e-posta ve online randevu formu üzerinden ulaşın. ${site.owner} dosyanız için en uygun dönüş kanalını belirlesin.`,
   alternates: { canonical: `${site.url}/iletisim` },
   openGraph: {
     title: `İletişim — Randevu ve WhatsApp Web | ${site.shortName}`,

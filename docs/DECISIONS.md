@@ -1,5 +1,18 @@
 # Decisions
 
+## 2026-05-26 Hero Aksiyon ve Sadelik Kararı
+
+- Ana sayfa hero sahnesinde dekoratif `Premium` etiketi kullanılmayacak; güven anlatımı kurucu avukat, yazılı süreç, KVKK ve düzenli bilgilendirme üzerinden verilecek.
+- Aynı hedefe yönlendiren yinelenen dış CTA kullanılmayacak; hero içindeki ana CTA'lara ek olarak sahne içinde yalnızca çalışan `WhatsApp` ve `Randevu Formu` aksiyonları korunacak.
+- Küçük ekranlarda okunabilirlik ve hizalama için sahnenin 3D derinlik katmanları azaltılacak; tam 3D etki masaüstünde korunabilecek.
+
+## 2026-05-22 Tek Avukat Görünümü Kararı
+
+- Görünür avukat kadrosu şimdilik yalnızca `Av. Mahmut KARDAK` olarak tutulacak.
+- Av. Servet Ağcakaya ve Av. Berk Erdem Işık site arayüzünden ve blog yazar atamalarından kaldırıldı.
+- Blog yazar adı, hakkımızda ekip bölümü ve iletişim/ana sayfa metinleri tek kurucu avukat diline hizalanacak.
+- İleride yeni avukat eklenecekse bu karar tekrar güncellenecek ve `lib/team.ts` yeniden genişletilecek.
+
 ## 2026-05-21 AI Katalog Görsel Kararı
 
 - Çalışma alanı kartlarında gerçekçi görünüm için lokal AI üretimli katalog fotoğrafları kullanılacak.
@@ -57,7 +70,7 @@
 
 ## 2026-05-12 Çift Şehir (Ankara + İstanbul) Kararları
 
-- Marka, Ankara (Bilkent) ve İstanbul (Beşiktaş) olmak üzere iki ofisle çalışacak. Kurucu avukat Mahmut Kardak; ekip Servet Ağcakaya ve Berk Erdem Işık olarak korunuyor.
+- Marka, Ankara (Bilkent) ve İstanbul (Beşiktaş) olmak üzere iki ofisle çalışacak. Kurucu avukat Mahmut Kardak; ekip Servet Ağcakaya ve Berk Erdem Işık olarak korunuyor. Bu ekip kararı 2026-05-22'de görünür avukat kadrosunun şimdilik yalnızca Av. Mahmut KARDAK olması kararıyla güncellendi.
 - Tek telefon hattı (0553 612 24 56) ve tek WhatsApp her iki ofis için ortak kullanılıyor. İleride İstanbul için ayrı hat çıkarsa yapı genişlemeye hazır.
 - Ofis adresleri ilçe seviyesinde (Bilkent / Beşiktaş) tutuluyor; tam sokak/kapı bilgisi yine "WhatsApp üzerinden paylaşılır" mantığında.
 - JSON-LD; tek Organization + her ofis için ayrı LegalService (parentOrganization referanslı) standart pattern olarak benimsendi. Google Business Profile için iki ayrı profil açılırsa bu yapı destek verir.

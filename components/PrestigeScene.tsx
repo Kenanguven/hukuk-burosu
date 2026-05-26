@@ -5,7 +5,6 @@ import Link from "next/link";
 import {
   ArrowRight,
   MessageCircle,
-  Sparkles,
 } from "lucide-react";
 import {
   motion,
@@ -55,7 +54,7 @@ export function PrestigeScene() {
     >
       <motion.div
         style={reduceMotion ? undefined : { rotateX, rotateY }}
-        className="scene-preserve-3d relative aspect-[0.86] min-h-[27rem] w-full overflow-hidden rounded-[2.4rem] prestige-shell md:min-h-[31rem]"
+        className="scene-preserve-3d relative aspect-[0.92] min-h-[24rem] w-full overflow-hidden rounded-[2.4rem] prestige-shell md:aspect-[0.86] md:min-h-[31rem]"
       >
         <motion.div
           aria-hidden
@@ -64,7 +63,7 @@ export function PrestigeScene() {
           className="prestige-orbit depth-back absolute left-1/2 top-[17%] h-[19rem] w-[19rem] -translate-x-1/2 rounded-full"
         />
 
-        <div className="depth-12 absolute inset-x-4 top-5 flex items-center justify-between gap-2 md:inset-x-7 md:top-7">
+        <div className="depth-md-12 absolute inset-x-4 top-5 flex items-center justify-between gap-2 md:inset-x-7 md:top-7">
           <div className="premium-glass rounded-full px-3 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-coffee-deep md:px-3.5 md:text-xs">
             Randevulu Görüşme
           </div>
@@ -77,32 +76,17 @@ export function PrestigeScene() {
         <motion.div
           animate={reduceMotion ? undefined : { y: [0, -8, 0] }}
           transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-          className="depth-44 absolute inset-x-5 top-[20%] rounded-[2rem] border border-cream-soft/24 bg-graphite/36 p-6 text-cream shadow-[0_38px_90px_-54px_rgba(17,16,15,0.85)] backdrop-blur-xl md:inset-x-8 md:p-8"
+          className="depth-md-44 absolute inset-x-5 top-[18%] rounded-[2rem] border border-cream-soft/24 bg-graphite/36 p-5 text-cream shadow-[0_38px_90px_-54px_rgba(17,16,15,0.85)] backdrop-blur-xl md:inset-x-8 md:top-[20%] md:p-8"
         >
-          <div className="mx-auto grid h-32 w-32 place-items-center rounded-[2rem] bg-cream-soft/95 p-2 shadow-[0_28px_80px_-44px_rgba(255,244,207,0.8)] ring-1 ring-cream-soft/60 md:h-36 md:w-36">
-            <Logo variant="gold" size={104} className="rounded-[1.55rem]" />
+          <div className="mx-auto grid h-28 w-28 place-items-center rounded-[1.75rem] bg-cream-soft/95 p-2 shadow-[0_28px_80px_-44px_rgba(255,244,207,0.8)] ring-1 ring-cream-soft/60 md:h-36 md:w-36 md:rounded-[2rem]">
+            <Logo variant="gold" size={96} className="rounded-[1.55rem] md:h-[104px] md:w-[104px]" />
           </div>
-          <p className="mt-6 text-center text-xs font-semibold uppercase tracking-[0.22em] text-cream-soft/78">
+          <p className="mt-5 text-center text-xs font-semibold uppercase tracking-[0.22em] text-cream-soft/78 md:mt-6">
             KARDAK Hukuk Bürosu
           </p>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, x: 16, rotate: 7 }}
-          animate={{ opacity: 1, x: 0, rotate: 7 }}
-          transition={{ duration: 0.65, delay: 1.05, ease }}
-          className="depth-28 absolute bottom-10 right-5 hidden rounded-[1.45rem] bg-onyx/88 px-4 py-3 text-cream shadow-[0_28px_80px_-48px_rgba(17,16,15,0.82)] backdrop-blur-xl md:block"
-        >
-          <div className="flex items-center gap-1.5 text-aurum">
-            <Sparkles className="h-4 w-4" strokeWidth={1.6} />
-            <span className="text-xs font-semibold uppercase tracking-[0.16em]">
-              Premium
-            </span>
-          </div>
-          <p className="mt-2 text-sm text-cream-soft/82">{site.owner}</p>
-        </motion.div>
-
-        <div className="depth-44 absolute inset-x-5 bottom-6 grid grid-cols-2 gap-2 md:inset-x-6">
+        <div className="absolute inset-x-5 bottom-6 grid grid-cols-2 gap-2 md:inset-x-6">
           <Link
             href={site.whatsappUrl}
             target="_blank"
@@ -114,9 +98,9 @@ export function PrestigeScene() {
           </Link>
           <Link
             href="/iletisim"
-            className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-cream/25 bg-cream/10 text-sm font-semibold text-cream backdrop-blur-md transition-colors duration-200 hover:border-aurum/55 hover:bg-cream/18"
+            className="group inline-flex min-h-12 items-center justify-center gap-1.5 rounded-full border border-cream/42 bg-onyx/38 px-2 text-[0.82rem] font-semibold text-cream-soft shadow-[0_14px_30px_-18px_rgba(17,16,15,0.72)] backdrop-blur-md transition-colors duration-200 hover:border-aurum/60 hover:bg-onyx/52 sm:text-sm"
           >
-            Form
+            Randevu Formu
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
           </Link>
         </div>
@@ -128,14 +112,6 @@ export function PrestigeScene() {
       </motion.div>
 
       <div className="pointer-events-none absolute -inset-8 -z-10 rounded-[3rem] bg-aurum/12 blur-3xl" />
-
-      <Link
-        href="/iletisim"
-        className="premium-glass absolute -bottom-7 left-1/2 hidden -translate-x-1/2 items-center gap-2 rounded-full px-5 py-3 text-sm font-semibold text-coffee-deep transition-transform hover:-translate-y-1 md:inline-flex"
-      >
-        Randevu Akışına Geç
-        <ArrowRight className="h-4 w-4" />
-      </Link>
     </motion.div>
   );
 }

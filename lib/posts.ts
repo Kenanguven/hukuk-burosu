@@ -54,7 +54,7 @@ export const posts: Post[] = [
       "Mağdur ve katılan vekilliği de ceza avukatlığının önemli bir parçasıdır. Mağdurun zararlarının tespit edilmesi, suçtan zarar gören sıfatıyla davaya katılma talebi ve maddi-manevi tazminat hakları stratejik biçimde takip edilir.",
       "Karar verildikten sonra istinaf yolu açıktır. İstanbul Bölge Adliye Mahkemesi Ceza Daireleri istinaf incelemesi yapar; istinaf kararına karşı bazı dosyalarda Yargıtay'a temyiz yolu açıktır. Bu aşamalarda sürelerin titiz takibi büyük önem taşır.",
       "İnfaz süreci ise kararın kesinleşmesinden sonra başlar. Denetimli serbestlik, koşullu salıverilme, açık ceza infaz kurumuna ayrılma gibi pek çok kurum infaz hukukunun kapsamındadır. Hatalı infaz hesapları için İstanbul İnfaz Hakimliklerine itiraz yolu açıktır.",
-      "Beşiktaş ofisimiz İstanbul Avrupa Yakası adliyelerine yakınlığıyla ifade ve duruşma takibinde hız sağlamaktadır. Anadolu Yakası dosyalarında Kartal Adliyesi süreçleri de aynı ekip tarafından yönetilmektedir.",
+      "Beşiktaş randevu noktamız İstanbul Avrupa Yakası adliyelerine yakınlığıyla ifade ve duruşma takibinde hız sağlamaktadır. Anadolu Yakası dosyalarında Kartal Adliyesi süreçleri de aynı çalışma disipliniyle yönetilmektedir.",
       "KARDAK Hukuk Bürosu olarak İstanbul'da ceza dosyalarını; soruşturmanın ilk dakikasından infaza kadar her aşamada müvekkilin haklarını korumak temel anlayışıyla yürütüyor, ölçülü ve delile dayalı bir savunma diliyle çalışıyoruz.",
     ],
   },
@@ -88,7 +88,7 @@ export const posts: Post[] = [
     excerpt:
       "İstanbul'da haksız feshe maruz kalan işçinin işe iade davası açabilmesi için gerekli şartlar, arabuluculuk zorunluluğu, Avrupa-Anadolu Yakası iş mahkemeleri uygulaması ve işe başlatmama tazminatı.",
     category: "İş Hukuku",
-    author: "Av. Berk Erdem Işık",
+    author: "Av. Mahmut KARDAK",
     date: "2026-05-05",
     readMinutes: 8,
     body: [
@@ -111,7 +111,7 @@ export const posts: Post[] = [
     excerpt:
       "İstanbul'da tapu iptal ve tescil davası açılırken yetkili Asliye Hukuk Mahkemesi, muris muvazaası, hile, ehliyetsizlik, kat mülkiyeti ve imar uyuşmazlıkları üzerine kapsamlı bir İstanbul gayrimenkul avukatı rehberi.",
     category: "Gayrimenkul Hukuku",
-    author: "Av. Servet Ağcakaya",
+    author: "Av. Mahmut KARDAK",
     date: "2026-05-03",
     readMinutes: 9,
     body: [
@@ -145,7 +145,7 @@ export const posts: Post[] = [
       "Üçüncü kriter: iletişim ritmi. Avukatınızın mesajlarınıza ne kadar sürede döndüğü, dosyanız hakkında sizi nasıl bilgilendirdiği ve önemli aşamaları yazılı olarak paylaşıp paylaşmadığı süreçteki güveni belirler. İlk görüşmede iletişim şeklinin net biçimde konuşulması faydalıdır.",
       "Dördüncü kriter: şeffaf ücretlendirme. Türkiye Barolar Birliği'nin Avukatlık Asgari Ücret Tarifesi temel referanstır. İyi bir Ankara hukuk bürosu; ücret kalemlerini, ödeme takvimini, başarıya bağlı ek ödeme varsa hesaplama yöntemini yazılı avukatlık sözleşmesiyle baştan belirler.",
       "Beşinci kriter: yazılı avukatlık sözleşmesi. Sözlü anlaşmalar ileride yorum farkına yol açabilir. Sözleşmede vekaletin kapsamı, ücret ve masrafların paylaşımı, görev tanımı ve dosyanın sona erme koşulları açıkça yer almalıdır.",
-      "Altıncı kriter: dosya yönetim disiplini. Ankara adliyelerinde tek bir avukatın yüzlerce dosyayı eş zamanlı yönetmeye çalıştığı durumlarda hatalar artmaktadır. Tercih ettiğiniz hukuk bürosunun dosya başına ayırdığı çalışma kapasitesini ve ekip yapısını sorgulamak önemlidir.",
+      "Altıncı kriter: dosya yönetim disiplini. Ankara adliyelerinde çok sayıda dosyanın takipsiz bırakıldığı durumlarda hatalar artmaktadır. Tercih ettiğiniz hukuk bürosunun dosya başına ayırdığı çalışma kapasitesini ve bilgilendirme düzenini sorgulamak önemlidir.",
       "Yedinci kriter: gizlilik ve veri güvenliği. Avukatlık Kanunu kapsamındaki sır saklama yükümlülüğüne ek olarak KVKK uyum süreçleri, dijital iletişim güvenliği ve dosya saklama disipliniyle ilgili sorular sormaktan çekinmeyin.",
       "Sekizinci kriter: ön görüşme niteliği. İyi bir Ankara avukatı, ilk görüşmede size pazarlama yapmak yerine; dosyanızın gerçek risklerini, alternatif çözüm yollarını, mahkeme süreçlerinin ortalama sürelerini ve maliyet aralığını net biçimde anlatır.",
       "Seçim sürecinde dikkat edilmesi gereken bir başka husus; tavsiye edilen avukatın gerçekten konuya hakim olup olmadığıdır. Yakınınıza birinin önermesi tek başına yeterli değildir; uzmanlık alanı uyuşmazlığınızla örtüşmüyorsa süreç beklediğinizden farklı şekilde ilerleyebilir.",
@@ -252,7 +252,7 @@ export const posts: Post[] = [
     excerpt:
       "Ankara'da limited ya da anonim şirket kuruluşu, esas sözleşme hazırlığı, ticaret sicil tescili, ticari sözleşmeler, birleşme-devralma ve hissedarlar sözleşmesi süreçlerinde dikkat edilmesi gereken hukuki noktalar.",
     category: "Ticaret Hukuku",
-    author: "Av. Servet Ağcakaya",
+    author: "Av. Mahmut KARDAK",
     date: "2026-05-02",
     readMinutes: 10,
     body: [
@@ -276,7 +276,7 @@ export const posts: Post[] = [
     excerpt:
       "Ankara'da tapu iptal ve tescil davası açılırken yetkili Asliye Hukuk Mahkemesi, muris muvazaası, hile, ehliyetsizlik gibi sık görülen hukuki sebepler, kat mülkiyeti ve imar uyuşmazlıkları üzerine kapsamlı rehber.",
     category: "Gayrimenkul Hukuku",
-    author: "Av. Servet Ağcakaya",
+    author: "Av. Mahmut KARDAK",
     date: "2026-04-28",
     readMinutes: 8,
     body: [
@@ -300,7 +300,7 @@ export const posts: Post[] = [
     excerpt:
       "Ankara'da haksız feshe maruz kalan işçinin işe iade davası açabilmesi için gerekli şartlar, arabuluculuk zorunluluğu, dava süresi, karar sonrası işverenin yükümlülükleri ve sık yapılan hatalar.",
     category: "İş Hukuku",
-    author: "Av. Berk Erdem Işık",
+    author: "Av. Mahmut KARDAK",
     date: "2026-04-22",
     readMinutes: 8,
     body: [
@@ -323,7 +323,7 @@ export const posts: Post[] = [
     excerpt:
       "Ankara İcra Müdürlüklerinde ilamlı ve ilamsız takip, itirazın kaldırılması, haciz, maaş haczi, satış, menfi tespit ve istihkak davaları üzerinden alacak tahsili sürecinin pratik anlatımı.",
     category: "İcra Hukuku",
-    author: "Av. Berk Erdem Işık",
+    author: "Av. Mahmut KARDAK",
     date: "2026-04-18",
     readMinutes: 8,
     body: [
@@ -348,7 +348,7 @@ export const posts: Post[] = [
     excerpt:
       "Ankara'da kira sözleşmelerinde aşırı ifa güçlüğü doğduğunda kira uyarlama davası nasıl açılır, hangi Sulh Hukuk Mahkemesi yetkilidir, bilirkişi süreci ve ortalama süreler nasıl ilerler?",
     category: "Gayrimenkul Hukuku",
-    author: "Av. Servet Ağcakaya",
+    author: "Av. Mahmut KARDAK",
     date: "2026-03-30",
     readMinutes: 7,
     body: [

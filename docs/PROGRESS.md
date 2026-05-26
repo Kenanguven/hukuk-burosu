@@ -1,5 +1,42 @@
 # Progress
 
+## 2026-05-26
+
+Bugünkü görev: ana sayfa hero alanı daha çekici, sade ve işlevi açık bir ilk ekran deneyimine göre rafine edildi.
+
+### Hero Sahnesi Sadeleştirmesi
+
+- Kullanıcı geri bildirimindeki dekoratif `Premium` kartı `components/PrestigeScene.tsx` içinden kaldırıldı.
+- Sahne dışında tekrar eden `Randevu Akışına Geç` butonu kaldırıldı; sahne içindeki çalışan form bağlantısı korunarak `Randevu Formu` biçiminde netleştirildi.
+- `Randevu Formu` butonunun koyu zemin üzerindeki kontrastı ve dokunma alanı güçlendirildi.
+- Küçük ekranlarda 3D katmanların içerik üst üste binmesine yol açmaması için derinlik etkisi rozet/logo panelinde yalnızca masaüstüne sınırlandı ve mobil sahne oranı sıkılaştırıldı.
+- Hero üst rozeti `Av. Mahmut KARDAK · Kurucu Avukat`, güven rozeti `Düzenli bilgilendirme` diline alındı.
+- Hero dikey boşluğu azaltılarak desktop ilk görünümde sonraki süreç kartlarının başlangıcı görünür hale getirildi.
+- Ana sayfadaki görünür `premium bir danışmanlık` ifadesi daha doğal `özenli ve anlaşılır bir çalışma düzeni` diliyle değiştirildi.
+
+### Son Kontrol
+
+- `ui-ux-pro-max` tasarım sistemi önerileri, hukuk bürosu için güven/otorite ve erişilebilir aksiyon önceliğiyle değerlendirildi.
+- `npm.cmd run lint`: geçti.
+- `npm.cmd run build`: geçti (30/30 statik sayfa).
+- Chrome/CDP ile desktop ve 390px mobil görsel kontrol yapıldı; `Premium` ve `Randevu Akışına Geç` görünmüyor, `Randevu Formu` `/iletisim` bağlantısına gidiyor, mobilde yatay scroll yok.
+
+## 2026-05-22
+
+Bugünkü görev: sitedeki görünür avukat kadrosu şimdilik yalnızca Av. Mahmut KARDAK olacak şekilde sadeleştirildi.
+
+### Tek Avukat Görünümü
+
+- `lib/team.ts` tek üyeye indirildi; Av. Servet Ağcakaya ve Av. Berk Erdem Işık görünür ekip listesinden kaldırıldı.
+- `/hakkimizda` sayfasındaki ekip bölümü `Avukatımız` diline çekildi ve tek kart düzenine göre sadeleştirildi.
+- Ana sayfa, blog ve iletişim sayfalarındaki `ekip`, `avukatlarımız`, `ve ekibi` gibi çoğul ifadeler tekil büro/kurucu avukat diline güncellendi.
+- Blog yazılarındaki yazar alanları tek kaynak olarak `Av. Mahmut KARDAK` değerine hizalandı.
+
+### Son Kontrol
+
+- `npm.cmd run lint`: geçti.
+- `npm.cmd run build`: geçti (30/30 statik sayfa).
+
 ## 2026-05-21
 
 Bugünkü görev: çalışma alanı katalog kapakları daha gerçekçi görünecek şekilde AI ile üretilen yerel fotoğraf varlıklarına taşındı.

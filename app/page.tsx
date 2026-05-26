@@ -20,7 +20,7 @@ const principles = [
   {
     icon: Handshake,
     title: "Müvekkille birebir iletişim",
-    text: "Her dosya için size özel bir avukat atanır; süreç boyunca aynı muhatapla çalışırsınız.",
+    text: "Başvurularınız Av. Mahmut KARDAK tarafından değerlendirilir; süreç boyunca aynı muhatapla çalışırsınız.",
   },
   {
     icon: ShieldCheck,
@@ -89,8 +89,9 @@ export default function HomePage() {
               Hayatın her kavşağında, doğru hukuki adım.
             </h2>
             <p className="mt-4 text-ink-soft">
-              Birden fazla disiplinde derinleşmiş bir ekiple çalışıyoruz. Dosyanızın
-              ihtiyaç duyduğu uzmanlığı tek çatı altında bulursunuz.
+              Birden fazla çalışma alanında derinleşmiş bir büro yaklaşımıyla
+              çalışıyoruz. Dosyanızın ihtiyaç duyduğu hukuki çerçeveyi tek çatı
+              altında değerlendirirsiniz.
             </p>
           </FadeIn>
 
@@ -172,8 +173,8 @@ export default function HomePage() {
               Sıcak bir iletişim, soğukkanlı bir hukuk.
             </h2>
             <p className="mt-4 text-ink-soft leading-relaxed">
-              Bir hukuk bürosundan beklediğiniz titizliği, premium bir danışmanlık
-              deneyiminin netliğiyle birleştiriyoruz. Süreçleri karmaşıklaştırmadan,
+              Bir hukuk bürosundan beklediğiniz titizliği, özenli ve anlaşılır bir
+              çalışma düzeniyle birleştiriyoruz. Süreçleri karmaşıklaştırmadan,
               dosyanızın gerçek risklerini görünür hâle getiriyoruz.
             </p>
           </FadeIn>
