@@ -1,6 +1,46 @@
 # Progress
 
+## 2026-06-01
+
+Bugünkü düzeltme: İstanbul ile ilgili kaldırma kapsamı netleştirildi. Ofis/randevu noktası içerikleri kaldırılacak, ancak İstanbul blogları SEO için yayında kalacak.
+
+### İstanbul Blogları SEO İçin Geri Açıldı
+
+- `lib/posts.ts` içindeki İstanbul odaklı beş blog yazısı yeniden yayımlanan `posts` listesine alındı.
+- İstanbul bloglarındaki `Beşiktaş ofisi`, `Beşiktaş randevu noktası` ve iki şehirli ofis yönetimi gibi ofis iddiası taşıyan kapanış cümleleri temizlendi.
+- İstanbul yazıları artık ofis iddiası kurmadan; İstanbul mahkemeleri, adliye ayrımı ve dosya takibi bağlamında SEO içerikleri olarak kalıyor.
+- İletişim sayfası, footer, `site.offices`, yapılandırılmış veri ve görünür randevu noktası yapısı Ankara / Bilkent tek lokasyon olarak korunuyor.
+
+### Kontrol
+
+- `npm.cmd run lint`: geçti.
+- `npm.cmd run build`: geçti (30/30 statik sayfa).
+- Route kontrolünde İstanbul blog URL'si `200`, iletişim sayfasında İstanbul ofis/Beşiktaş randevu içeriği görünmüyor.
+
 ## 2026-05-26
+
+Bugünkü ek görev: site geçici olarak Ankara tek lokasyon yapısına indirildi ve mevcut premium kimlik, daha canlı ama kontrollü bir renk sistemiyle güçlendirildi.
+
+### Ankara Tek Lokasyon Geçişi
+
+- İstanbul / Beşiktaş randevu noktası görünür arayüzden kaldırıldı; iletişim, footer ve merkezi ofis verisi yalnız Ankara / Bilkent randevu noktasını gösteriyor.
+- İletişim üst kartları WhatsApp Web, e-posta ve Ankara randevu konumu olacak şekilde üçlü düzene çekildi.
+- Metadata, anahtar kelimeler ve JSON-LD servis alanı İstanbul ofis/randevu vurgusundan temizlenerek Ankara odaklı hale getirildi.
+- İstanbul odaklı beş blog içeriğinin SEO için yayında kalacağı 2026-06-01'de netleştirildi; içeriklerdeki ofis/randevu noktası iddiaları temizlendi.
+
+### Canlı Premium Renk Rafinesi
+
+- Aslan Hukuk ve Tahancı resmi sitelerindeki kurumsal kontrast ile açık iletişim kurgusu incelenerek KARDAK markasına özgü bir hibrit yön uygulandı.
+- Genel palet fildişi yüzeyler, grafit/orman vurgular ve daha belirgin şampanya-altın detaylarla canlandırıldı.
+- Hero ve alt sayfa başlık zeminleri yeni palete hizalandı; ana sayfadaki süreç/güven bandı daha güçlü koyu bir otorite yüzeyine taşındı.
+- Yeni framework veya paket eklenmedi; mevcut responsive yapı korunarak ilerlenildi.
+
+### Ek Kontrol
+
+- `npm.cmd run lint`: geçti.
+- `npm.cmd run build`: geçti (30/30 statik sayfa).
+- Yerel route kontrolde İstanbul blog URL'si ve Ankara blog URL'si `200` döndü.
+- Chrome/CDP masaüstü ve 390px mobil kontrolde ana sayfa ile iletişim sayfasında İstanbul/Beşiktaş görünmüyor, yeni koyu güven bandı uygulanıyor ve yatay taşma oluşmuyor.
 
 Bugünkü görev: ana sayfa hero alanı daha çekici, sade ve işlevi açık bir ilk ekran deneyimine göre rafine edildi.
 

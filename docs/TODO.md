@@ -79,9 +79,14 @@
 - [x] Ana sayfa hero sahnesindeki dekoratif `Premium` kartı ve tekrar eden `Randevu Akışına Geç` butonu kaldırıldı.
 - [x] Sahne içindeki aktif form aksiyonu `Randevu Formu` olarak netleştirildi; mobil kontrast, derinlik ve hero spacing düzenlendi.
 - [x] Hero sadeleştirmesi sonrasında `npm.cmd run lint`, `npm.cmd run build` ve desktop/390px mobil Chrome CDP kontrolü yapıldı.
+- [x] İstanbul / Beşiktaş görünür randevu noktası, iletişim kartı ve ilgili yapılandırılmış veri/metadata vurguları kaldırılarak site Ankara tek lokasyona indirildi.
+- [x] İstanbul odaklı blog içerikleri SEO için yayında bırakıldı; blog metinlerindeki İstanbul ofisi / Beşiktaş randevu noktası iddiaları temizlendi.
+- [x] Aslan Hukuk ve Tahancı referansları doğrultusunda renk paleti fildişi, grafit/orman ve şampanya-altın dengesiyle daha canlı premium dile rafine edildi.
+- [x] Ankara tek lokasyon ve renk rafinesi sonrasında `npm.cmd run lint`, `npm.cmd run build` ve desktop/390px mobil Chrome CDP kontrolü yapıldı.
 
 ## Sıradaki İşler
 
+- [ ] İstanbul randevu noktası yeniden açılacaksa ofis verisi, iletişim kartı ve metadata/JSON-LD birlikte yeniden etkinleştirilecek; mevcut İstanbul blogları yalnızca gerekiyorsa ofis bilgisiyle genişletilecek.
 - [ ] Gerçek e-posta, adres, sosyal medya ve domain değerleri marka sahibi tarafından doğrulanacak.
 - [ ] İleride yeni avukat eklenecekse `lib/team.ts`, blog yazar atamaları ve hakkımızda metinleri yeni kadroya göre tekrar açılacak.
 - [ ] Kullanıcının sağladığı SVG logo marka sahibi tarafından son kez onaylanacak; gerçek ofis/fotoğraf dili veya kurumsal görsel seti netleşirse AI katalog fotoğrafları ve hero/alt sayfa görsel dili bu materyallere göre tekrar değerlendirilecek.

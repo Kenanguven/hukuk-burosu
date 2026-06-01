@@ -9,7 +9,7 @@ export type Post = {
   body: string[];
 };
 
-export const posts: Post[] = [
+const allPosts: Post[] = [
   {
     slug: "istanbul-bosanma-davasi-rehberi",
     title: "İstanbul'da Boşanma Davası: Yetkili Aile Mahkemesi, Süreç ve Avukat Rehberi",
@@ -31,7 +31,7 @@ export const posts: Post[] = [
       "İstanbul Aile Mahkemelerinde çekişmeli boşanma davaları; delil toplama, tanık dinleme, bilirkişi raporu ve istinaf süreçleri nedeniyle ortalama 14-26 ay sürebilmektedir. Yurt dışı boyutlu ve yüksek değerli mal rejimi içeren dosyalarda bu süre daha da uzayabilir.",
       "Stratejik hatalar bakımından en sık karşılaşılanlar; sosyal medyada karşı tarafa zarar verecek paylaşımlar yapmak, hukuka aykırı delil sunmak, gereksiz tanık listesi vermek ve müzakere zeminini erkenden kaybetmektir.",
       "İstanbul'da çekişmeli sürecin orta vadede anlaşmalıya dönüştürülmesi yargılama açısından lehe sonuçlar üretebilir. İyi hazırlanmış bir protokol taslağı, sürecin her aşamasında uzlaşma kapısını açık tutar.",
-      "KARDAK Hukuk Bürosu'nun Beşiktaş ofisi olarak İstanbul Avrupa ve Anadolu Yakası Aile Mahkemelerinde boşanma davalarını; delil disiplini, müvekkil iletişimi ve mümkün olduğunda uzlaşma odaklı stratejilerle yönetiyoruz. Ankara Bilkent ofisimizle birlikte iki şehri kapsayan tek hat dosya yönetimi sağlıyoruz.",
+      "KARDAK Hukuk Bürosu olarak İstanbul Avrupa ve Anadolu Yakası Aile Mahkemelerindeki boşanma dosyalarını; delil disiplini, müvekkil iletişimi ve mümkün olduğunda uzlaşma odaklı stratejilerle, Ankara merkezli ve çevrim içi görüşme kanallarını da kapsayan bir çalışma düzeniyle yönetiyoruz.",
     ],
   },
   {
@@ -54,7 +54,7 @@ export const posts: Post[] = [
       "Mağdur ve katılan vekilliği de ceza avukatlığının önemli bir parçasıdır. Mağdurun zararlarının tespit edilmesi, suçtan zarar gören sıfatıyla davaya katılma talebi ve maddi-manevi tazminat hakları stratejik biçimde takip edilir.",
       "Karar verildikten sonra istinaf yolu açıktır. İstanbul Bölge Adliye Mahkemesi Ceza Daireleri istinaf incelemesi yapar; istinaf kararına karşı bazı dosyalarda Yargıtay'a temyiz yolu açıktır. Bu aşamalarda sürelerin titiz takibi büyük önem taşır.",
       "İnfaz süreci ise kararın kesinleşmesinden sonra başlar. Denetimli serbestlik, koşullu salıverilme, açık ceza infaz kurumuna ayrılma gibi pek çok kurum infaz hukukunun kapsamındadır. Hatalı infaz hesapları için İstanbul İnfaz Hakimliklerine itiraz yolu açıktır.",
-      "Beşiktaş randevu noktamız İstanbul Avrupa Yakası adliyelerine yakınlığıyla ifade ve duruşma takibinde hız sağlamaktadır. Anadolu Yakası dosyalarında Kartal Adliyesi süreçleri de aynı çalışma disipliniyle yönetilmektedir.",
+      "İstanbul Avrupa Yakası ve Anadolu Yakası dosyalarında ifade, duruşma ve adliye takibi; dosyanın bulunduğu adliye, işlem takvimi ve aciliyet derecesine göre planlanır. Kartal Adliyesi süreçleri de aynı çalışma disipliniyle yönetilmektedir.",
       "KARDAK Hukuk Bürosu olarak İstanbul'da ceza dosyalarını; soruşturmanın ilk dakikasından infaza kadar her aşamada müvekkilin haklarını korumak temel anlayışıyla yürütüyor, ölçülü ve delile dayalı bir savunma diliyle çalışıyoruz.",
     ],
   },
@@ -79,7 +79,7 @@ export const posts: Post[] = [
       "Mirastan feragat sözleşmesi, muris sağlığında bir mirasçının ileride doğacak miras hakkından feragat etmesini sağlar. Bu sözleşme noter huzurunda resmi şekilde yapılmadığı sürece geçerli değildir; karşılıklı veya tek taraflı olabilir.",
       "İstanbul Sulh Hukuk Mahkemelerinde miras davalarının ortalama süresi; uyuşmazlığın niteliğine göre 10-20 ay arasında değişebilmektedir. Bilirkişi gerektiren karmaşık tereke incelemelerinde süre daha da uzayabilir.",
       "Pratik bir öneri olarak; mirasçılar muris öldükten sonra hızlıca veraset ilamı çıkarmalı, banka ve tapu kayıtlarını dondurmak için tedbir talep etmeli ve tereke borcu varsa mirasın reddi süresini kaçırmamalıdır. İstanbul gibi yüksek değerli mal varlığına sahip dosyalarda profesyonel destek almak süreci kısaltır.",
-      "KARDAK Hukuk Bürosu'nun Beşiktaş ofisi olarak İstanbul'da miras davalarını Ankara Bilkent ofisimizle birlikte tek hat üzerinden yönetiyor; tereke tespiti, mirasın reddi, tenkis, muvazaa ve ortaklığın giderilmesi süreçlerinde mirasçıların menfaatlerini dengeli biçimde gözetiyoruz.",
+      "KARDAK Hukuk Bürosu olarak İstanbul'daki miras davalarını Ankara merkezli ve çevrim içi görüşme kanallarını da içeren tek iletişim düzeniyle yönetiyor; tereke tespiti, mirasın reddi, tenkis, muvazaa ve ortaklığın giderilmesi süreçlerinde mirasçıların menfaatlerini dengeli biçimde gözetiyoruz.",
     ],
   },
   {
@@ -102,7 +102,7 @@ export const posts: Post[] = [
       "İşveren işçiyi tekrar işe başlatmazsa, mahkemece belirlenen 4 ile 8 aylık ücret tutarındaki işe başlatmama tazminatı ile boşta geçen sürenin en çok dört aylık ücret tutarı işçiye ödenmek zorundadır. Bu hakların talep edilebilmesi için işçinin süresi içinde işverene başvurmuş olması şarttır.",
       "İşe iade davası ile birlikte ödenmemiş kıdem ve ihbar tazminatı, fazla mesai, hafta tatili ve genel tatil ücreti gibi işçilik alacakları ayrı bir davayla veya birleştirilerek talep edilebilir. İstanbul'da bu davalar çoğunlukla aynı iş mahkemesinde görülür.",
       "İşveren tarafının dikkat etmesi gereken nokta ise fesih sürecini yazılı belgelerle desteklemek, savunma almayı ihmal etmemek ve performans uyarılarını dosyaya işlemektir. İstanbul İş Mahkemelerinin yerleşik içtihatları savunma alınmamış fesihleri büyük ölçüde geçersiz kabul etmektedir.",
-      "KARDAK Hukuk Bürosu'nun Beşiktaş ofisi olarak İstanbul İş Mahkemelerinde işe iade davalarını; sürelerin titiz takibi, delil hazırlığı ve müvekkilin işletmeyle ilişkisinin korunması ekseninde stratejik biçimde yönetiyoruz.",
+      "KARDAK Hukuk Bürosu olarak İstanbul İş Mahkemelerindeki işe iade davalarını; sürelerin titiz takibi, delil hazırlığı ve müvekkilin işletmeyle ilişkisinin korunması ekseninde stratejik biçimde yönetiyoruz.",
     ],
   },
   {
@@ -126,7 +126,7 @@ export const posts: Post[] = [
       "İmar uygulamalarından doğan ihtilaflar idari yargının görev alanındadır. İstanbul'da imar planı değişiklikleri, parselasyon işlemleri ve kamulaştırma kararlarına karşı İstanbul İdare Mahkemelerine başvurulur. Sürelerin titiz takibi şarttır; iptal davası süresi tebliğden itibaren altmış gündür.",
       "Pratik bir öneri olarak; İstanbul'da gayrimenkul almadan önce tapu sorgusu, imar durumu sorgulaması, varsa şerh ve haciz kayıtlarının incelenmesi, kat mülkiyeti durumunun değerlendirilmesi ve yapı kullanma izninin var olduğunun teyit edilmesi sonradan açılacak davaların büyük çoğunluğunu önler.",
       "Yargılama süreleri açısından, tapu iptal davaları İstanbul'da bilirkişi gerektirmesi nedeniyle ortalama 16-26 ay sürmektedir. İstinaf ve Yargıtay aşamalarıyla birlikte toplam süre üç yılı aşabilmektedir.",
-      "KARDAK Hukuk Bürosu'nun Beşiktaş ofisi olarak İstanbul'da gayrimenkul davalarını; alım öncesi due diligence çalışmasından tapu iptal, tahliye, kat mülkiyeti ve imar süreçlerine kadar her aşamada müvekkillerimizle birlikte yürütüyoruz.",
+      "KARDAK Hukuk Bürosu olarak İstanbul'daki gayrimenkul davalarını; alım öncesi due diligence çalışmasından tapu iptal, tahliye, kat mülkiyeti ve imar süreçlerine kadar her aşamada müvekkillerimizle birlikte yürütüyoruz.",
     ],
   },
   {
@@ -389,6 +389,8 @@ export const posts: Post[] = [
     ],
   },
 ];
+
+export const posts: Post[] = allPosts;
 
 export function getPost(slug: string): Post | undefined {
   return posts.find((p) => p.slug === slug);

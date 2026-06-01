@@ -35,7 +35,7 @@ export function StatsBar() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="premium-card rounded-[2rem] p-5 md:p-7"
+          className="authority-panel rounded-[2rem] p-5 md:p-7"
         >
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {assurances.map((item, idx) => {
@@ -48,15 +48,15 @@ export function StatsBar() {
                   viewport={{ once: true }}
                   transition={{ delay: idx * 0.08, duration: 0.5 }}
                   whileHover={{ y: -2 }}
-                  className="trust-sheen flex h-full min-h-[9.5rem] flex-col rounded-[1.35rem] px-4 py-5 transition-colors duration-300 hover:bg-cream-soft/70"
+                  className="authority-tile trust-sheen flex h-full min-h-[9.5rem] flex-col rounded-[1.35rem] px-4 py-5 transition-colors duration-300"
                 >
-                  <span className="grid h-12 w-12 shrink-0 place-items-center rounded-[1rem] bg-graphite text-cream">
+                  <span className="grid h-12 w-12 shrink-0 place-items-center rounded-[1rem] border border-gold-soft/25 bg-cream-soft/8 text-gold-soft">
                     <Icon className="h-5 w-5" strokeWidth={1.5} />
                   </span>
-                  <h2 className="mt-4 font-serif text-xl leading-tight text-coffee-deep">
+                  <h2 className="mt-4 font-serif text-xl leading-tight text-cream-soft">
                     {item.title}
                   </h2>
-                  <p className="mt-2 text-sm leading-relaxed text-ink-soft">
+                  <p className="mt-2 text-sm leading-relaxed text-cream-soft/72">
                     {item.text}
                   </p>
                 </motion.div>

@@ -25,7 +25,7 @@ export function Hero() {
         className="absolute inset-0 -z-20"
         style={{
           background:
-            "radial-gradient(circle at 72% 18%, rgba(214,179,106,0.24), transparent 32rem), linear-gradient(180deg, rgba(255,253,249,0.97) 0%, rgba(246,241,232,0.92) 45%, rgba(226,215,197,0.76) 100%)",
+            "radial-gradient(circle at 73% 15%, rgba(212,162,79,0.34), transparent 31rem), radial-gradient(circle at 15% 74%, rgba(40,65,57,0.1), transparent 28rem), linear-gradient(180deg, rgba(255,253,248,0.98) 0%, rgba(246,245,240,0.94) 45%, rgba(230,228,218,0.8) 100%)",
         }}
       />
       <div
@@ -39,7 +39,7 @@ export function Hero() {
       <div
         aria-hidden
         className="absolute top-12 right-0 h-[38rem] w-[38rem] rounded-[45%] blur-3xl opacity-35 -z-10"
-        style={{ background: "linear-gradient(135deg, rgba(214,179,106,0.72), rgba(138,97,54,0.2), transparent)" }}
+        style={{ background: "linear-gradient(135deg, rgba(212,162,79,0.62), rgba(40,65,57,0.22), transparent)" }}
       />
 
       <div className="absolute inset-y-0 left-0 w-px bg-coffee/10 hidden lg:block">

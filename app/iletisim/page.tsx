@@ -18,7 +18,6 @@ export const metadata: Metadata = {
 };
 
 const primaryOffice = site.offices[0];
-const secondaryOffice = site.offices[1];
 const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(
   `${primaryOffice.district}, ${primaryOffice.city}`
 )}&output=embed`;
@@ -29,16 +28,9 @@ const mapLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
 const contactCards = [
   {
     icon: MessageCircle,
-    title: `${primaryOffice.city} WhatsApp`,
+    title: "WhatsApp Web",
     value: primaryOffice.whatsappPhone,
     href: primaryOffice.whatsappUrl,
-    external: true,
-  },
-  {
-    icon: MessageCircle,
-    title: `${secondaryOffice.city} WhatsApp`,
-    value: secondaryOffice.whatsappPhone,
-    href: secondaryOffice.whatsappUrl,
     external: true,
   },
   {
@@ -50,7 +42,7 @@ const contactCards = [
   {
     icon: MapPin,
     title: "Randevu Konumu",
-    value: "Bilkent / Beşiktaş",
+    value: "Bilkent / Ankara",
     href: "#randevu-konumlari",
   },
 ];
@@ -130,7 +122,7 @@ export default function ContactPage() {
             </div>
           </FadeIn>
 
-          <Stagger className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <Stagger className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
             {contactCards.map((card) => {
               const Icon = card.icon;
               const content = (
@@ -173,7 +165,7 @@ export default function ContactPage() {
               id="randevu-konumlari"
               className="scroll-mt-24 rounded-3xl border border-coffee/10 bg-cream-soft p-7 md:p-8"
             >
-              <span className="eyebrow">Randevu Noktaları</span>
+              <span className="eyebrow">Randevu Noktası</span>
               <h2 className="mt-4 font-serif text-2xl text-coffee-deep">
                 Görüşme akışı dosyanıza göre planlanır.
               </h2>
@@ -229,7 +221,7 @@ export default function ContactPage() {
                 Mesaj Gönderin
               </h2>
               <p className="mb-7 text-sm text-ink-soft">
-                Dosyanız hakkında kısaca bilgi paylaşın; en uygun avukatımız size dönüş yapsın.
+                Dosyanız hakkında kısaca bilgi paylaşın; Av. Mahmut KARDAK size dönüş yapsın.
               </p>
               <ContactForm />
             </div>

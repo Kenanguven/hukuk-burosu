@@ -1,5 +1,13 @@
 # Decisions
 
+## 2026-05-26 Ankara Tek Lokasyon ve Renk Kararı
+
+- Görünür site yapısı şimdilik yalnız Ankara / Bilkent randevu noktasıyla çalışacak; İstanbul / Beşiktaş kartları, iletişim hattı vurgusu ve ofis/randevu noktası iddiaları yayında gösterilmeyecek.
+- İstanbul odaklı blog yazıları SEO için yayında kalacak; bu yazılar İstanbul ofisi veya Beşiktaş randevu noktası varmış gibi konum iddiası kurmayacak.
+- İletişim sayfasındaki üst bilgi kartları WhatsApp Web, e-posta ve Ankara randevu konumuyla sade bir tek lokasyon akışı sunacak.
+- Renk dili Tahancı'daki aydınlık açıklık ve Aslan'daki koyu kurumsal kontrast referansından hareketle, birebir kopya olmadan fildişi, grafit/orman ve şampanya-altın paletiyle sürdürülecek.
+- Mevcut Next.js yapısı ve responsive davranış korunacak; bu görsel revizyon için yeni paket eklenmeyecek.
+
 ## 2026-05-26 Hero Aksiyon ve Sadelik Kararı
 
 - Ana sayfa hero sahnesinde dekoratif `Premium` etiketi kullanılmayacak; güven anlatımı kurucu avukat, yazılı süreç, KVKK ve düzenli bilgilendirme üzerinden verilecek.
@@ -70,6 +78,7 @@
 
 ## 2026-05-12 Çift Şehir (Ankara + İstanbul) Kararları
 
+- Bu bölüm tarihsel karardır; görünür lokasyon yapısı 2026-05-26 tarihli Ankara tek lokasyon kararıyla şimdilik geçersiz kılındı.
 - Marka, Ankara (Bilkent) ve İstanbul (Beşiktaş) olmak üzere iki ofisle çalışacak. Kurucu avukat Mahmut Kardak; ekip Servet Ağcakaya ve Berk Erdem Işık olarak korunuyor. Bu ekip kararı 2026-05-22'de görünür avukat kadrosunun şimdilik yalnızca Av. Mahmut KARDAK olması kararıyla güncellendi.
 - Tek telefon hattı (0553 612 24 56) ve tek WhatsApp her iki ofis için ortak kullanılıyor. İleride İstanbul için ayrı hat çıkarsa yapı genişlemeye hazır.
 - Ofis adresleri ilçe seviyesinde (Bilkent / Beşiktaş) tutuluyor; tam sokak/kapı bilgisi yine "WhatsApp üzerinden paylaşılır" mantığında.

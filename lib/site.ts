@@ -1,6 +1,6 @@
 export type Office = {
-  slug: "ankara" | "istanbul";
-  city: "Ankara" | "İstanbul";
+  slug: "ankara";
+  city: "Ankara";
   district: string;
   regionLabel: string;
   shortAddress: string;
@@ -26,19 +26,6 @@ export const offices: Office[] = [
     whatsappRaw: "+905536122456",
     whatsappUrl: "https://wa.me/905536122456",
   },
-  {
-    slug: "istanbul",
-    city: "İstanbul",
-    district: "Beşiktaş",
-    regionLabel: "Beşiktaş · İstanbul",
-    shortAddress: "Beşiktaş · İstanbul",
-    longAddress:
-      "Beşiktaş / İstanbul — randevulu görüşme için tam konum bilgisi WhatsApp Web üzerinden paylaşılır.",
-    barosu: "İstanbul Barosu",
-    whatsappPhone: "0545 724 42 88",
-    whatsappRaw: "+905457244288",
-    whatsappUrl: "https://wa.me/905457244288",
-  },
 ];
 
 export const site = {
@@ -50,7 +37,7 @@ export const site = {
   description:
     "KARDAK Hukuk Bürosu; kurucu avukat Mahmut KARDAK liderliğinde ceza, aile, iş, ticaret, gayrimenkul, miras, icra-iflas ve idare hukuku alanlarında bireylere ve şirketlere stratejik hukuki temsil ve danışmanlık sunar.",
   url: "https://kardakhukuk.com",
-  cities: ["Ankara", "İstanbul"] as const,
+  cities: ["Ankara"] as const,
   city: "Ankara",
   address:
     "Randevulu görüşmeler için tam konum bilgisi WhatsApp Web üzerinden paylaşılır.",

@@ -22,7 +22,7 @@ export function PageHero({
         className="absolute inset-0 -z-20"
         style={{
           background:
-            "linear-gradient(180deg, rgba(255,253,249,0.96) 0%, rgba(247,244,238,0.9) 100%)",
+            "radial-gradient(circle at 86% 18%, rgba(212,162,79,0.16), transparent 22rem), linear-gradient(180deg, rgba(255,253,248,0.98) 0%, rgba(246,245,240,0.92) 100%)",
         }}
       />
       <div
@@ -36,7 +36,7 @@ export function PageHero({
       <div
         aria-hidden
         className="absolute -top-24 right-0 h-[28rem] w-[28rem] rounded-[46%] blur-3xl opacity-30 -z-10"
-        style={{ background: "linear-gradient(135deg, rgba(234,215,182,0.78), rgba(128,105,78,0.14), transparent)" }}
+        style={{ background: "linear-gradient(135deg, rgba(240,216,164,0.68), rgba(40,65,57,0.16), transparent)" }}
       />
 
       <div className="absolute inset-y-0 left-0 w-px bg-coffee/10 hidden lg:block">

@@ -78,9 +78,9 @@ export function Footer() {
 
         <div className="md:col-span-5 space-y-5">
           <h3 className="text-sm font-semibold uppercase tracking-widest text-cream">
-            Randevu Noktaları
+            Randevu Noktası
           </h3>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <ul className="max-w-sm">
             {site.offices.map((office) => (
               <li key={office.slug} className="space-y-1.5">
                 <p className="text-xs uppercase tracking-[0.18em] text-gold">
