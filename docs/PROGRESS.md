@@ -1,5 +1,28 @@
 # Progress
 
+## 2026-06-03
+
+Bugünkü görev: Hakkımızda sayfasındaki kurucu avukat kartı daha genel bir çalışma yaklaşımıyla revize edildi ve iletişim konumu kullanıcı tarafından verilen Google Maps bağlantısına taşındı.
+
+### Hakkımızda Kurucu Avukat Kartı
+
+- `lib/team.ts` içindeki Av. Mahmut KARDAK bio metni, belirli birkaç çalışma alanıyla sınırlı görünmeyecek şekilde genişletildi.
+- Mahmut KARDAK kartındaki `Ceza Hukuku`, `Aile Hukuku`, `Danışmanlık` etiketleri kaldırıldı; `TeamCard` boş uzmanlık listesi geldiğinde etiket alanını hiç render etmeyecek şekilde güvenli hale getirildi.
+- `/hakkimizda` ekip bölümü `Kurucu Avukat` diliyle revize edildi; başvuru, dosyanın konusu ve ihtiyaç duyduğu hukuki çerçeveye göre değerlendiriliyor mesajı verildi.
+
+### Maidan / Çankaya Konum Güncellemesi
+
+- Kullanıcının verdiği Google Maps kısa bağlantısı çözümlendi ve randevu konumu `Maidan, Mustafa Kemal, 2118. Cd., 06510 Çankaya / Ankara` olarak merkezi `lib/site.ts` verisine işlendi.
+- `/iletisim` harita embed sorgusu, üst iletişim kartı, `Google Haritalar'da Aç` butonu ve randevu noktası kartı yeni konuma hizalandı.
+- Layout metadata keywordleri ve JSON-LD adres alanları eski Bilkent varsayımından çıkarılarak Maidan / Mustafa Kemal / Çankaya konumuna göre güncellendi.
+
+### Kontrol
+
+- `npm.cmd run lint`: geçti.
+- `npm.cmd run build`: geçti (30/30 statik sayfa).
+- `http://localhost:3003/hakkimizda` HTML kontrolünde eski `Şimdilik görünür avukat` metni bulunmadı ve yeni kurucu avukat metni render edildi.
+- `http://localhost:3003/iletisim` HTML kontrolünde `Maidan` ve kullanıcının Maps linki render edildi; ilgili sayfada `Bilkent` kalmadı.
+
 ## 2026-06-02
 
 Bugünkü görev: marka metnindeki birleşik yazım hatası, telefon/WhatsApp numarası ve SSS içeriği düzeltildi.

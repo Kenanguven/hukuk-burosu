@@ -122,14 +122,14 @@ export default function AboutPage() {
       <section className="py-16 md:py-24 bg-cream-soft">
         <div className="container-prose">
           <FadeIn className="max-w-2xl">
-            <span className="eyebrow">Avukatımız</span>
+            <span className="eyebrow">Kurucu Avukat</span>
             <h2 className="mt-4 font-serif text-3xl md:text-4xl text-coffee-deep">
-              Dosyanızı doğrudan takip eden kurucu avukat.
+              Dosyanın niteliğine göre kurulan sakin bir çalışma planı.
             </h2>
             <p className="mt-4 text-ink-soft">
-              Şimdilik görünür avukat kadrosunda yalnızca Av. {site.owner} yer
-              alıyor. Başvurular doğrudan kurucu avukat yaklaşımıyla
-              değerlendiriliyor.
+              Av. {site.owner}, başvuruları konusuna ve ihtiyaç duyduğu hukuki
+              çerçeveye göre değerlendirir. Görüşme sonrasında iletişim düzeni,
+              iş bölümü ve takip planı netleştirilir.
             </p>
           </FadeIn>
 

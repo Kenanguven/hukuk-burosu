@@ -1,5 +1,12 @@
 # Decisions
 
+## 2026-06-03 Hakkımızda Kartı ve Randevu Konumu Kararı
+
+- Görünür avukat kadrosu şimdilik Av. Mahmut KARDAK olarak kalmaya devam edecek, ancak kart altında belirli çalışma alanı etiketleri gösterilmeyecek.
+- Hakkımızda dili, kurucu avukatın yalnızca birkaç alanla sınırlı çalıştığı algısını vermemek için dosyanın niteliğine göre değerlendirme ve iş bölümü planı üzerinden kurulacak.
+- Kullanıcının verdiği `https://maps.app.goo.gl/fe9STM5cYKWmhUCi6?g_st=iw` bağlantısı güncel randevu konumu olarak kabul edildi.
+- Randevu konumu merkezi `lib/site.ts` verisinden yönetilecek; görünür iletişim kartları, Google Maps embed sorgusu ve JSON-LD adres bilgileri bu kaynağı kullanacak.
+
 ## 2026-06-02 Telefon ve SSS Kararı
 
 - Güncel cep telefonu ve WhatsApp Web numarası `+90 533 612 24 56` / `https://wa.me/905336122456` olarak kabul edildi.

@@ -19,11 +19,9 @@ export const metadata: Metadata = {
 
 const primaryOffice = site.offices[0];
 const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(
-  `${primaryOffice.district}, ${primaryOffice.city}`
+  primaryOffice.mapQuery
 )}&output=embed`;
-const mapLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-  `${primaryOffice.district}, ${primaryOffice.city}`
-)}`;
+const mapLink = primaryOffice.mapUrl;
 
 const contactCards = [
   {
@@ -42,8 +40,9 @@ const contactCards = [
   {
     icon: MapPin,
     title: "Randevu Konumu",
-    value: "Bilkent / Ankara",
-    href: "#randevu-konumlari",
+    value: primaryOffice.shortAddress,
+    href: primaryOffice.mapUrl,
+    external: true,
   },
 ];
 
@@ -58,7 +57,7 @@ export default function ContactPage() {
             uzağınızdayız.
           </>
         }
-        description="Dosyanız hakkında kısa bilgi paylaşabilir, WhatsApp Web ya da form üzerinden randevu talep edebilirsiniz. Tam konum bilgisi görüşme planlanırken paylaşılır."
+        description="Dosyanız hakkında kısa bilgi paylaşabilir, WhatsApp Web ya da form üzerinden randevu talep edebilirsiniz. Randevu konumu Google Haritalar ve WhatsApp Web üzerinden netleştirilir."
       />
 
       <section className="pb-10">
@@ -74,7 +73,7 @@ export default function ContactPage() {
                 }}
               />
               <iframe
-                title={`${site.shortName} randevu bölgesi haritası`}
+                title={`${site.shortName} randevu konumu haritası`}
                 src={mapSrc}
                 className="absolute inset-0 h-full w-full border-0 opacity-80 grayscale-[0.18] saturate-[0.82]"
                 loading="lazy"
@@ -100,13 +99,13 @@ export default function ContactPage() {
                   </span>
                   <div className="min-w-0">
                     <p className="text-xs font-semibold uppercase tracking-[0.18em] text-coffee">
-                      Randevu Bölgesi
+                      Randevu Konumu
                     </p>
                     <h2 className="mt-1 font-serif text-xl leading-tight text-coffee-deep">
-                      {primaryOffice.district}, {primaryOffice.city}
+                      {primaryOffice.shortAddress}
                     </h2>
                     <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-                      Tam konum bilgisi, görüşme kesinleştiğinde WhatsApp Web üzerinden paylaşılır.
+                      Görüşme saati ve dosya akışı WhatsApp Web üzerinden netleştirilir.
                     </p>
                     <a
                       href={mapLink}
@@ -189,15 +188,26 @@ export default function ContactPage() {
                         {office.barosu}
                       </span>
                     </div>
-                    <a
-                      href={office.whatsappUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-4 inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-coffee/20 px-4 text-sm font-semibold text-coffee-deep transition-colors hover:bg-cream-warm"
-                    >
-                      WhatsApp Web
-                      <MessageCircle className="h-4 w-4" />
-                    </a>
+                    <div className="mt-4 flex flex-wrap gap-3">
+                      <a
+                        href={office.whatsappUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-coffee/20 px-4 text-sm font-semibold text-coffee-deep transition-colors hover:bg-cream-warm"
+                      >
+                        WhatsApp Web
+                        <MessageCircle className="h-4 w-4" />
+                      </a>
+                      <a
+                        href={office.mapUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-coffee/20 px-4 text-sm font-semibold text-coffee-deep transition-colors hover:bg-cream-warm"
+                      >
+                        Haritada Aç
+                        <Navigation className="h-4 w-4" />
+                      </a>
+                    </div>
                   </div>
                 ))}
               </div>

@@ -6,6 +6,8 @@ Aktif doğrulanmış hata yok.
 
 ## Giderilenler
 
+- 2026-06-03: `/iletisim` sayfasındaki Google Maps embed ve randevu kartları eski `Bilkent, Ankara` bölge varsayımını kullanıyordu. Kullanıcının verdiği Google Maps bağlantısı çözümlenerek konum `Maidan, Mustafa Kemal, 2118. Cd., 06510 Çankaya / Ankara` olarak merkezi veriye işlendi; iletişim sayfası ve JSON-LD bu konuma hizalandı.
+
 - 2026-06-02: Ana sayfadaki koyu güven bandında başlıkların koyu zeminde yeterince okunmaması giderildi. Koyu yüzey heading/paragraf renkleri açık fildişi tonlara sabitlendi, kart opaklığı ve animasyon başlangıç opaklığı artırıldı; desktop ve 390px mobil CDP kontrast taraması temiz geçti.
 - 2026-05-20: Ana sayfadaki doğrulanmamış `500+ müvekkil`, `1200+ dosya` ve `14+ yıllık deneyim` metrikleri görünür arayüzden kaldırıldı. Stat bandı sayısız süreç ilkelerine dönüştürüldü.
 - 2026-05-12: İlk lint çalıştırmasında `react/no-unescaped-entities` hataları görüldü. JSX içindeki düz tırnak/apostrof karakterleri güvenli entity biçimine çevrildi.
@@ -26,8 +28,8 @@ Aktif doğrulanmış hata yok.
 - `CONTACT_INBOX` ve `CONTACT_FROM` değerleri production için doğrulanmalı.
 - `lib/site.ts` içindeki telefon ve WhatsApp değeri kullanıcı tarafından verildiği için güncellendi.
 - `lib/site.ts` içindeki e-posta ve domain marka adına göre düzenlendi ancak gerçek production değeri ayrıca doğrulanmalı.
-- Gerçek adres ve sosyal medya değerleri henüz verilmedi. Sahte/generic değerler kaldırıldı; adres yerine randevu sırasında WhatsApp üzerinden konum paylaşımı mesajı gösteriliyor.
-- `/iletisim` sayfasındaki Google Maps embed, gerçek açık adres verilmediği için `Bilkent, Ankara` randevu bölgesi sorgusuyla çalışıyor. Açık adres kesinleşirse embed sorgusu güncellenmeli.
+- Kullanıcı tarafından randevu konumu için Google Maps bağlantısı verildi ve merkezi site verisine işlendi. Sosyal medya değerleri henüz verilmedi.
+- Gerçek e-posta ve domain değerleri marka adını temel alıyor; production öncesi marka sahibi tarafından ayrıca doğrulanmalı.
 - Çalışma alanı görselleri gerçek ofis fotoğrafı değil, AI ile üretilmiş lisans riski düşük temsili katalog fotoğraflarıdır. Kurumsal fotoğraf/stock seti netleşirse ilgili kapaklar gerçek görsellerle değiştirilmeli.
 - Sayısal güven metrikleri görünür arayüzden kaldırıldı; ileride gerçek ve belgelenebilir metrik kullanılacaksa avukat/marka sahibi tarafından ayrıca onaylanmalı.
 - Blog yazıları ve hukuki metinlerin gerçek hukuki danışmanlık açısından avukat tarafından onaylanıp onaylanmadığı bilinmiyor. 2026-05-12 SEO çalışmasıyla eklenen 7 yeni uzun-form yazı genel bilgilendirme amaçlı yazıldı; sürelere, görevli mahkeme bilgilerine ve yargısal pratiğe değinen kısımların avukat tarafından son okuması yapılmalı.

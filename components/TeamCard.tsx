@@ -86,24 +86,26 @@ export function TeamCard({ member, index = 0 }: { member: Member; index?: number
           </p>
         </div>
         <p className="text-sm text-ink-soft leading-relaxed">{member.bio}</p>
-        <motion.div
-          className="flex flex-wrap gap-2 pt-2"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.1 }}
-        >
-          {member.focus.map((f, i) => (
-            <motion.span
-              key={f}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.1 + i * 0.05 }}
-              className="text-[10px] uppercase tracking-wider font-semibold bg-coffee text-cream px-3 py-1.5 rounded-full border border-coffee/20 group-hover:border-gold/40 transition-colors"
-            >
-              {f}
-            </motion.span>
-          ))}
-        </motion.div>
+        {member.focus.length > 0 && (
+          <motion.div
+            className="flex flex-wrap gap-2 pt-2"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.1 }}
+          >
+            {member.focus.map((f, i) => (
+              <motion.span
+                key={f}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.1 + i * 0.05 }}
+                className="text-[10px] uppercase tracking-wider font-semibold bg-coffee text-cream px-3 py-1.5 rounded-full border border-coffee/20 group-hover:border-gold/40 transition-colors"
+              >
+                {f}
+              </motion.span>
+            ))}
+          </motion.div>
+        )}
       </div>
     </motion.article>
   );

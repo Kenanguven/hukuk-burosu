@@ -88,6 +88,9 @@
 - [x] SSS içinden ilk görüşme ücretine dair madde kaldırıldı; blogdaki ücretsiz ön görüşme iddiası nötr ücretlendirme diline çekildi.
 - [x] Ana sayfadaki koyu güven bandı ve site genelindeki koyu yüzeylerde başlık/metin kontrastı iyileştirildi.
 - [x] Kontrast düzeltmesi sonrasında ana sayfa, hakkımızda, hizmetler, iletişim, SSS, blog ve blog detay sayfaları desktop/390px mobil Chrome CDP ile kontrol edildi.
+- [x] Hakkımızda sayfasındaki Av. Mahmut KARDAK kartı belirli alanlarla sınırlı görünmeyecek şekilde sadeleştirildi; uzmanlık etiketleri boş listede render edilmeyecek hale getirildi.
+- [x] İletişim sayfası ve merkezi site verisi kullanıcı tarafından verilen Maidan / Mustafa Kemal / Çankaya Google Maps konumuna güncellendi.
+- [x] Konum ve Hakkımızda güncellemesi sonrasında `npm.cmd run lint`, `npm.cmd run build` ve lokal HTML smoke kontrolü yapıldı.
 
 ## Sıradaki İşler
 

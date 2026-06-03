@@ -12,7 +12,8 @@ Ana hedef, potansiyel müvekkillerin büroyu tanıması, hizmet alanlarını inc
 - Büro sahibi / kurucu avukat: `Mahmut Kardak`
 - Telefon: `+90 533 612 24 56`
 - WhatsApp Web: `https://wa.me/905336122456`
-- Adres, sosyal medya, gerçek domain ve production e-posta bilgileri henüz ayrıca doğrulanmalıdır.
+- Randevu konumu: `Maidan, Mustafa Kemal, 2118. Cd., 06510 Çankaya / Ankara`
+- Sosyal medya, gerçek domain ve production e-posta bilgileri henüz ayrıca doğrulanmalıdır.
 
 ## Proje Tipi
 

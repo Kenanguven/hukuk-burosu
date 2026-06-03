@@ -2,13 +2,18 @@ export type Office = {
   slug: "ankara";
   city: "Ankara";
   district: string;
+  locality: string;
   regionLabel: string;
   shortAddress: string;
+  streetAddress: string;
+  postalCode: string;
   longAddress: string;
   barosu: string;
   whatsappPhone: string;
   whatsappRaw: string;
   whatsappUrl: string;
+  mapQuery: string;
+  mapUrl: string;
   mapEmbed?: string;
 };
 
@@ -16,15 +21,20 @@ export const offices: Office[] = [
   {
     slug: "ankara",
     city: "Ankara",
-    district: "Bilkent",
-    regionLabel: "Bilkent · Çankaya · Ankara",
-    shortAddress: "Bilkent, Çankaya · Ankara",
+    district: "Mustafa Kemal",
+    locality: "Çankaya",
+    regionLabel: "Maidan · Mustafa Kemal · Çankaya · Ankara",
+    shortAddress: "Maidan, Çankaya · Ankara",
+    streetAddress: "Maidan, Mustafa Kemal, 2118. Cd.",
+    postalCode: "06510",
     longAddress:
-      "Bilkent, Çankaya / Ankara — randevulu görüşme için tam konum bilgisi WhatsApp Web üzerinden paylaşılır.",
+      "Maidan, Mustafa Kemal, 2118. Cd., 06510 Çankaya / Ankara — randevu akışı WhatsApp Web üzerinden netleştirilir.",
     barosu: "Ankara Barosu",
     whatsappPhone: "+90 533 612 24 56",
     whatsappRaw: "+905336122456",
     whatsappUrl: "https://wa.me/905336122456",
+    mapQuery: "Maidan, Mustafa Kemal, 2118. Cd., 06510 Çankaya/Ankara",
+    mapUrl: "https://maps.app.goo.gl/fe9STM5cYKWmhUCi6?g_st=iw",
   },
 ];
 
@@ -40,7 +50,7 @@ export const site = {
   cities: ["Ankara"] as const,
   city: "Ankara",
   address:
-    "Randevulu görüşmeler için tam konum bilgisi WhatsApp Web üzerinden paylaşılır.",
+    "Maidan, Mustafa Kemal, 2118. Cd., 06510 Çankaya / Ankara",
   phone: "+90 533 612 24 56",
   phoneRaw: "+905336122456",
   whatsapp: "+905336122456",
