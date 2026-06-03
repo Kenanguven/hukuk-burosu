@@ -5,10 +5,6 @@ export type Faq = {
 
 export const faqs: Faq[] = [
   {
-    q: "İlk görüşme ücretli mi?",
-    a: "Telefon, WhatsApp Web ya da e-posta üzerinden yapılan ilk ön değerlendirmede dosyanızın genel çerçevesini dinleriz. Yüz yüze veya kapsamlı belge incelemesi gerektiren danışmanlık görüşmelerinde Türkiye Barolar Birliği'nin asgari ücret tarifesi dikkate alınarak şeffaf bir ücret bilgisi paylaşılır.",
-  },
-  {
     q: "Avukatlık ücretiniz nasıl belirleniyor?",
     a: "Ücret; dosyanın niteliği, uyuşmazlığın değeri, beklenen iş yoğunluğu ve süresine göre belirlenir. Her dosya için yazılı avukatlık sözleşmesi düzenlenir; kapsam ve ödeme planı görüşmenin başında netleştirilir.",
   },

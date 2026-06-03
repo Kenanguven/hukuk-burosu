@@ -10,8 +10,8 @@ Ana hedef, potansiyel müvekkillerin büroyu tanıması, hizmet alanlarını inc
 
 - Firma adı: `Kardak Hukuk Bürosu`
 - Büro sahibi / kurucu avukat: `Mahmut Kardak`
-- Telefon: `0553 612 24 56`
-- WhatsApp Web: `https://wa.me/905536122456`
+- Telefon: `+90 533 612 24 56`
+- WhatsApp Web: `https://wa.me/905336122456`
 - Adres, sosyal medya, gerçek domain ve production e-posta bilgileri henüz ayrıca doğrulanmalıdır.
 
 ## Proje Tipi

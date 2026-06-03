@@ -61,7 +61,7 @@ export default function AboutPage() {
           </FadeIn>
           <FadeIn delay={0.1} className="md:col-span-7 space-y-5 text-ink-soft leading-relaxed">
             <p>
-              {site.shortName}, kurucu avukatımız Av. {site.owner} tarafından,
+              {site.shortName}, kurucu avukatımız Av. {site.owner}{" "}tarafından,
               &quot;müvekkille yan yana çalışan bir hukuk bürosu&quot; anlayışıyla
               yapılandırıldı. Dosya stratejisinden iletişim ritmine kadar her
               adımda sade, ölçülü ve öngörülebilir bir çalışma düzeni hedeflenir.

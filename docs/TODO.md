@@ -83,6 +83,11 @@
 - [x] İstanbul odaklı blog içerikleri SEO için yayında bırakıldı; blog metinlerindeki İstanbul ofisi / Beşiktaş randevu noktası iddiaları temizlendi.
 - [x] Aslan Hukuk ve Tahancı referansları doğrultusunda renk paleti fildişi, grafit/orman ve şampanya-altın dengesiyle daha canlı premium dile rafine edildi.
 - [x] Ankara tek lokasyon ve renk rafinesi sonrasında `npm.cmd run lint`, `npm.cmd run build` ve desktop/390px mobil Chrome CDP kontrolü yapıldı.
+- [x] Cep telefonu ve WhatsApp Web bilgisi `+90 533 612 24 56` / `https://wa.me/905336122456` olarak düzeltildi.
+- [x] `/hakkimizda` sayfasında soyad ile sonraki kelimenin birleşik görünme riski giderildi.
+- [x] SSS içinden ilk görüşme ücretine dair madde kaldırıldı; blogdaki ücretsiz ön görüşme iddiası nötr ücretlendirme diline çekildi.
+- [x] Ana sayfadaki koyu güven bandı ve site genelindeki koyu yüzeylerde başlık/metin kontrastı iyileştirildi.
+- [x] Kontrast düzeltmesi sonrasında ana sayfa, hakkımızda, hizmetler, iletişim, SSS, blog ve blog detay sayfaları desktop/390px mobil Chrome CDP ile kontrol edildi.
 
 ## Sıradaki İşler
 

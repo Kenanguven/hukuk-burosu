@@ -152,12 +152,26 @@ body {
 
 .authority-tile {
   border: 1px solid rgba(255, 253, 248, 0.08);
-  background: rgba(255, 253, 248, 0.025);
+  background: rgba(255, 253, 248, 0.045);
 }
 
 .authority-tile:hover {
-  background: rgba(255, 253, 248, 0.07);
+  background: rgba(255, 253, 248, 0.085);
   border-color: rgba(225, 195, 132, 0.22);
+}
+
+.authority-panel :is(h1, h2, h3, h4, h5),
+.bg-coffee-deep :is(h1, h2, h3, h4, h5),
+.bg-graphite :is(h1, h2, h3, h4, h5),
+footer :is(h1, h2, h3, h4, h5) {
+  color: var(--color-cream-soft);
+}
+
+.authority-panel p,
+.bg-coffee-deep p,
+.bg-graphite p,
+footer p {
+  color: rgba(255, 253, 248, 0.78);
 }
 
 .prestige-orbit::after {

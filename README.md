@@ -6,8 +6,8 @@ Güncel marka bilgileri:
 
 - Firma: KARDAK Hukuk Bürosu
 - Kurucu/Sahip: Mahmut KARDAK
-- Telefon: 0553 612 24 56
-- WhatsApp Web: `https://wa.me/905536122456`
+- Telefon: +90 533 612 24 56
+- WhatsApp Web: `https://wa.me/905336122456`
 
 ## Kullanılan Teknolojiler
 

@@ -31,10 +31,10 @@ export function StatsBar() {
     <section className="relative z-10 -mt-12 py-12 md:py-16">
       <div className="container-prose">
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
+          initial={{ opacity: 0.94, y: 14 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
-          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.38, ease: [0.22, 1, 0.36, 1] }}
           className="authority-panel rounded-[2rem] p-5 md:p-7"
         >
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
@@ -43,10 +43,10 @@ export function StatsBar() {
               return (
                 <motion.div
                   key={item.title}
-                  initial={{ opacity: 0, y: 12 }}
+                  initial={{ opacity: 0.92, y: 8 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: idx * 0.08, duration: 0.5 }}
+                  transition={{ delay: idx * 0.04, duration: 0.32 }}
                   whileHover={{ y: -2 }}
                   className="authority-tile trust-sheen flex h-full min-h-[9.5rem] flex-col rounded-[1.35rem] px-4 py-5 transition-colors duration-300"
                 >

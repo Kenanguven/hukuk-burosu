@@ -22,9 +22,9 @@ export const offices: Office[] = [
     longAddress:
       "Bilkent, Çankaya / Ankara — randevulu görüşme için tam konum bilgisi WhatsApp Web üzerinden paylaşılır.",
     barosu: "Ankara Barosu",
-    whatsappPhone: "0553 612 24 56",
-    whatsappRaw: "+905536122456",
-    whatsappUrl: "https://wa.me/905536122456",
+    whatsappPhone: "+90 533 612 24 56",
+    whatsappRaw: "+905336122456",
+    whatsappUrl: "https://wa.me/905336122456",
   },
 ];
 
@@ -41,10 +41,10 @@ export const site = {
   city: "Ankara",
   address:
     "Randevulu görüşmeler için tam konum bilgisi WhatsApp Web üzerinden paylaşılır.",
-  phone: "0553 612 24 56",
-  phoneRaw: "+905536122456",
-  whatsapp: "+905536122456",
-  whatsappUrl: "https://wa.me/905536122456",
+  phone: "+90 533 612 24 56",
+  phoneRaw: "+905336122456",
+  whatsapp: "+905336122456",
+  whatsappUrl: "https://wa.me/905336122456",
   email: "info@kardakhukuk.com",
   hours: "Pazartesi – Cuma · 09:00 – 18:30",
   social: {

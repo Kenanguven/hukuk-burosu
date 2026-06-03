@@ -1,5 +1,32 @@
 # Progress
 
+## 2026-06-02
+
+Bugünkü görev: marka metnindeki birleşik yazım hatası, telefon/WhatsApp numarası ve SSS içeriği düzeltildi.
+
+### İletişim Bilgisi ve SSS Düzeltmesi
+
+- Merkezi telefon ve WhatsApp Web bilgisi `+90 533 612 24 56` / `https://wa.me/905336122456` olarak güncellendi.
+- Ankara randevu noktası WhatsApp kartı, footer/iletişim akışı, JSON-LD ve metadata'nın kullandığı merkezi `site` verisi yeni numaraya hizalandı.
+- `/hakkimizda` metninde soyad ile sonraki kelimenin birleşik görünme riski, JSX içinde açık boşluk verilerek düzeltildi.
+- SSS listesinden ilk görüşme ücretine dair madde kaldırıldı.
+- Blog içeriğinde kalan ücretsiz ön görüşme iddiası nötr, yazılı ücretlendirme diliyle değiştirildi.
+- `docs/PROJECT_BRIEF.md` ve `README.md` içindeki marka telefon/WhatsApp bilgileri yeni numarayla güncellendi.
+
+### Kontrol
+
+- `npm.cmd run lint`: geçti.
+- `npm.cmd run build`: geçti (30/30 statik sayfa).
+- Uygulama kaynaklarında eski telefon numarası, kaldırılan SSS maddesi, ücretsiz ön görüşme iddiası ve birleşik soyad yazımı kalıntısı bulunmadı.
+
+### Kontrast ve Okunurluk Düzeltmesi
+
+- Ana sayfadaki koyu güven bandında başlıkların koyu zeminde okunmamasına yol açan stil çakışması giderildi.
+- `.authority-panel`, koyu CTA blokları ve footer gibi karanlık yüzeylerde heading/paragraf renkleri açık fildişi tonlara kilitlendi.
+- Güven kartlarının cam yüzey opaklığı hafif artırıldı; animasyon başlangıç opaklığı yükseltilerek scroll anında metinlerin kısa süreli soluk görünmesi azaltıldı.
+- `ui-ux-pro-max` erişilebilirlik rehberindeki 4.5:1 kontrast önceliği referans alındı.
+- Chrome/CDP ile `/`, `/hakkimizda`, `/hizmetler`, `/iletisim`, `/sss`, `/blog` ve bir blog detay sayfası desktop + 390px mobil ölçüldü; koyu yüzeylerde düşük kontrast uyarısı ve yatay taşma kalmadı.
+
 ## 2026-06-01
 
 Bugünkü düzeltme: İstanbul ile ilgili kaldırma kapsamı netleştirildi. Ofis/randevu noktası içerikleri kaldırılacak, ancak İstanbul blogları SEO için yayında kalacak.
@@ -124,7 +151,7 @@ Bugünkü görev: Aslan Hukuk Danışmanlık ve Tahancı Avukatlık Bürosu refe
 
 - Kullanıcı referans ekran görüntüsüne göre `/iletisim` sayfası üstte geniş harita, altında dört eşit iletişim kartı ve devamında randevu noktaları + mesaj formu düzenine taşındı.
 - Gerçek açık adres henüz verilmediği için Google Maps embed `Bilkent, Ankara` randevu bölgesi sorgusuyla kullanıldı; tam konum bilgisinin WhatsApp Web üzerinden paylaşılacağı dili korundu.
-- İki WhatsApp Web hattı korundu: Ankara için `0553 612 24 56`, İstanbul/Beşiktaş için `0545 724 42 88`.
+- İki WhatsApp Web hattı korundu: Ankara için `+90 533 612 24 56`, İstanbul/Beşiktaş için `0545 724 42 88`. Ankara numarası 2026-06-02'de yeni doğru değerle güncellendi.
 - Çalışma alanı kartlarına konuya özel premium görsel kapaklar eklendi.
 - `/hizmetler` detay bloklarında her hizmet için görsel kapak + madde listesi düzeni kullanıldı.
 - Stok fotoğraf lisans riski oluşturmamak için görseller lokal, kod tabanlı ve konuya özel temsili kapaklar olarak üretildi; gerçek ofis/fotoğraf seti gelirse aynı alanlar kolayca değiştirilebilir.
@@ -213,7 +240,7 @@ Bugünkü görev: logo yenilemesi yapıldı.
 
 - `/iletisim` sayfasındaki Ankara ve İstanbul ofis kartlarından ayrı `Telefon` satırı kaldırıldı.
 - Ofis kartlarında yalnızca `WhatsApp Web` satırı bırakıldı.
-- Ankara WhatsApp Web numarası mevcut `0553 612 24 56` olarak korundu.
+- Ankara WhatsApp Web numarası 2026-06-02 güncellemesiyle `+90 533 612 24 56` olarak düzeltildi.
 - İstanbul / Beşiktaş WhatsApp Web numarası `0545 724 42 88` olarak eklendi (`https://wa.me/905457244288`).
 - `lib/site.ts` içinde ofis bazlı `whatsappPhone`, `whatsappRaw`, `whatsappUrl` alanları eklendi.
 - JSON-LD ofis telefon/contactPoint bilgileri ofis bazlı WhatsApp numaralarını kullanacak şekilde güncellendi.
@@ -424,7 +451,7 @@ Bir sonraki görev olarak gerçek marka bilgileri netleştirilmeli; ardından `l
 - Skill önerileri doğrultusunda liquid glass, premium dark/gold, 3D configurator hissi, kontrollü animasyon ve mobil yatay taşma kontrolü önceliklendirildi.
 - Marka adı `Kardak Hukuk Bürosu` olarak güncellendi.
 - Büro sahibi / kurucu avukat bilgisi `Mahmut Kardak` olarak eklendi.
-- Telefon `0553 612 24 56`, tel linki `+905536122456`, WhatsApp Web linki `https://wa.me/905536122456` olarak merkezi `lib/site.ts` içine işlendi.
+- Telefon `+90 533 612 24 56`, tel linki `+905336122456`, WhatsApp Web linki `https://wa.me/905336122456` olarak merkezi `lib/site.ts` içinde tutuluyor.
 - Eski Mercan marka adı uygulama kodundan kaldırıldı; blog author ve ekipteki kurucu avukat bilgisi Mahmut Kardak olarak güncellendi.
 - Sahte görünen adres ve generic sosyal medya linkleri yayından kaldırıldı; adres alanı randevu sırasında WhatsApp üzerinden konum paylaşımı mesajına çevrildi.
 - Ana hero alanı marka odaklı hale getirildi; H1 artık `Kardak Hukuk Bürosu`.

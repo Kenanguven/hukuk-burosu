@@ -149,7 +149,7 @@ const allPosts: Post[] = [
       "Yedinci kriter: gizlilik ve veri güvenliği. Avukatlık Kanunu kapsamındaki sır saklama yükümlülüğüne ek olarak KVKK uyum süreçleri, dijital iletişim güvenliği ve dosya saklama disipliniyle ilgili sorular sormaktan çekinmeyin.",
       "Sekizinci kriter: ön görüşme niteliği. İyi bir Ankara avukatı, ilk görüşmede size pazarlama yapmak yerine; dosyanızın gerçek risklerini, alternatif çözüm yollarını, mahkeme süreçlerinin ortalama sürelerini ve maliyet aralığını net biçimde anlatır.",
       "Seçim sürecinde dikkat edilmesi gereken bir başka husus; tavsiye edilen avukatın gerçekten konuya hakim olup olmadığıdır. Yakınınıza birinin önermesi tek başına yeterli değildir; uzmanlık alanı uyuşmazlığınızla örtüşmüyorsa süreç beklediğinizden farklı şekilde ilerleyebilir.",
-      "KARDAK Hukuk Bürosu olarak Ankara'da hukuki destek arayan bireylere ve şirketlere; sade bir iletişim, yazılı sözleşme ile şeffaf ücretlendirme, dosya başına ayrılmış zaman ve düzenli bilgi notu pratiği sunuyoruz. Ön görüşme her zaman ücretsizdir.",
+      "KARDAK Hukuk Bürosu olarak Ankara'da hukuki destek arayan bireylere ve şirketlere; sade bir iletişim, yazılı sözleşme ile şeffaf ücretlendirme, dosya başına ayrılmış zaman ve düzenli bilgi notu pratiği sunuyoruz. Görüşme kapsamı ve ücretlendirme çalışma başlamadan önce yazılı biçimde netleştirilir.",
     ],
   },
   {

@@ -6,6 +6,7 @@ Aktif doğrulanmış hata yok.
 
 ## Giderilenler
 
+- 2026-06-02: Ana sayfadaki koyu güven bandında başlıkların koyu zeminde yeterince okunmaması giderildi. Koyu yüzey heading/paragraf renkleri açık fildişi tonlara sabitlendi, kart opaklığı ve animasyon başlangıç opaklığı artırıldı; desktop ve 390px mobil CDP kontrast taraması temiz geçti.
 - 2026-05-20: Ana sayfadaki doğrulanmamış `500+ müvekkil`, `1200+ dosya` ve `14+ yıllık deneyim` metrikleri görünür arayüzden kaldırıldı. Stat bandı sayısız süreç ilkelerine dönüştürüldü.
 - 2026-05-12: İlk lint çalıştırmasında `react/no-unescaped-entities` hataları görüldü. JSX içindeki düz tırnak/apostrof karakterleri güvenli entity biçimine çevrildi.
 - 2026-05-12: İlk lint çalıştırmasında `react-hooks/set-state-in-effect` hataları görüldü. `CookieBanner` state güncellemesi async callback içine alındı, `Navbar` mobil menü kapatma davranışı link tıklamalarına taşındı.

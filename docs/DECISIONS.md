@@ -1,5 +1,11 @@
 # Decisions
 
+## 2026-06-02 Telefon ve SSS Kararı
+
+- Güncel cep telefonu ve WhatsApp Web numarası `+90 533 612 24 56` / `https://wa.me/905336122456` olarak kabul edildi.
+- Telefon ve WhatsApp bilgileri merkezi `lib/site.ts` verisinden yönetilecek; görünür kartlar ve yapılandırılmış veri bu kaynağı kullanacak.
+- SSS içinde ilk görüşme ücretine dair ayrı madde gösterilmeyecek; ücretlendirme iletişimi yazılı sözleşme ve dosya kapsamı üzerinden nötr biçimde anlatılacak.
+
 ## 2026-05-26 Ankara Tek Lokasyon ve Renk Kararı
 
 - Görünür site yapısı şimdilik yalnız Ankara / Bilkent randevu noktasıyla çalışacak; İstanbul / Beşiktaş kartları, iletişim hattı vurgusu ve ofis/randevu noktası iddiaları yayında gösterilmeyecek.
@@ -80,7 +86,7 @@
 
 - Bu bölüm tarihsel karardır; görünür lokasyon yapısı 2026-05-26 tarihli Ankara tek lokasyon kararıyla şimdilik geçersiz kılındı.
 - Marka, Ankara (Bilkent) ve İstanbul (Beşiktaş) olmak üzere iki ofisle çalışacak. Kurucu avukat Mahmut Kardak; ekip Servet Ağcakaya ve Berk Erdem Işık olarak korunuyor. Bu ekip kararı 2026-05-22'de görünür avukat kadrosunun şimdilik yalnızca Av. Mahmut KARDAK olması kararıyla güncellendi.
-- Tek telefon hattı (0553 612 24 56) ve tek WhatsApp her iki ofis için ortak kullanılıyor. İleride İstanbul için ayrı hat çıkarsa yapı genişlemeye hazır.
+- Tek telefon hattı 2026-06-02 itibarıyla `+90 533 612 24 56` olarak güncellendi. İleride İstanbul için ayrı hat çıkarsa yapı genişlemeye hazır.
 - Ofis adresleri ilçe seviyesinde (Bilkent / Beşiktaş) tutuluyor; tam sokak/kapı bilgisi yine "WhatsApp üzerinden paylaşılır" mantığında.
 - JSON-LD; tek Organization + her ofis için ayrı LegalService (parentOrganization referanslı) standart pattern olarak benimsendi. Google Business Profile için iki ayrı profil açılırsa bu yapı destek verir.
 - Blog içerik stratejisi: 11 Ankara odaklı + 5 İstanbul odaklı uzun-form yazı (toplam 16). Kapsam dengeli; İstanbul'a Avrupa/Anadolu Yakası ayrımı işlendi.
@@ -122,7 +128,7 @@
 ## 2026-05-13 Ofis WhatsApp Kararları
 
 - `/iletisim` ofis kartlarında ayrı telefon satırı gösterilmeyecek; ofis kartları WhatsApp Web üzerinden aksiyon alacak.
-- Ankara/Bilkent ofisi WhatsApp Web numarası `0553 612 24 56` olarak kalacak.
+- Ankara/Bilkent ofisi WhatsApp Web numarası 2026-06-02 itibarıyla `+90 533 612 24 56` olarak kullanılacak.
 - İstanbul/Beşiktaş ofisi WhatsApp Web numarası `0545 724 42 88` olarak kullanılacak.
 - Kullanıcının geri dönüş numarasını almak için iletişim formundaki `Telefon` alanı korunacak.
 - Yapılandırılmış veride ofis bazlı iletişim numaraları kullanılacak.
