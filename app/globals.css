@@ -79,8 +79,8 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  opacity: 0.72;
-  filter: saturate(1.02) contrast(1.08) brightness(0.95) sepia(0.04);
+  opacity: 0.9;
+  filter: saturate(1.12) contrast(1.2) brightness(0.9) sepia(0.03);
   transform: scale(1.015);
   animation: office-video-reveal 1.4s ease-out both;
 }
@@ -91,7 +91,7 @@ body {
     transform: scale(1.04);
   }
   to {
-    opacity: 0.72;
+    opacity: 0.9;
     transform: scale(1.015);
   }
 }
@@ -99,7 +99,7 @@ body {
 @media (max-width: 767px) {
   .hero-office-video {
     object-position: center top;
-    opacity: 0.52;
+    opacity: 0.68;
     transform: scale(1.05);
     animation-name: office-video-reveal-mobile;
   }
@@ -111,7 +111,7 @@ body {
     transform: scale(1.075);
   }
   to {
-    opacity: 0.52;
+    opacity: 0.68;
     transform: scale(1.05);
   }
 }
