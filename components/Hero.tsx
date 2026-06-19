@@ -20,12 +20,30 @@ const trustBadges = [
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative isolate overflow-hidden">
+      <div aria-hidden className="absolute inset-0 -z-30 overflow-hidden bg-cream">
+        <video
+          className="hero-office-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster="/videos/ofis-hero-poster.webp"
+        >
+          <source
+            src="/videos/ofis-hero-mobile.mp4"
+            type="video/mp4"
+            media="(max-width: 767px)"
+          />
+          <source src="/videos/ofis-hero-1280.mp4" type="video/mp4" />
+        </video>
+      </div>
       <div
         className="absolute inset-0 -z-20"
         style={{
           background:
-            "radial-gradient(circle at 73% 15%, rgba(212,162,79,0.34), transparent 31rem), radial-gradient(circle at 15% 74%, rgba(40,65,57,0.1), transparent 28rem), linear-gradient(180deg, rgba(255,253,248,0.98) 0%, rgba(246,245,240,0.94) 45%, rgba(230,228,218,0.8) 100%)",
+            "radial-gradient(circle at 72% 14%, rgba(212,162,79,0.26), transparent 30rem), radial-gradient(circle at 15% 74%, rgba(40,65,57,0.18), transparent 27rem), linear-gradient(90deg, rgba(255,253,248,0.74) 0%, rgba(255,253,248,0.52) 43%, rgba(246,239,222,0.24) 100%), linear-gradient(180deg, rgba(255,253,248,0.68) 0%, rgba(246,245,240,0.44) 50%, rgba(230,228,218,0.54) 100%)",
         }}
       />
       <div

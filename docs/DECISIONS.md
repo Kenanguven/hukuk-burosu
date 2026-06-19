@@ -1,5 +1,14 @@
 # Decisions
 
+## 2026-06-19 Hero Video Kararı
+
+- Kullanıcının sağladığı `görseller/ofis.mov` dosyası doğrudan yayına alınmayacak; yüksek boyutu nedeniyle optimize edilmiş web video çıktıları kullanılacak.
+- Hero arka planında video, okunabilirliği bozmayacak düşük opaklık ve sıcak filtrelerle dekoratif/sinematik katman olarak çalışacak.
+- Desktop ve mobil için ayrı video kaynakları kullanılacak; mobilde dikey kırpım tercih edilecek.
+- Video sessiz, autoplay, loop ve playsInline özellikleriyle kullanılacak; `prefers-reduced-motion` tercihinde video gizlenecek.
+- Video varlıkları `public/videos/` altında tutulacak; yeni npm paketi kurulmayacak.
+- Orijinal yüksek boyutlu kaynak videolar repo içinde takip edilmeyecek; `görseller/` altındaki büyük video dosyaları `.gitignore` kapsamında yerel kaynak olarak kalacak.
+
 ## 2026-06-03 Hakkımızda Kartı ve Randevu Konumu Kararı
 
 - Görünür avukat kadrosu şimdilik Av. Mahmut KARDAK olarak kalmaya devam edecek, ancak kart altında belirli çalışma alanı etiketleri gösterilmeyecek.

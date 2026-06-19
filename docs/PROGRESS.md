@@ -1,5 +1,30 @@
 # Progress
 
+## 2026-06-19
+
+Bugünkü görev: kullanıcının `görseller/ofis.mov` dosyası ana sayfa hero arka planına performans odaklı, sinematik ve soft bir video katmanı olarak entegre edildi.
+
+### Hero Ofis Videosu
+
+- `görseller/ofis.mov` dosyası incelendi; orijinal video yaklaşık 215 MB, 1920x1080, 15 saniye ve çok yüksek bitrate olduğu için doğrudan kullanılmadı.
+- Mevcut npm cache içindeki hazır `ffmpeg` binary'si kullanılarak yeni paket kurmadan optimize video çıktıları üretildi.
+- Desktop için `public/videos/ofis-hero-1280.mp4` üretildi: 1280x720, H.264, sessiz, 24fps, fast-start, yaklaşık 1 MB.
+- Mobil için `public/videos/ofis-hero-mobile.mp4` üretildi: 720x960 dikey kırpım, H.264, sessiz, 24fps, fast-start, yaklaşık 636 KB.
+- İlk boya ve video yüklenmeden önce yumuşak geçiş için `public/videos/ofis-hero-poster.webp` üretildi: yaklaşık 49 KB.
+- `components/Hero.tsx` içine autoplay/muted/loop/playsInline özellikli arka plan video katmanı eklendi; mobil ve desktop kaynakları ayrı `<source>` olarak tanımlandı.
+- `app/globals.css` içinde `.hero-office-video` sınıfı eklendi; video düşük opaklık, sıcak filtre, scale ve soft reveal animasyonuyla mevcut premium hero kimliğinin arkasında konumlandırıldı.
+- `prefers-reduced-motion: reduce` altında video gizlenerek hareket hassasiyeti ve erişilebilirlik gözetildi.
+- Kullanıcı geri bildirimiyle video görünürlüğü artırıldı; sütlü overlay azaltıldı, video opaklığı yükseltildi ve kontrast/saturation ayarları daha sinematik hale getirildi.
+- 215 MB orijinal `görseller/ofis.mov` dosyası git takibinden çıkarıldı; dosya yerelde kalabilir ancak `.gitignore` ile tekrar commit edilmesi engellendi.
+
+### Kontrol
+
+- `npm.cmd run lint`: geçti.
+- `npm.cmd run build`: geçti (30/30 statik sayfa). İlk build denemesi sandbox ağ kısıtı nedeniyle Google Fonts erişiminde düştü; onaylı build tekrarında geçti.
+- Görünürlük ve büyük dosya düzeltmesi sonrasında `npm.cmd run lint` ve `npm.cmd run build` tekrar geçti.
+- `http://localhost:3003/` HTML kontrolünde desktop video, mobil video ve poster kaynaklarının render edildiği doğrulandı.
+- `http://localhost:3003/videos/ofis-hero-1280.mp4`, `ofis-hero-mobile.mp4` ve `ofis-hero-poster.webp` dosyaları 200 yanıtı verdi.
+
 ## 2026-06-03
 
 Bugünkü görev: Hakkımızda sayfasındaki kurucu avukat kartı daha genel bir çalışma yaklaşımıyla revize edildi ve iletişim konumu kullanıcı tarafından verilen Google Maps bağlantısına taşındı.

@@ -74,6 +74,48 @@ body {
   border-color: rgba(128, 105, 78, 0.14);
 }
 
+.hero-office-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.72;
+  filter: saturate(1.02) contrast(1.08) brightness(0.95) sepia(0.04);
+  transform: scale(1.015);
+  animation: office-video-reveal 1.4s ease-out both;
+}
+
+@keyframes office-video-reveal {
+  from {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+  to {
+    opacity: 0.72;
+    transform: scale(1.015);
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-office-video {
+    object-position: center top;
+    opacity: 0.52;
+    transform: scale(1.05);
+    animation-name: office-video-reveal-mobile;
+  }
+}
+
+@keyframes office-video-reveal-mobile {
+  from {
+    opacity: 0;
+    transform: scale(1.075);
+  }
+  to {
+    opacity: 0.52;
+    transform: scale(1.05);
+  }
+}
+
 .scene-perspective {
   perspective: 1400px;
 }
@@ -413,8 +455,11 @@ h1, h2, h3, h4, h5 {
 
   .chip-premium,
   .chip-premium::before,
-  .btn-soft {
+  .btn-soft,
+  .hero-office-video {
     transition: none;
+    animation: none;
+    display: none;
   }
 
   .chip-premium:hover,

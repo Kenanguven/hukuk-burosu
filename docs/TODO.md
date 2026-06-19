@@ -91,6 +91,10 @@
 - [x] Hakkımızda sayfasındaki Av. Mahmut KARDAK kartı belirli alanlarla sınırlı görünmeyecek şekilde sadeleştirildi; uzmanlık etiketleri boş listede render edilmeyecek hale getirildi.
 - [x] İletişim sayfası ve merkezi site verisi kullanıcı tarafından verilen Maidan / Mustafa Kemal / Çankaya Google Maps konumuna güncellendi.
 - [x] Konum ve Hakkımızda güncellemesi sonrasında `npm.cmd run lint`, `npm.cmd run build` ve lokal HTML smoke kontrolü yapıldı.
+- [x] `görseller/ofis.mov` dosyası optimize edilerek ana sayfa hero arka planına sinematik soft video katmanı olarak entegre edildi.
+- [x] Hero videosu için desktop MP4, mobil MP4 ve WebP poster çıktıları `public/videos/` altında üretildi.
+- [x] Hero video entegrasyonu sonrasında `npm.cmd run lint`, `npm.cmd run build` ve lokal HTTP smoke kontrolü yapıldı.
+- [x] Hero video görünürlüğü artırıldı ve 215 MB orijinal `ofis.mov` dosyası git takibinden çıkarılıp `.gitignore` kapsamına alındı.
 
 ## Sıradaki İşler
 

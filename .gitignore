@@ -24,6 +24,12 @@
 .DS_Store
 *.pem
 
+# large local source media; optimized web assets live in public/videos
+görseller/*.mov
+görseller/*.mp4
+görseller/*.avi
+görseller/*.mkv
+
 # debug
 npm-debug.log*
 yarn-debug.log*

@@ -31,6 +31,8 @@ Aktif doğrulanmış hata yok.
 - Kullanıcı tarafından randevu konumu için Google Maps bağlantısı verildi ve merkezi site verisine işlendi. Sosyal medya değerleri henüz verilmedi.
 - Gerçek e-posta ve domain değerleri marka adını temel alıyor; production öncesi marka sahibi tarafından ayrıca doğrulanmalı.
 - Çalışma alanı görselleri gerçek ofis fotoğrafı değil, AI ile üretilmiş lisans riski düşük temsili katalog fotoğraflarıdır. Kurumsal fotoğraf/stock seti netleşirse ilgili kapaklar gerçek görsellerle değiştirilmeli.
+- Hero arka planındaki ofis videosu kullanıcının sağladığı gerçek video varlığıdır; performans için optimize MP4/WebP çıktıları kullanılıyor. İleride daha güncel bir ofis videosu gelirse aynı `public/videos/` yapısıyla değiştirilebilir.
+- Orijinal `görseller/ofis.mov` dosyası yaklaşık 215 MB olduğu için GitHub/Vercel push sürecini zorlayabilir; bu dosya git takibinden çıkarıldı ve `.gitignore` kapsamına alındı. Yayında yalnız optimize `public/videos/` çıktıları kullanılmalı.
 - Sayısal güven metrikleri görünür arayüzden kaldırıldı; ileride gerçek ve belgelenebilir metrik kullanılacaksa avukat/marka sahibi tarafından ayrıca onaylanmalı.
 - Blog yazıları ve hukuki metinlerin gerçek hukuki danışmanlık açısından avukat tarafından onaylanıp onaylanmadığı bilinmiyor. 2026-05-12 SEO çalışmasıyla eklenen 7 yeni uzun-form yazı genel bilgilendirme amaçlı yazıldı; sürelere, görevli mahkeme bilgilerine ve yargısal pratiğe değinen kısımların avukat tarafından son okuması yapılmalı.
 - `site.url` "https://kardakhukuk.com" değeriyle JSON-LD ve canonical URL'lerde kullanılıyor. Gerçek domain başka olursa metadata + sitemap + JSON-LD doğru çalışsın diye yalnızca `site.url` güncellenmesi yeterli.
