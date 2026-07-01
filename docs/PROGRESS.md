@@ -2,6 +2,13 @@
 
 ## 2026-07-01
 
+Ek görev: navbar sol üst marka yazısı `Hukuk & Danışmanlık` olarak güncellendi.
+
+- `components/Navbar.tsx` içindeki sol üst görünen marka metni `site.shortName` yerine `Hukuk & Danışmanlık` olarak değiştirildi.
+- Hero, footer, metadata ve yapılandırılmış veri marka adı korunarak bırakıldı.
+- `npm.cmd run lint`: geçti.
+- `npm.cmd run build`: geçti (30/30 statik sayfa).
+
 Bugünkü görev: ana sayfa hero alanında video arka planın görünürlüğü artırıldı, sol metin okunurluğu güçlendirildi ve sağdaki dekoratif kart sahnesi kaldırıldı.
 
 ### Hero Video ve Okunurluk Rafinesi

@@ -39,7 +39,7 @@ export function Navbar() {
               <Logo variant="gold" size={40} />
             </span>
             <span className="truncate font-serif text-xl tracking-tight text-coffee-deep">
-              {site.shortName}
+              Hukuk & Danışmanlık
             </span>
           </Link>
 
