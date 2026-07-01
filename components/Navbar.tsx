@@ -38,8 +38,16 @@ export function Navbar() {
             <span className="block transition-transform duration-300 group-hover:-rotate-3">
               <Logo variant="gold" size={40} />
             </span>
-            <span className="truncate font-serif text-xl tracking-tight text-coffee-deep">
-              Hukuk & Danışmanlık
+            <span className="flex min-w-0 flex-col leading-none">
+              <span className="font-serif text-[1.35rem] tracking-[0.18em] text-coffee-deep sm:text-2xl">
+                KARDAK
+              </span>
+              <span className="mt-0.5 text-[0.58rem] font-semibold uppercase tracking-[0.32em] text-coffee sm:text-[0.64rem]">
+                Hukuk Bürosu
+              </span>
+              <span className="mt-1 hidden text-[0.46rem] font-semibold uppercase tracking-[0.34em] text-gold sm:block">
+                Avukatlık · Danışmanlık
+              </span>
             </span>
           </Link>
 

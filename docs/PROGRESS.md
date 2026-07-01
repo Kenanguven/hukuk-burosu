@@ -2,9 +2,10 @@
 
 ## 2026-07-01
 
-Ek görev: navbar sol üst marka yazısı `Hukuk & Danışmanlık` olarak güncellendi.
+Ek görev: navbar sol üst marka alanı görsel logodaki hiyerarşiye uygun mini lockup olarak güncellendi.
 
-- `components/Navbar.tsx` içindeki sol üst görünen marka metni `site.shortName` yerine `Hukuk & Danışmanlık` olarak değiştirildi.
+- `components/Navbar.tsx` içindeki sol üst görünen marka metni `KARDAK`, `Hukuk Bürosu` ve `Avukatlık · Danışmanlık` satırlarıyla kompakt bir lockup haline getirildi.
+- Küçük ekranlarda taşmayı önlemek için en alt açıklama satırı mobilde gizlenecek şekilde ayarlandı.
 - Hero, footer, metadata ve yapılandırılmış veri marka adı korunarak bırakıldı.
 - `npm.cmd run lint`: geçti.
 - `npm.cmd run build`: geçti (30/30 statik sayfa).
