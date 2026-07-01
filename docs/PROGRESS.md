@@ -2,6 +2,15 @@
 
 ## 2026-07-01
 
+Ek görev: `Kardak Logo.dc.html` içindeki `1a Zarif Terazi` yönü, ana menüde premium yatay logo lockup olarak entegre edildi.
+
+- `components/NavbarBrand.tsx` eklendi; solda zarif terazi/denge işareti, sağda `KARDAK`, `Hukuk Bürosu` ve `Avukatlık · Danışmanlık` satırlarından oluşan menü logosu oluşturuldu.
+- `components/Navbar.tsx` yeni marka bileşenini kullanacak şekilde sadeleştirildi; logo fotoğraftaki gibi açık kapsül içinde gösteriliyor.
+- Menü öğeleri logo kapsülüne yer açacak şekilde ortalandı ve `SSS` üst menüden kaldırıldı; `/sss` sayfası yayında kalmaya devam ediyor.
+- `npm.cmd run lint`: geçti.
+- `npm.cmd run build`: geçti (30/30 statik sayfa).
+- Lokal HTML smoke kontrolünde yeni logo metinleri render edildi, navbar içinde `/sss` linki görünmedi.
+
 Ek görev: navbar sol üst marka alanı görsel logodaki hiyerarşiye uygun mini lockup olarak güncellendi.
 
 - `components/Navbar.tsx` içindeki sol üst görünen marka metni `KARDAK`, `Hukuk Bürosu` ve `Avukatlık · Danışmanlık` satırlarıyla kompakt bir lockup haline getirildi.
