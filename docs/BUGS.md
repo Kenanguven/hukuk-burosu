@@ -6,6 +6,8 @@ Aktif doğrulanmış hata yok.
 
 ## Giderilenler
 
+- 2026-07-01: Ana sayfa hero alanında video arka plan üzerinde sol metinler silik görünüyordu ve sağdaki dekoratif kart sahnesi bina/ofis videosunu gereksiz kapatıyordu. `PrestigeScene` hero'dan kaldırıldı; metin kontrastı yumuşak scrim, net renkler ve text-shadow ile güçlendirildi.
+
 - 2026-06-03: `/iletisim` sayfasındaki Google Maps embed ve randevu kartları eski `Bilkent, Ankara` bölge varsayımını kullanıyordu. Kullanıcının verdiği Google Maps bağlantısı çözümlenerek konum `Maidan, Mustafa Kemal, 2118. Cd., 06510 Çankaya / Ankara` olarak merkezi veriye işlendi; iletişim sayfası ve JSON-LD bu konuma hizalandı.
 
 - 2026-06-02: Ana sayfadaki koyu güven bandında başlıkların koyu zeminde yeterince okunmaması giderildi. Koyu yüzey heading/paragraf renkleri açık fildişi tonlara sabitlendi, kart opaklığı ve animasyon başlangıç opaklığı artırıldı; desktop ve 390px mobil CDP kontrast taraması temiz geçti.

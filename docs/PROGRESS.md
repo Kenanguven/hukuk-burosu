@@ -1,5 +1,24 @@
 # Progress
 
+## 2026-07-01
+
+Bugünkü görev: ana sayfa hero alanında video arka planın görünürlüğü artırıldı, sol metin okunurluğu güçlendirildi ve sağdaki dekoratif kart sahnesi kaldırıldı.
+
+### Hero Video ve Okunurluk Rafinesi
+
+- `components/Hero.tsx` içindeki sağ kolon `PrestigeScene` kullanımı kaldırıldı; ilk ekran artık bina/ofis videosunu kapatan ek bir kart göstermiyor.
+- Hero grid yapısı tek güçlü metin bloğu + açık video arka plan olacak şekilde sadeleştirildi.
+- Sol metinlerin video üstünde silik görünmemesi için `hero-copy-panel`, `hero-copy-title`, `hero-copy-kicker` ve `hero-copy-description` stilleri eklendi.
+- Yazıların arkasına kart hissi vermeyen, soldan sağa kaybolan yumuşak okunurluk katmanı eklendi; mobilde bu katman daha dikey ve kompakt çalışacak şekilde ayarlandı.
+- Video opaklığı ve filtreleri hafif artırıldı; sağ tarafta bina/ofis görüntüsünün daha belirgin kalması sağlandı.
+
+### Kontrol
+
+- `npm.cmd run lint`: geçti.
+- `npm.cmd run build`: geçti (30/30 statik sayfa).
+- `http://localhost:3003/` HTML smoke kontrolünde `Randevulu Görüşme` ve `PrestigeScene` kalıntısı bulunmadı.
+- Desktop ve mobil hero video kaynaklarının render edildiği doğrulandı; `/videos/ofis-hero-1280.mp4` ve `/videos/ofis-hero-mobile.mp4` 200 yanıt verdi.
+
 ## 2026-06-19
 
 Bugünkü görev: kullanıcının `görseller/ofis.mov` dosyası ana sayfa hero arka planına performans odaklı, sinematik ve soft bir video katmanı olarak entegre edildi.

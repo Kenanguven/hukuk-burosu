@@ -95,6 +95,7 @@
 - [x] Hero videosu için desktop MP4, mobil MP4 ve WebP poster çıktıları `public/videos/` altında üretildi.
 - [x] Hero video entegrasyonu sonrasında `npm.cmd run lint`, `npm.cmd run build` ve lokal HTTP smoke kontrolü yapıldı.
 - [x] Hero video görünürlüğü artırıldı ve 215 MB orijinal `ofis.mov` dosyası git takibinden çıkarılıp `.gitignore` kapsamına alındı.
+- [x] Hero alanındaki sağ dekoratif kart sahnesi kaldırıldı; sol metinler video üzerinde daha okunur hale getirildi ve bina/ofis videosu daha belirgin bırakıldı.
 
 ## Sıradaki İşler
 

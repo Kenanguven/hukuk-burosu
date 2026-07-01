@@ -9,7 +9,6 @@ import {
   MessageCircle,
   ShieldCheck,
 } from "lucide-react";
-import { PrestigeScene } from "@/components/PrestigeScene";
 import { site } from "@/lib/site";
 
 const trustBadges = [
@@ -43,7 +42,7 @@ export function Hero() {
         className="absolute inset-0 -z-20"
         style={{
           background:
-            "radial-gradient(circle at 72% 14%, rgba(212,162,79,0.18), transparent 30rem), radial-gradient(circle at 15% 74%, rgba(40,65,57,0.2), transparent 27rem), linear-gradient(90deg, rgba(255,253,248,0.58) 0%, rgba(255,253,248,0.34) 42%, rgba(246,239,222,0.1) 100%), linear-gradient(180deg, rgba(255,253,248,0.48) 0%, rgba(246,245,240,0.26) 50%, rgba(230,228,218,0.34) 100%)",
+            "radial-gradient(circle at 72% 14%, rgba(212,162,79,0.13), transparent 30rem), radial-gradient(circle at 16% 72%, rgba(40,65,57,0.16), transparent 27rem), linear-gradient(90deg, rgba(255,253,248,0.76) 0%, rgba(255,253,248,0.5) 38%, rgba(246,239,222,0.14) 68%, rgba(246,239,222,0.04) 100%), linear-gradient(180deg, rgba(255,253,248,0.36) 0%, rgba(246,245,240,0.16) 50%, rgba(14,23,21,0.12) 100%)",
         }}
       />
       <div
@@ -77,8 +76,8 @@ export function Hero() {
         />
       </div>
 
-      <div className="container-prose grid grid-cols-1 items-center gap-10 pb-20 pt-14 md:grid-cols-12 md:gap-10 md:pb-24 md:pt-20">
-        <div className="min-w-0 space-y-7 md:col-span-7">
+      <div className="container-prose grid min-h-[calc(100svh-7rem)] grid-cols-1 items-center pb-20 pt-14 md:min-h-[calc(100svh-8rem)] md:grid-cols-12 md:pb-24 md:pt-20">
+        <div className="hero-copy-panel min-w-0 space-y-7 md:col-span-8 lg:col-span-7">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -97,7 +96,7 @@ export function Hero() {
             initial={{ opacity: 0, filter: "blur(10px)", y: 18 }}
             animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
             transition={{ duration: 0.65, delay: 0.18, ease: [0.22, 1, 0.36, 1] }}
-            className="max-w-4xl font-serif text-5xl leading-[0.95] text-coffee-deep md:text-7xl lg:text-[5.35rem]"
+            className="hero-copy-title max-w-4xl font-serif text-5xl leading-[0.95] md:text-7xl lg:text-[5.35rem]"
           >
             {site.name}
           </motion.h1>
@@ -106,7 +105,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.58 }}
-            className="max-w-2xl font-serif text-2xl italic leading-snug text-coffee md:text-3xl"
+            className="hero-copy-kicker max-w-2xl font-serif text-2xl italic leading-snug md:text-3xl"
           >
             {site.tagline}
           </motion.p>
@@ -115,7 +114,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.15 }}
-            className="max-w-2xl text-lg leading-relaxed text-ink-soft md:text-xl"
+            className="hero-copy-description max-w-2xl text-lg leading-relaxed md:text-xl"
           >
             {site.description}
           </motion.p>
@@ -164,11 +163,6 @@ export function Hero() {
               </Link>
             </motion.div>
           </motion.div>
-
-        </div>
-
-        <div className="min-w-0 md:col-span-5">
-          <PrestigeScene />
         </div>
       </div>
 

@@ -1,5 +1,12 @@
 # Decisions
 
+## 2026-07-01 Hero Video-First Kararı
+
+- Ana sayfa hero alanında sağdaki dekoratif `PrestigeScene` kart sahnesi kullanılmayacak; ilk ekran video/bina arka planını daha açık gösterecek.
+- Hero mesajı tek güçlü metin bloğu üzerinden verilecek; okunurluk için metin arkasında kart gibi görünmeyen, yumuşak ve kaybolan bir scrim kullanılacak.
+- Video görünürlüğü korunurken metin kontrastı 4.5:1 erişilebilirlik hedefi gözetilerek güçlendirilecek.
+- Mobilde aynı yapı tek kolon kalacak; video üstündeki metin için daha kompakt okunurluk katmanı kullanılacak.
+
 ## 2026-06-19 Hero Video Kararı
 
 - Kullanıcının sağladığı `görseller/ofis.mov` dosyası doğrudan yayına alınmayacak; yüksek boyutu nedeniyle optimize edilmiş web video çıktıları kullanılacak.
