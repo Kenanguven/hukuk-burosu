@@ -44,11 +44,8 @@ export function NavbarBrand({ onClick }: NavbarBrandProps) {
         <span className="font-serif text-[1.18rem] font-semibold tracking-[0.28em] text-gold sm:text-[1.45rem]">
           KARDAK
         </span>
-        <span className="mt-1 text-[0.5rem] font-semibold uppercase tracking-[0.42em] text-coffee/70 sm:text-[0.56rem]">
-          Hukuk Bürosu
-        </span>
-        <span className="mt-1 hidden text-[0.42rem] font-semibold uppercase tracking-[0.34em] text-gold sm:block">
-          Avukatlık · Danışmanlık
+        <span className="mt-1 text-[0.5rem] font-semibold uppercase tracking-[0.34em] text-coffee/70 sm:text-[0.58rem]">
+          Hukuk / Danışmanlık
         </span>
       </span>
     </Link>

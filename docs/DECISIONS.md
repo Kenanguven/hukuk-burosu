@@ -1,5 +1,13 @@
 # Decisions
 
+## 2026-07-01 Canli Oncesi Sertlestirme Karari
+
+- Production guvenlik headerlari uygulama seviyesinde `next.config.ts` uzerinden yonetilecek.
+- Video, hizmet gorseli ve logo gibi hash/versiyonlu statik assetlerde uzun sureli immutable cache kullanilacak.
+- Iletisim formunda database eklemeden, mevcut Next route handler icinde govde boyutu limiti ve IP bazli basit rate limit uygulanacak.
+- `npm audit fix --force` uygulanmayacak; cunku mevcut advisory icin onerilen force cozum Next.js surumunu guvenli olmayan/kirici sekilde degistirebilir. Next/PostCSS icin uyumlu guvenli patch beklenmeli.
+- Hero gibi ilk ekran kritik metinleri SSR ilk boyamada gizli/blur halde baslamayacak; hiz algisi, no-JS dayanikliligi ve SEO icin gorunur baslayacak.
+
 ## 2026-07-01 Hero Video-First Kararı
 
 - Ana sayfa hero alanında sağdaki dekoratif `PrestigeScene` kart sahnesi kullanılmayacak; ilk ekran video/bina arka planını daha açık gösterecek.

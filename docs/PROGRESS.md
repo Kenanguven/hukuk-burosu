@@ -1,5 +1,27 @@
 # Progress
 
+## 2026-07-01 Canli Oncesi Kontrol
+
+Canli oncesi teknik kontrol ve optimizasyon turu tamamlandi.
+
+- `npm audit fix` calistirildi; guvenli dependency guncellemeleri `package-lock.json` icine islendi.
+- `next.config.ts` icine production guvenlik headerlari eklendi: `X-Content-Type-Options`, `Referrer-Policy`, `X-Frame-Options`, `Permissions-Policy`.
+- Video, hizmet gorseli ve logo assetleri icin uzun sureli immutable cache headerlari eklendi.
+- `/api/contact` route'u govde boyutu limiti ve IP bazli basit rate limit ile guclendirildi; bozuk JSON, buyuk payload ve hizli tekrar denemeleri test edildi.
+- `CookieBanner` storage anahtari marka adina hizalandi; mobilde banner metin tasmasi giderildi.
+- Ana sayfa hero metni mobilde sagdan kirpilmeyecek sekilde satir genisligi ve bosluklari duzenlendi; kritik hero metinleri ilk HTML boyamasinda gorunur hale getirildi.
+- Kullanilmayan default `public/*.svg` Next/Vercel assetleri ve kullanilmayan eski `.original` / `Testimonials` component dosyalari temizlendi.
+- Production server `http://localhost:3005` uzerinden sayfa, asset, CSS chunk, cache header ve API smoke kontrolleri yapildi.
+- 390px mobil ve 1440px desktop Chrome headless gorsel kontrollerinde hero ve cookie banner tasmasi giderildi.
+
+### Kontrol
+
+- `npm.cmd run lint`: gecti.
+- `npm.cmd run build`: gecti (30/30 statik sayfa).
+- HTTP smoke: `/`, `/hakkimizda`, `/hizmetler`, `/blog`, `/sss`, `/iletisim`, `/kvkk`, `/gizlilik`, `/robots.txt`, `/sitemap.xml`, hero videolari, hizmet gorseli ve logo `200` dondu.
+- API smoke: bozuk JSON `400`, buyuk govde `413`, gecerli ilk 5 form denemesi `200`, 6. deneme `429`.
+- Kalan audit riski: Next.js 16.2.6 icindeki transitive `postcss <8.5.10` moderate advisory. `npm audit fix --force` Next'i geriye/baska major'a cekebilecegi icin uygulanmadi; guvenli Next patch'i beklenmeli.
+
 ## 2026-07-01
 
 Ek görev: `Kardak Logo.dc.html` içindeki `1a Zarif Terazi` yönü, ana menüde premium yatay logo lockup olarak entegre edildi.

@@ -98,6 +98,12 @@
 - [x] Hero alanındaki sağ dekoratif kart sahnesi kaldırıldı; sol metinler video üzerinde daha okunur hale getirildi ve bina/ofis videosu daha belirgin bırakıldı.
 - [x] Navbar sol üst marka alanı fotoğraftaki logoya yakın şekilde `KARDAK / Hukuk Bürosu / Avukatlık · Danışmanlık` mini lockup düzenine alındı.
 
+- [x] Canlı öncesi `npm audit fix`, `npm.cmd run lint`, `npm.cmd run build`, HTTP route/asset smoke ve API smoke kontrolleri tamamlandı.
+- [x] Production güvenlik headerları ve statik asset cache headerları `next.config.ts` içinde eklendi.
+- [x] `/api/contact` gövde boyutu limiti ve IP bazlı rate limit ile sertleştirildi.
+- [x] Mobil hero ve cookie banner taşma/kırpma sorunları Chrome headless 390px kontrolüyle giderildi.
+- [x] Kullanılmayan default Next/Vercel public SVG assetleri ve kullanılmayan eski component yedekleri temizlendi.
+
 ## Sıradaki İşler
 
 - [ ] İstanbul randevu noktası yeniden açılacaksa ofis verisi, iletişim kartı ve metadata/JSON-LD birlikte yeniden etkinleştirilecek; mevcut İstanbul blogları yalnızca gerekiyorsa ofis bilgisiyle genişletilecek.
@@ -109,7 +115,5 @@
 - [ ] Blog yazıları hukuki doğruluk, tarih ve mevzuat güncelliği açısından avukat tarafından gözden geçirilecek.
 - [ ] KVKK ve gizlilik metinleri gerçek veri işleme süreçlerine göre hukukçu tarafından onaylanacak.
 - [ ] SEO metadata, sitemap ve robots dosyaları gerçek domain ile tekrar kontrol edilecek.
-- [ ] `public/` klasöründeki varsayılan Next/Vercel SVG dosyalarının kullanılıp kullanılmadığı kontrol edilecek.
-- [ ] `components/*.original.tsx` yedek dosyalarının saklanıp saklanmayacağına karar verilecek.
 - [ ] Vercel preview deploy sonrası smoke test yapılacak.
 - [ ] Gelecek değişikliklerden sonra build veya lint hatası çıkarsa giderilecek.

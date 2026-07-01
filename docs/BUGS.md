@@ -6,6 +6,10 @@ Aktif doğrulanmış hata yok.
 
 ## Giderilenler
 
+- 2026-07-01: Canli oncesi Chrome headless 390px kontrolde ana sayfa hero aciklama metni ve cookie banner metni sag kenara tasiyordu. Hero mobil satir genisligi, panel bosluklari ve cookie banner mobil genisligi duzenlendi; son mobil gorsel kontrolde tasma giderildi.
+- 2026-07-01: Hero kritik metinleri Framer Motion ilk render'inda `opacity:0` / blur ile basladigi icin ilk paint ve no-JS senaryosunda gec gorunme riski vardi. Hero metinleri ilk HTML boyamasinda gorunur baslayacak sekilde duzenlendi.
+- 2026-07-01: `/api/contact` route'unda govde boyutu ve hizli tekrar deneme siniri yoktu. 12 KB govde limiti ve IP bazli 5 istek/dakika rate limit eklendi; bozuk JSON `400`, buyuk govde `413`, 6. tekrar `429` olarak dogrulandi.
+
 - 2026-07-01: Ana sayfa hero alanında video arka plan üzerinde sol metinler silik görünüyordu ve sağdaki dekoratif kart sahnesi bina/ofis videosunu gereksiz kapatıyordu. `PrestigeScene` hero'dan kaldırıldı; metin kontrastı yumuşak scrim, net renkler ve text-shadow ile güçlendirildi.
 
 - 2026-06-03: `/iletisim` sayfasındaki Google Maps embed ve randevu kartları eski `Bilkent, Ankara` bölge varsayımını kullanıyordu. Kullanıcının verdiği Google Maps bağlantısı çözümlenerek konum `Maidan, Mustafa Kemal, 2118. Cd., 06510 Çankaya / Ankara` olarak merkezi veriye işlendi; iletişim sayfası ve JSON-LD bu konuma hizalandı.
@@ -25,6 +29,8 @@ Aktif doğrulanmış hata yok.
 - 2026-05-12: Kardak 3D/premium UI çalışması sonrası `npm.cmd run lint`, `npm.cmd run build` ve Chrome headless/CDP mobil kontrolü başarıyla geçti.
 
 ## Riskler ve Bilinmeyenler
+
+- `npm audit --audit-level=moderate` halen Next.js 16.2.6 icinden gelen transitive `postcss <8.5.10` moderate advisory raporlayabilir. `npm audit fix --force` uygulanmadi; force onerisi Next surumunu kirici/uygunsuz sekilde degistirebilecegi icin guvenli Next patch'i beklenmeli.
 
 - `RESEND_API_KEY` production ortamında tanımlı değilse iletişim formu kullanıcıya başarılı dönebilir ama e-posta göndermez.
 - `CONTACT_INBOX` ve `CONTACT_FROM` değerleri production için doğrulanmalı.

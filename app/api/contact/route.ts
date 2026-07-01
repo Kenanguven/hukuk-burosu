@@ -10,6 +10,11 @@ const schema = {
   message: { min: 10, max: 4000 },
 };
 
+const MAX_BODY_BYTES = 12_000;
+const RATE_LIMIT_WINDOW_MS = 60_000;
+const RATE_LIMIT_MAX = 5;
+const rateLimit = new Map<string, { count: number; resetAt: number }>();
+
 function clean(v: unknown): string {
   return typeof v === "string" ? v.trim() : "";
 }
@@ -21,6 +26,34 @@ function escapeHtml(s: string): string {
 }
 
 export async function POST(req: Request) {
+  const contentLength = Number(req.headers.get("content-length") ?? 0);
+  if (contentLength > MAX_BODY_BYTES) {
+    return NextResponse.json({ error: "Ä°stek boyutu Ã§ok bÃ¼yÃ¼k." }, { status: 413 });
+  }
+
+  const ip =
+    req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ??
+    req.headers.get("x-real-ip") ??
+    "unknown";
+  const now = Date.now();
+  if (rateLimit.size > 1000) {
+    for (const [key, value] of rateLimit) {
+      if (value.resetAt <= now) rateLimit.delete(key);
+    }
+  }
+  const current = rateLimit.get(ip);
+  if (!current || current.resetAt <= now) {
+    rateLimit.set(ip, { count: 1, resetAt: now + RATE_LIMIT_WINDOW_MS });
+  } else {
+    current.count += 1;
+    if (current.count > RATE_LIMIT_MAX) {
+      return NextResponse.json(
+        { error: "Ã‡ok fazla deneme yapÄ±ldÄ±. LÃ¼tfen biraz sonra tekrar deneyin." },
+        { status: 429 },
+      );
+    }
+  }
+
   let body: Record<string, unknown>;
   try {
     body = await req.json();

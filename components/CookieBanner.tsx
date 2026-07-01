@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Cookie } from "lucide-react";
 
-const STORAGE_KEY = "mh-cookie-consent";
+const STORAGE_KEY = "kardak-cookie-consent";
 
 export function CookieBanner() {
   const [visible, setVisible] = useState(false);
@@ -32,15 +32,15 @@ export function CookieBanner() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 32 }}
           transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-          className="fixed bottom-4 left-4 right-4 z-[60] md:bottom-6 md:left-auto md:right-6 md:max-w-md"
+          className="fixed bottom-4 left-4 right-4 z-[60] w-[calc(100vw-2rem)] max-w-[calc(100vw-2rem)] md:bottom-6 md:left-auto md:right-6 md:w-auto md:max-w-md"
         >
           <div className="premium-glass rounded-[1.65rem] p-4 text-coffee-deep md:p-5">
             <div className="flex items-start gap-3">
-              <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-graphite text-cream shadow-[inset_0_1px_0_rgba(255,255,255,0.18)]">
-                <Cookie className="h-5 w-5" />
+              <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-graphite text-cream shadow-[inset_0_1px_0_rgba(255,255,255,0.18)] sm:h-10 sm:w-10">
+                <Cookie className="h-[1.125rem] w-[1.125rem] sm:h-5 sm:w-5" />
               </span>
               <div className="min-w-0 space-y-2">
-                <p className="text-sm font-medium leading-relaxed text-ink-soft">
+                <p className="max-w-[16.5rem] text-[0.82rem] font-medium leading-relaxed text-ink-soft [overflow-wrap:break-word] sm:max-w-none sm:text-sm">
                   Sitemizin işleyişi için zorunlu çerezleri kullanıyoruz. Detaylar
                   için{" "}
                   <Link

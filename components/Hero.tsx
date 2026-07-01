@@ -77,9 +77,9 @@ export function Hero() {
       </div>
 
       <div className="container-prose grid min-h-[calc(100svh-7rem)] grid-cols-1 items-center pb-20 pt-14 md:min-h-[calc(100svh-8rem)] md:grid-cols-12 md:pb-24 md:pt-20">
-        <div className="hero-copy-panel min-w-0 space-y-7 md:col-span-8 lg:col-span-7">
+        <div className="hero-copy-panel w-full max-w-full min-w-0 space-y-6 px-1 md:col-span-8 md:space-y-7 md:px-0 lg:col-span-7">
           <motion.div
-            initial={{ opacity: 0, y: 10 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="trust-sheen premium-glass inline-flex max-w-full items-center gap-3 rounded-[1.35rem] py-1.5 pl-1.5 pr-4 text-sm sm:rounded-full sm:pr-5"
@@ -93,34 +93,34 @@ export function Hero() {
           </motion.div>
 
           <motion.h1
-            initial={{ opacity: 0, filter: "blur(10px)", y: 18 }}
+            initial={false}
             animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
             transition={{ duration: 0.65, delay: 0.18, ease: [0.22, 1, 0.36, 1] }}
-            className="hero-copy-title max-w-4xl font-serif text-5xl leading-[0.95] md:text-7xl lg:text-[5.35rem]"
+            className="hero-copy-title max-w-full font-serif text-[3.15rem] leading-[0.96] sm:text-6xl md:max-w-4xl md:text-7xl lg:text-[5.35rem]"
           >
             {site.name}
           </motion.h1>
 
           <motion.p
-            initial={{ opacity: 0, y: 16 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.58 }}
-            className="hero-copy-kicker max-w-2xl font-serif text-2xl italic leading-snug md:text-3xl"
+            className="hero-copy-kicker max-w-full font-serif text-xl italic leading-snug sm:text-2xl md:max-w-2xl md:text-3xl"
           >
             {site.tagline}
           </motion.p>
 
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.15 }}
-            className="hero-copy-description max-w-2xl text-lg leading-relaxed md:text-xl"
+            className="hero-copy-description max-w-full text-base leading-relaxed sm:text-lg md:max-w-2xl md:text-xl"
           >
             {site.description}
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 16 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.55, delay: 1.25 }}
             className="flex flex-wrap gap-2.5"
@@ -140,7 +140,7 @@ export function Hero() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.38 }}
             className="flex flex-wrap items-center gap-3 pt-2"

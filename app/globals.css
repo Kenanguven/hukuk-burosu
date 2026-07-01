@@ -99,6 +99,7 @@ body {
 .hero-copy-panel {
   position: relative;
   isolation: isolate;
+  max-width: 100%;
 }
 
 .hero-copy-panel::before {
@@ -145,8 +146,29 @@ body {
     animation-name: office-video-reveal-mobile;
   }
 
+  .hero-copy-panel {
+    width: 100%;
+  }
+
+  .hero-copy-title,
+  .hero-copy-kicker,
+  .hero-copy-description {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .hero-copy-title,
+  .hero-copy-kicker {
+    max-width: min(100%, 20.5rem);
+  }
+
+  .hero-copy-description {
+    max-width: min(100%, 20rem);
+    font-size: 0.98rem;
+  }
+
   .hero-copy-panel::before {
-    inset: -1rem -0.9rem -1rem -0.9rem;
+    inset: -1rem -0.25rem -1rem -0.25rem;
     border-radius: 1.5rem;
     background: linear-gradient(
       180deg,
