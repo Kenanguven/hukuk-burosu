@@ -103,6 +103,7 @@
 - [x] `/api/contact` gövde boyutu limiti ve IP bazlı rate limit ile sertleştirildi.
 - [x] Mobil hero ve cookie banner taşma/kırpma sorunları Chrome headless 390px kontrolüyle giderildi.
 - [x] Kullanılmayan default Next/Vercel public SVG assetleri ve kullanılmayan eski component yedekleri temizlendi.
+- [x] Navbar logo alt metni tek satır `Hukuk & Danışmanlık` olarak güncellendi; üst `KARDAK` satırı korundu.
 
 ## Sıradaki İşler
 

@@ -45,7 +45,7 @@ export function NavbarBrand({ onClick }: NavbarBrandProps) {
           KARDAK
         </span>
         <span className="mt-1 text-[0.5rem] font-semibold uppercase tracking-[0.34em] text-coffee/70 sm:text-[0.58rem]">
-          Hukuk / Danışmanlık
+          Hukuk & Danışmanlık
         </span>
       </span>
     </Link>

@@ -10,6 +10,7 @@ Canli oncesi teknik kontrol ve optimizasyon turu tamamlandi.
 - `/api/contact` route'u govde boyutu limiti ve IP bazli basit rate limit ile guclendirildi; bozuk JSON, buyuk payload ve hizli tekrar denemeleri test edildi.
 - `CookieBanner` storage anahtari marka adina hizalandi; mobilde banner metin tasmasi giderildi.
 - Ana sayfa hero metni mobilde sagdan kirpilmeyecek sekilde satir genisligi ve bosluklari duzenlendi; kritik hero metinleri ilk HTML boyamasinda gorunur hale getirildi.
+- Navbar logo lockup alt metni kullanici istegine gore sade tek satir `Hukuk & Danışmanlık` olacak sekilde guncellendi; ust marka satirinda `KARDAK` korundu.
 - Kullanilmayan default `public/*.svg` Next/Vercel assetleri ve kullanilmayan eski `.original` / `Testimonials` component dosyalari temizlendi.
 - Production server `http://localhost:3005` uzerinden sayfa, asset, CSS chunk, cache header ve API smoke kontrolleri yapildi.
 - 390px mobil ve 1440px desktop Chrome headless gorsel kontrollerinde hero ve cookie banner tasmasi giderildi.
