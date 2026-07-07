@@ -3,6 +3,7 @@
 ## Tamamlananlar
 
 - [x] Google arama sonucu icin ana title `KARDAK Hukuk & Danışmanlık`, meta description, OpenGraph/Twitter, icon ve JSON-LD site adi sinyalleri guncellendi.
+- [x] Site genelindeki logo kullanimi tek yeni zarif terazi amblemiyle hizalandi; navbar, footer, favicon ve `public/kardak-hukuk.svg` guncellendi.
 - [x] Proje kökü ve package yapılandırması incelendi.
 - [x] Proje hafızası için `AGENTS.md` ve `docs` dosyaları oluşturuldu.
 - [x] Mevcut README proje gerçeklerine göre güncellendi.

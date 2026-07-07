@@ -4,6 +4,9 @@
 
 Canli Google sonucunda marka basligi ornek ekran goruntusundeki gibi gorunsun diye ana SEO metadata sinyalleri guncellendi.
 
+- Site genelindeki eski logo kalintilari temizlendi; `Logo` component'i, navbar, footer, favicon ve JSON-LD logo dosyasi ayni zarif terazi amblem/lockup cizgisine hizalandi.
+- `app/icon.svg` hafif yeni amblem SVG'siyle degistirildi.
+- `public/kardak-hukuk.svg` yeni `KARDAK / Hukuk & Danışmanlık` lockup SVG'siyle degistirildi; dosya yolu korunarak Google/JSON-LD referansi kirilmadi.
 - Ana sayfa/layout default title `KARDAK Hukuk & Danışmanlık` olarak ayarlandi.
 - Meta description kisa ve Google sonucuna uygun olacak sekilde Ankara odakli hukuki temsil/danismanlik metnine cekildi.
 - OpenGraph, Twitter, applicationName, favicon/icon ve canonical sinyalleri ayni marka basligiyla hizalandi.
@@ -14,7 +17,7 @@ Canli Google sonucunda marka basligi ornek ekran goruntusundeki gibi gorunsun di
 
 - `npm.cmd run lint`: gecti.
 - `npm.cmd run build`: gecti (30/30 statik sayfa).
-- Local HTML: title `KARDAK Hukuk &amp; Danışmanlık`, canonical `https://kardakhukuk.com`, icon `/icon.svg`.
+- Local HTML: title `KARDAK Hukuk &amp; Danışmanlık`, canonical `https://kardakhukuk.com`, icon `/icon.svg`; `/icon.svg` ve `/kardak-hukuk.svg` `200` dondu.
 - Not: Google arama sonucunu aninda degistirmez; deploy sonrasi yeniden tarama/indexleme tamamlandiginda yeni baslik ve aciklama gorunur.
 
 ## 2026-07-01 Canli Oncesi Kontrol
