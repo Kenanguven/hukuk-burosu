@@ -1,5 +1,22 @@
 # Progress
 
+## 2026-07-07 Google Arama Sonucu SEO Ayari
+
+Canli Google sonucunda marka basligi ornek ekran goruntusundeki gibi gorunsun diye ana SEO metadata sinyalleri guncellendi.
+
+- Ana sayfa/layout default title `KARDAK Hukuk & Danışmanlık` olarak ayarlandi.
+- Meta description kisa ve Google sonucuna uygun olacak sekilde Ankara odakli hukuki temsil/danismanlik metnine cekildi.
+- OpenGraph, Twitter, applicationName, favicon/icon ve canonical sinyalleri ayni marka basligiyla hizalandi.
+- Organization ve WebSite JSON-LD adlari `KARDAK Hukuk & Danışmanlık` olarak guncellendi; eski `KARDAK Hukuk Bürosu` adlari alternateName olarak korundu.
+- Local production HTML kontrolunde title, description, canonical ve icon dogrulandi.
+
+### Kontrol
+
+- `npm.cmd run lint`: gecti.
+- `npm.cmd run build`: gecti (30/30 statik sayfa).
+- Local HTML: title `KARDAK Hukuk &amp; Danışmanlık`, canonical `https://kardakhukuk.com`, icon `/icon.svg`.
+- Not: Google arama sonucunu aninda degistirmez; deploy sonrasi yeniden tarama/indexleme tamamlandiginda yeni baslik ve aciklama gorunur.
+
 ## 2026-07-01 Canli Oncesi Kontrol
 
 Canli oncesi teknik kontrol ve optimizasyon turu tamamlandi.

@@ -1,10 +1,14 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { CookieBanner } from "@/components/CookieBanner";
 import { site, offices } from "@/lib/site";
 import "./globals.css";
+
+const searchBrandName = "KARDAK Hukuk & Danışmanlık";
+const searchDescription =
+  "Ankara'da ceza, aile, iş, ticaret, miras, gayrimenkul, icra-iflas ve idare hukuku alanlarında stratejik hukuki temsil ve danışmanlık.";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -20,11 +24,12 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
+  applicationName: searchBrandName,
   title: {
-    default: `${site.name} · Ceza, Aile, İş ve Ticaret Hukuku`,
-    template: `%s | ${site.shortName}`,
+    default: searchBrandName,
+    template: `%s | ${searchBrandName}`,
   },
-  description: site.description,
+  description: searchDescription,
   keywords: [
     "Ankara avukat",
     "Ankara hukuk bürosu",
@@ -44,24 +49,30 @@ export const metadata: Metadata = {
     "kira uyarlama Ankara",
     "şirket kurulumu Ankara",
     "tapu iptal davası Ankara",
+    "KARDAK Hukuk & Danışmanlık",
     "KARDAK Hukuk Bürosu",
     "Mahmut KARDAK avukat",
   ],
   alternates: {
     canonical: site.url,
   },
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+    shortcut: ["/icon.svg"],
+    apple: [{ url: "/icon.svg", type: "image/svg+xml" }],
+  },
   openGraph: {
-    title: `${site.name} — Stratejik Hukuki Temsil`,
-    description: site.description,
+    title: searchBrandName,
+    description: searchDescription,
     url: site.url,
-    siteName: site.name,
+    siteName: searchBrandName,
     locale: "tr_TR",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} — Stratejik Hukuki Temsil`,
-    description: site.description,
+    title: searchBrandName,
+    description: searchDescription,
   },
   robots: {
     index: true,
@@ -144,11 +155,11 @@ const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "@id": `${site.url}#organization`,
-  name: site.name,
-  alternateName: site.shortName,
+  name: searchBrandName,
+  alternateName: [site.name, site.shortName],
   url: site.url,
   logo: `${site.url}/kardak-hukuk.svg`,
-  description: site.description,
+  description: searchDescription,
   founder: {
     "@type": "Person",
     name: `Av. ${site.owner}`,
@@ -185,8 +196,9 @@ const websiteJsonLd = {
   "@type": "WebSite",
   "@id": `${site.url}#website`,
   url: site.url,
-  name: site.name,
-  description: site.description,
+  name: searchBrandName,
+  alternateName: [site.name, site.shortName],
+  description: searchDescription,
   inLanguage: "tr-TR",
   publisher: { "@id": `${site.url}#organization` },
 };

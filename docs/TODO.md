@@ -1,7 +1,8 @@
-# TODO
+﻿# TODO
 
 ## Tamamlananlar
 
+- [x] Google arama sonucu icin ana title `KARDAK Hukuk & Danışmanlık`, meta description, OpenGraph/Twitter, icon ve JSON-LD site adi sinyalleri guncellendi.
 - [x] Proje kökü ve package yapılandırması incelendi.
 - [x] Proje hafızası için `AGENTS.md` ve `docs` dosyaları oluşturuldu.
 - [x] Mevcut README proje gerçeklerine göre güncellendi.

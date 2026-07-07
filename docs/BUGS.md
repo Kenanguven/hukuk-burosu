@@ -30,6 +30,7 @@ Aktif doğrulanmış hata yok.
 
 ## Riskler ve Bilinmeyenler
 
+- Google arama sonucundaki baslik/aciklama site deploy edilir edilmez aninda degismeyebilir. Yeni `title`, description, icon ve JSON-LD sinyalleri yayina alindiktan sonra Google'in sayfayi yeniden taramasi ve index sonucunu yenilemesi gerekir.
 - `npm audit --audit-level=moderate` halen Next.js 16.2.6 icinden gelen transitive `postcss <8.5.10` moderate advisory raporlayabilir. `npm audit fix --force` uygulanmadi; force onerisi Next surumunu kirici/uygunsuz sekilde degistirebilecegi icin guvenli Next patch'i beklenmeli.
 
 - `RESEND_API_KEY` production ortamında tanımlı değilse iletişim formu kullanıcıya başarılı dönebilir ama e-posta göndermez.
