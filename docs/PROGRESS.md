@@ -1,5 +1,19 @@
 # Progress
 
+## 2026-07-10 Yandex Site Dogrulama Dosyasi
+
+Yandex Webmaster alan sahipligi dogrulamasi icin kullanicinin Downloads klasorundeki dogrulama HTML dosyasi site kokunden servis edilecek sekilde eklendi.
+
+- `C:\Users\adm.kenang\Downloads\yandex_07e7a128e10534fe.html` dosyasi incelendi.
+- Dosya ayni ad ve icerikle `public/yandex_07e7a128e10534fe.html` altina eklendi.
+- Next.js public statik dosya yapisi sayesinde deploy sonrasi `https://kardakhukuk.com/yandex_07e7a128e10534fe.html` adresinden erisilebilir olacak.
+
+### Kontrol
+
+- `npm.cmd run lint`: gecti.
+- `npm.cmd run build`: gecti.
+- Lokal HTTP kontrolde `/yandex_07e7a128e10534fe.html` `200` dondu ve dogrulama metni goruldu.
+
 ## 2026-07-07 Google Arama Sonucu SEO Ayari
 
 Canli Google sonucunda marka basligi ornek ekran goruntusundeki gibi gorunsun diye ana SEO metadata sinyalleri guncellendi.
