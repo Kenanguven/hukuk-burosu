@@ -7,12 +7,16 @@ Yandex Webmaster alan sahipligi dogrulamasi icin kullanicinin Downloads klasorun
 - `C:\Users\adm.kenang\Downloads\yandex_07e7a128e10534fe.html` dosyasi incelendi.
 - Dosya ayni ad ve icerikle `public/yandex_07e7a128e10534fe.html` altina eklendi.
 - Next.js public statik dosya yapisi sayesinde deploy sonrasi `https://kardakhukuk.com/yandex_07e7a128e10534fe.html` adresinden erisilebilir olacak.
+- Yandex tarafinda `www` mulku icin yeni verilen `C:\Users\adm.kenang\Downloads\yandex_844b3d2d7b69a104.html` dosyasi da incelendi.
+- Yeni dosya ayni ad ve icerikle `public/yandex_844b3d2d7b69a104.html` altina eklendi.
+- Deploy sonrasi `https://www.kardakhukuk.com/yandex_844b3d2d7b69a104.html` adresinden erisilebilir olacak.
 
 ### Kontrol
 
 - `npm.cmd run lint`: gecti.
 - `npm.cmd run build`: gecti.
 - Lokal HTTP kontrolde `/yandex_07e7a128e10534fe.html` `200` dondu ve dogrulama metni goruldu.
+- Lokal HTTP kontrolde `/yandex_844b3d2d7b69a104.html` `200` dondu ve yeni dogrulama metni goruldu.
 
 ## 2026-07-07 Google Arama Sonucu SEO Ayari
 

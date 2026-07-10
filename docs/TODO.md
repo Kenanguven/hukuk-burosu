@@ -3,6 +3,7 @@
 ## Tamamlananlar
 
 - [x] Yandex Webmaster dogrulamasi icin `yandex_07e7a128e10534fe.html` dosyasi site kokunden servis edilecek sekilde `public/` altina eklendi.
+- [x] Yandex Webmaster `www` mulku icin yeni `yandex_844b3d2d7b69a104.html` dogrulama dosyasi `public/` altina eklendi.
 - [x] Google arama sonucu icin ana title `KARDAK Hukuk & Danışmanlık`, meta description, OpenGraph/Twitter, icon ve JSON-LD site adi sinyalleri guncellendi.
 - [x] Site genelindeki logo kullanimi tek yeni zarif terazi amblemiyle hizalandi; navbar, footer, favicon ve `public/kardak-hukuk.svg` guncellendi.
 - [x] Proje kökü ve package yapılandırması incelendi.
