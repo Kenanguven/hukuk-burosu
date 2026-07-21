@@ -1,5 +1,26 @@
 # Progress
 
+## 2026-07-20 Hesaplama Araclari Sayfasi
+
+`/hesaplama-araclari` rotasi icin SEO uyumlu, mobil uyumlu ve tamamen client-side calisan yeni hesaplama araclari sayfasi eklendi.
+
+- Yeni sayfa `app/hesaplama-araclari/page.tsx` altinda metadata, canonical, OpenGraph ve WebPage JSON-LD ile olusturuldu.
+- `components/calculators/LegalCalculators.tsx` icinde sekmeli/kart secimli hesaplama arayuzu eklendi.
+- `components/calculators/calculator-config.ts` icinde guncellenebilir mevzuat/vergi/katsayi degerleri tek CONFIG blogunda toplandi.
+- `components/calculators/calculator-utils.ts` icinde TL formatlama, tarih/kidem farki, ihbar suresi ve arac deger kaybi yardimci hesaplari ayrildi.
+- Eklenen araclar: kidem tazminati, ihbar tazminati, arac deger kaybi, ise baslatmama/kotuniyet tazminati.
+- Her aracta brut/net veya tahmini sonuc dokumu, kesinti kalemleri ve hukuki uyari metni gosteriliyor.
+- Sayfa sonuna mevcut stile uyumlu WhatsApp Web CTA eklendi.
+- Navigasyon ve footer linkleri icin merkezi `nav` listesine `Araclar` baglantisi eklendi.
+- `app/sitemap.ts` icine `/hesaplama-araclari` eklendi.
+- Canli ana domain `www.kardakhukuk.com` oldugu icin `site.url` degeri `https://www.kardakhukuk.com` olarak hizalandi; yeni canonical/sitemap URL'lerinde yeniden yonlendirme hatasi riski azaltildi.
+
+### Kontrol
+
+- `npm.cmd run lint`: gecti.
+- `npm.cmd run build`: gecti; `/hesaplama-araclari` statik olarak uretildi.
+- Lokal production HTTP kontrolde `/hesaplama-araclari` `200` dondu, canonical/noindex ve sitemap kaydi kontrol edildi.
+
 ## 2026-07-10 Yandex Site Dogrulama Dosyasi
 
 Yandex Webmaster alan sahipligi dogrulamasi icin kullanicinin Downloads klasorundeki dogrulama HTML dosyasi site kokunden servis edilecek sekilde eklendi.

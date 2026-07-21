@@ -1,5 +1,13 @@
 # Decisions
 
+## 2026-07-20 Hesaplama Araclari ve Canonical Karari
+
+- Hesaplama araclari yeni rota olarak `/hesaplama-araclari` altinda tutulacak.
+- Hesaplama araclari backend/API kullanmayacak; kullanici girdileri tarayicida hesaplanacak ve kaydedilmeyecek.
+- Kidem tavani, damga vergisi, gelir vergisi varsayimi ve arac deger kaybi katsayilari tek bir CONFIG dosyasindan yonetilecek.
+- Mevzuat degerleri Ocak/Temmuz veya ilgili mevzuat degisikliginde kontrol edilip ayni CONFIG dosyasindan guncellenecek.
+- Canli site `www.kardakhukuk.com` uzerinden 200 dondugu icin canonical, sitemap, robots ve JSON-LD sinyalleri `https://www.kardakhukuk.com` ile hizalanacak.
+
 ## 2026-07-01 Canli Oncesi Sertlestirme Karari
 
 - Production guvenlik headerlari uygulama seviyesinde `next.config.ts` uzerinden yonetilecek.

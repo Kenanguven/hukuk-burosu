@@ -2,6 +2,9 @@
 
 ## Tamamlananlar
 
+- [x] `/hesaplama-araclari` sayfasi eklendi; kidem, ihbar, arac deger kaybi ve ise baslatmama/kotuniyet hesaplari client-side calisacak sekilde hazirlandi.
+- [x] Hesaplama araclari sayfasi SEO metadata, canonical, sitemap ve WebPage JSON-LD sinyalleriyle eklendi.
+- [x] Canli ana domainle uyum icin `site.url` `https://www.kardakhukuk.com` degerine hizalandi.
 - [x] Yandex Webmaster dogrulamasi icin `yandex_07e7a128e10534fe.html` dosyasi site kokunden servis edilecek sekilde `public/` altina eklendi.
 - [x] Yandex Webmaster `www` mulku icin yeni `yandex_844b3d2d7b69a104.html` dogrulama dosyasi `public/` altina eklendi.
 - [x] Google arama sonucu icin ana title `KARDAK Hukuk & Danışmanlık`, meta description, OpenGraph/Twitter, icon ve JSON-LD site adi sinyalleri guncellendi.

@@ -30,6 +30,8 @@ Aktif doğrulanmış hata yok.
 
 ## Riskler ve Bilinmeyenler
 
+- Hesaplama araclarindaki kidem tavani, vergi oranlari ve arac deger kaybi katsayilari mevzuat degisikligiyle guncelligini kaybedebilir. Degerler CONFIG dosyasinda toplandi; Ocak/Temmuz ve SEDDK/Genel Sart degisikliklerinde yeniden kontrol edilmeli.
+- Arac deger kaybi hesabi Genel Sartlar formulune gore tahmini sonuc verir; kesin tutar eksper raporu, sigorta tahkim veya mahkeme dosyasindaki delillere gore degisebilir.
 - Google arama sonucundaki baslik/aciklama site deploy edilir edilmez aninda degismeyebilir. Yeni `title`, description, icon ve JSON-LD sinyalleri yayina alindiktan sonra Google'in sayfayi yeniden taramasi ve index sonucunu yenilemesi gerekir.
 - `npm audit --audit-level=moderate` halen Next.js 16.2.6 icinden gelen transitive `postcss <8.5.10` moderate advisory raporlayabilir. `npm audit fix --force` uygulanmadi; force onerisi Next surumunu kirici/uygunsuz sekilde degistirebilecegi icin guvenli Next patch'i beklenmeli.
 

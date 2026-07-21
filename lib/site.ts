@@ -46,7 +46,7 @@ export const site = {
   tagline: "Stratejik, sakin ve güçlü hukuki temsil.",
   description:
     "KARDAK Hukuk Bürosu; kurucu avukat Mahmut KARDAK liderliğinde ceza, aile, iş, ticaret, gayrimenkul, miras, icra-iflas ve idare hukuku alanlarında bireylere ve şirketlere stratejik hukuki temsil ve danışmanlık sunar.",
-  url: "https://kardakhukuk.com",
+  url: "https://www.kardakhukuk.com",
   cities: ["Ankara"] as const,
   city: "Ankara",
   address:
@@ -67,6 +67,7 @@ export const site = {
 
 export const nav = [
   { href: "/", label: "Anasayfa" },
+  { href: "/hesaplama-araclari", label: "Araçlar" },
   { href: "/hakkimizda", label: "Hakkımızda" },
   { href: "/hizmetler", label: "Çalışma Alanları" },
   { href: "/blog", label: "Yayınlar" },
