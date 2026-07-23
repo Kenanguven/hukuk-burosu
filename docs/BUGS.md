@@ -30,6 +30,7 @@ Aktif doğrulanmış hata yok.
 
 ## Riskler ve Bilinmeyenler
 
+- 2026-07-23'te eklenen TEDAŞ / elektrik direği / enerji nakil hattı makalesi genel bilgilendirme amaçlıdır. Kamulaştırmasız el atma, irtifak hakkı, görevli mahkeme ve zamanaşımı değerlendirmeleri dosyaya ve güncel içtihada göre değişebileceği için avukat son okuması yapılmalıdır.
 - Hesaplama araclarindaki kidem tavani, vergi oranlari ve arac deger kaybi katsayilari mevzuat degisikligiyle guncelligini kaybedebilir. Degerler CONFIG dosyasinda toplandi; Ocak/Temmuz ve SEDDK/Genel Sart degisikliklerinde yeniden kontrol edilmeli.
 - Arac deger kaybi hesabi Genel Sartlar formulune gore tahmini sonuc verir; kesin tutar eksper raporu, sigorta tahkim veya mahkeme dosyasindaki delillere gore degisebilir.
 - Google arama sonucundaki baslik/aciklama site deploy edilir edilmez aninda degismeyebilir. Yeni `title`, description, icon ve JSON-LD sinyalleri yayina alindiktan sonra Google'in sayfayi yeniden taramasi ve index sonucunu yenilemesi gerekir.

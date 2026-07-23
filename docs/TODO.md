@@ -111,6 +111,7 @@
 - [x] Mobil hero ve cookie banner taşma/kırpma sorunları Chrome headless 390px kontrolüyle giderildi.
 - [x] Kullanılmayan default Next/Vercel public SVG assetleri ve kullanılmayan eski component yedekleri temizlendi.
 - [x] Navbar logo alt metni tek satır `Hukuk & Danışmanlık` olarak güncellendi; üst `KARDAK` satırı korundu.
+- [x] Yayınlara `arsamdan elektrik direği geçiyor ne yapmalıyım` aramasını hedefleyen TEDAŞ / enerji nakil hattı / kamulaştırmasız el atma makalesi eklendi; lint, build ve sitemap kontrolü tamamlandı.
 
 ## Sıradaki İşler
 

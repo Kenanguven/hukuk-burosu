@@ -589,6 +589,18 @@ Bir sonraki görev olarak gerçek marka bilgileri netleştirilmeli; ardından `l
 - `npm.cmd run lint`: geçti.
 - `npm.cmd run build`: geçti.
 
+### 2026-07-23 TEDAŞ / Elektrik Direği SEO Makalesi
+
+- Yayınlara yeni uzun kuyruk SEO makalesi eklendi: `Arsamdan Elektrik Direği Geçiyor, Ne Yapmalıyım? TEDAŞ ve Enerji Nakil Hattı Tazminatı`.
+- Yeni URL: `/blog/arsamdan-elektrik-diregi-geciyor-ne-yapmaliyim`.
+- Hedef aramalar doğal metin akışına işlendi: `arsamdan elektrik direği geçiyor`, `tarlamdan TEDAŞ hattı geçiyor`, `enerji nakil hattı tazminatı`, `kamulaştırmasız el atma elektrik direği`, `pilon yeri bedeli`.
+- Makalede kamulaştırma, irtifak hakkı, pilon yeri bedeli, değer kaybı, ecrimisil ve Asliye Hukuk Mahkemesi süreci pratik bir rehber diliyle anlatıldı.
+- AYM'nin enerji nakil hattı ve kamulaştırmasız el atma bağlamındaki mülkiyet hakkı yaklaşımı genel bilgi olarak metne dahil edildi.
+- Sitemap mevcut `posts` listesini otomatik okuduğu için yeni URL `sitemap.xml` içine otomatik yansıdı.
+- `npm.cmd run lint`: geçti.
+- `npm.cmd run build`: geçti.
+- Lokal production HTTP kontrolünde makale `200` döndü, canonical `https://www.kardakhukuk.com/blog/arsamdan-elektrik-diregi-geciyor-ne-yapmaliyim` olarak doğrulandı, `noindex` yok ve sitemap içinde yeni URL var.
+
 ### PrestigeScene Strateji Kartı Kaldırıldı
 
 - Kullanıcı 3D sahnenin sol alt köşesindeki "Strateji" cam rozetinin görsel olarak kötü durduğunu söyledi.
