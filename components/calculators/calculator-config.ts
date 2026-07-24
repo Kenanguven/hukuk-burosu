@@ -1,6 +1,6 @@
 export const CALCULATOR_CONFIG = {
   severance: {
-    // Kaynak: Hazine ve Maliye Bakanligi mali/sosyal haklar genelgesi; tutar Verginet ve CSGB tavan sayfasi uzerinden 2026-07-20'de kontrol edildi.
+    // Kaynak: T.C. Calisma ve Sosyal Guvenlik Bakanligi kidem tazminati tavan sayfasi ve 2026 ikinci donem sirkulerleri; 2026-07-24'te kontrol edildi.
     // Her Ocak ve Temmuz'da guncellenmeli.
     capMonthlyGross: 73729.87,
     stampTaxRate: 0.00759, // Kaynak: Damga Vergisi Kanunu eki tablo; ucret/maas odemeleri icin binde 7,59.
@@ -63,6 +63,47 @@ export const CALCULATOR_CONFIG = {
     minMonths: 4,
     maxMonths: 8,
     badFaithMultiplier: 3, // Kaynak: kotuniyet tazminati, bildirim suresine ait ucretin uc kati olarak hesaplanir.
+    idleTimeMaxMonths: 4, // Kaynak: Is Kanunu m.21; bosta gecen sure ucreti en cok 4 aya kadar.
+  },
+  wage: {
+    employeeSgkRate: 0.14, // Kaynak: 5510 sayili Kanun uygulamasi; isci primi genel oran.
+    employeeUnemploymentRate: 0.01, // Kaynak: Issizlik sigortasi isci payi.
+    assumedIncomeTaxRate: 0.15, // Basitlestirilmis varsayim: kümülatif gelir vergisi dilimi %15 kabul edilir.
+    stampTaxRate: 0.00759,
+  },
+  unemployment: {
+    // Kaynak: ISKUR; gunluk odenek son 4 aylik ortalama brut kazancin %40'i, aylik brut asgari ucretin %80'ini gecemez.
+    // Asgari ucret degisirse guncellenmeli.
+    grossMinimumWageMonthly: 33030,
+    benefitRate: 0.4,
+    capRateOfMinimumWage: 0.8,
+    stampTaxRate: 0.00759,
+    durations: [
+      { minPremiumDays: 600, minContinuousDays: 120, days: 180, label: "600 gun prim: 180 gun" },
+      { minPremiumDays: 900, minContinuousDays: 120, days: 240, label: "900 gun prim: 240 gun" },
+      { minPremiumDays: 1080, minContinuousDays: 120, days: 300, label: "1080 gun prim: 300 gun" },
+    ],
+  },
+  courtFee: {
+    // Kaynak: 2026 yili Harclar Kanunu tarifeleri ve Adalet Bakanligi/RAYP yargi harclari duyurulari; 2026-07-24'te kontrol edildi.
+    applicationFeeCivil: 732,
+    applicationFeeEnforcement: 732,
+    fixedDecisionFee: 732,
+    relativeDecisionRate: 0.06831,
+    advanceRelativeQuarter: 0.25,
+    estimatedExpenseAdvanceDefault: 3_500,
+  },
+  rent: {
+    // Kaynak: TUIK Haziran 2026 TUFE 12 aylik ortalama; Temmuz 2026 yenilemeleri icin yasal tavan %32,03 olarak kontrol edildi.
+    // Her ay TUIK verisi aciklandiginda guncellenmeli.
+    currentTufeCapRate: 0.3203,
+  },
+  execution: {
+    conditionalReleaseRatios: [
+      { id: "oneHalf", label: "1/2 kosullu saliverme", denominator: 2, numerator: 1 },
+      { id: "twoThirds", label: "2/3 kosullu saliverme", denominator: 3, numerator: 2 },
+      { id: "threeFourths", label: "3/4 kosullu saliverme", denominator: 4, numerator: 3 },
+    ],
   },
 } as const;
 

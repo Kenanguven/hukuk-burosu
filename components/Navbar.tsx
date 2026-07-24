@@ -4,9 +4,32 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, MessageCircle, X } from "lucide-react";
+import {
+  ArrowLeftRight,
+  Calculator,
+  ChevronDown,
+  ClipboardCheck,
+  FileText,
+  Home,
+  Hourglass,
+  Menu,
+  MessageCircle,
+  ShieldCheck,
+  X,
+} from "lucide-react";
 import { NavbarBrand } from "@/components/NavbarBrand";
 import { nav, site } from "@/lib/site";
+
+const toolLinks = [
+  { href: "/hesaplama-araclari", label: "Tüm Hesaplama Araçları", icon: Calculator },
+  { href: "/hesaplama-araclari#labor", label: "İşçilik Alacakları", icon: ClipboardCheck },
+  { href: "/hesaplama-araclari#netGross", label: "Net ↔ Brüt Çevirici", icon: ArrowLeftRight },
+  { href: "/hesaplama-araclari#reemployment", label: "İşe İade Hesaplama", icon: ShieldCheck },
+  { href: "/hesaplama-araclari#unemployment", label: "İşsizlik Ödeneği", icon: ShieldCheck },
+  { href: "/hesaplama-araclari#execution", label: "İnfaz Hesaplama", icon: Hourglass },
+  { href: "/hesaplama-araclari#courtFee", label: "Dava Harcı Hesaplama", icon: FileText },
+  { href: "/hesaplama-araclari#rent", label: "Kira Artış Hesaplama", icon: Home },
+];
 
 export function Navbar() {
   const pathname = usePathname();
@@ -36,6 +59,52 @@ export function Navbar() {
                 item.href === "/"
                   ? pathname === "/"
                   : pathname.startsWith(item.href);
+              if (item.href === "/hesaplama-araclari") {
+                return (
+                  <div key={item.href} className="group relative">
+                    <Link
+                      href={item.href}
+                      className={`relative inline-flex items-center gap-1 rounded-full px-3 py-2 text-sm font-medium transition-colors lg:px-4 ${
+                        active
+                          ? "text-coffee-deep"
+                          : "text-ink-soft hover:bg-cream-soft/70 hover:text-coffee-deep"
+                      }`}
+                    >
+                      {item.label}
+                      <ChevronDown className="h-3.5 w-3.5 transition group-hover:rotate-180" />
+                      {active && (
+                        <motion.span
+                          layoutId="nav-active"
+                          className="absolute inset-0 -z-10 rounded-full bg-cream-soft/80 ring-1 ring-coffee/10"
+                          transition={{
+                            type: "spring",
+                            stiffness: 380,
+                            damping: 32,
+                          }}
+                        />
+                      )}
+                    </Link>
+                    <div className="invisible absolute left-1/2 top-full z-40 w-80 -translate-x-1/2 pt-3 opacity-0 transition duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                      <div className="overflow-hidden rounded-[1.1rem] border border-gold/25 bg-[#101a2d] p-2 shadow-warm-lg">
+                        {toolLinks.map((tool) => {
+                          const Icon = tool.icon;
+                          return (
+                            <Link
+                              key={tool.href}
+                              href={tool.href}
+                              className="flex items-center gap-3 rounded-xl px-3 py-3 text-sm font-semibold text-cream-soft/78 transition hover:bg-cream-soft/8 hover:text-cream-soft"
+                            >
+                              <Icon className="h-4 w-4 shrink-0 text-gold-soft" />
+                              {tool.label}
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </div>
+                );
+              }
+
               return (
                 <Link
                   key={item.href}
@@ -102,18 +171,37 @@ export function Navbar() {
                       ? pathname === "/"
                       : pathname.startsWith(item.href);
                   return (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      onClick={() => setOpen(false)}
-                      className={`rounded-2xl px-4 py-3 text-base font-medium transition ${
-                        active
-                          ? "bg-cream-soft text-coffee-deep"
-                          : "text-ink-soft hover:bg-cream-soft/80"
-                      }`}
-                    >
-                      {item.label}
-                    </Link>
+                    <div key={item.href} className="grid gap-1">
+                      <Link
+                        href={item.href}
+                        onClick={() => setOpen(false)}
+                        className={`rounded-2xl px-4 py-3 text-base font-medium transition ${
+                          active
+                            ? "bg-cream-soft text-coffee-deep"
+                            : "text-ink-soft hover:bg-cream-soft/80"
+                        }`}
+                      >
+                        {item.label}
+                      </Link>
+                      {item.href === "/hesaplama-araclari" && (
+                        <div className="grid gap-1 rounded-2xl bg-coffee-deep/95 p-2">
+                          {toolLinks.slice(1).map((tool) => {
+                            const Icon = tool.icon;
+                            return (
+                              <Link
+                                key={tool.href}
+                                href={tool.href}
+                                onClick={() => setOpen(false)}
+                                className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium text-cream-soft/82"
+                              >
+                                <Icon className="h-4 w-4 text-gold-soft" />
+                                {tool.label}
+                              </Link>
+                            );
+                          })}
+                        </div>
+                      )}
+                    </div>
                   );
                 })}
                 <a

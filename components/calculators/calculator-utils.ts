@@ -35,6 +35,12 @@ export function formatNumber(value: number): string {
   }).format(Number.isFinite(value) ? value : 0);
 }
 
+export function formatInteger(value: number): string {
+  return new Intl.NumberFormat("tr-TR", {
+    maximumFractionDigits: 0,
+  }).format(Number.isFinite(value) ? value : 0);
+}
+
 export function formatPercent(value: number): string {
   return new Intl.NumberFormat("tr-TR", {
     minimumFractionDigits: 2,
@@ -108,4 +114,45 @@ export function getMileageCoefficient(kilometers: number) {
       (row) => kilometers >= row.min && kilometers <= row.max,
     ) ?? CALCULATOR_CONFIG.vehicleValueLoss.mileageCoefficients.at(-1)!
   );
+}
+
+export function getUnemploymentDuration(premiumDays: number, continuousDays: number) {
+  if (continuousDays < 120) {
+    return { days: 0, label: "Son 120 gun kosulu saglanmadi." };
+  }
+
+  const eligible = [...CALCULATOR_CONFIG.unemployment.durations]
+    .reverse()
+    .find((row) => premiumDays >= row.minPremiumDays);
+
+  return eligible ?? { days: 0, label: "En az 600 gun prim kosulu saglanmadi." };
+}
+
+export function addDays(dateValue: string, days: number): string {
+  if (!dateValue || days <= 0) return "Tarih bekleniyor";
+
+  const date = new Date(`${dateValue}T00:00:00`);
+  if (Number.isNaN(date.getTime())) return "Tarih bekleniyor";
+
+  date.setDate(date.getDate() + days);
+
+  return new Intl.DateTimeFormat("tr-TR", {
+    day: "2-digit",
+    month: "long",
+    year: "numeric",
+  }).format(date);
+}
+
+export function sentenceToDays(years: number, months: number, days: number): number {
+  return Math.max(0, years) * 365 + Math.max(0, months) * 30 + Math.max(0, days);
+}
+
+export function daysToSentence(totalDays: number) {
+  const safeDays = Math.max(0, Math.floor(totalDays));
+  const years = Math.floor(safeDays / 365);
+  const remainingAfterYears = safeDays % 365;
+  const months = Math.floor(remainingAfterYears / 30);
+  const days = remainingAfterYears % 30;
+
+  return { years, months, days };
 }

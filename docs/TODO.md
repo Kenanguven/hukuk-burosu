@@ -112,6 +112,7 @@
 - [x] Kullanılmayan default Next/Vercel public SVG assetleri ve kullanılmayan eski component yedekleri temizlendi.
 - [x] Navbar logo alt metni tek satır `Hukuk & Danışmanlık` olarak güncellendi; üst `KARDAK` satırı korundu.
 - [x] Yayınlara `arsamdan elektrik direği geçiyor ne yapmalıyım` aramasını hedefleyen TEDAŞ / enerji nakil hattı / kamulaştırmasız el atma makalesi eklendi; lint, build ve sitemap kontrolü tamamlandı.
+- [x] `/hesaplama-araclari` sayfası A-Z genişletildi; işe iade, dava harcı, işçilik alacakları, net-brüt, işsizlik ödeneği, infaz, kira artışı ve araç değer kaybı araçları örnek menü/döküm düzeniyle eklendi.
 
 ## Sıradaki İşler
 

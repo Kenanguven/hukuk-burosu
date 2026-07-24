@@ -4,33 +4,37 @@ import { LegalCalculators } from "@/components/calculators/LegalCalculators";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Hesaplama Araçları — Kıdem, İhbar ve Araç Değer Kaybı",
+  title: "Hesaplama Araçları — İşe İade, Dava Harcı, Kıdem, İhbar ve Kira Artışı",
   description:
-    "Kıdem tazminatı hesaplama, ihbar tazminatı hesaplama, araç değer kaybı hesaplama İstanbul ve Ankara için genel bilgilendirme amaçlı hukuki hesaplama araçları.",
+    "İşe iade hesaplama, dava harcı hesaplama, kıdem ve ihbar tazminatı, işçilik alacakları, net brüt maaş, işsizlik ödeneği, infaz ve kira artış hesaplama araçları.",
   alternates: { canonical: `${site.url}/hesaplama-araclari` },
   keywords: [
+    "işe iade hesaplama",
+    "dava harcı hesaplama",
+    "işçilik alacakları hesaplama",
+    "net brüt maaş hesaplama",
     "kıdem tazminatı hesaplama",
     "ihbar tazminatı hesaplama",
+    "işsizlik ödeneği hesaplama",
+    "infaz hesaplama",
+    "kira artış hesaplama",
     "araç değer kaybı hesaplama",
-    "araç değer kaybı hesaplama İstanbul",
-    "işe başlatmama tazminatı hesaplama",
-    "kötüniyet tazminatı hesaplama",
     "KARDAK Hukuk hesaplama araçları",
   ],
   openGraph: {
     title: "Hesaplama Araçları | KARDAK Hukuk & Danışmanlık",
     description:
-      "Kıdem, ihbar, araç değer kaybı, işe başlatmama ve kötüniyet tazminatı için genel bilgilendirme amaçlı hesaplama araçları.",
+      "İşe iade, dava harcı, kıdem, ihbar, işçilik alacakları, işsizlik ödeneği, infaz, kira artışı ve araç değer kaybı için genel bilgilendirme amaçlı hesaplama araçları.",
     url: `${site.url}/hesaplama-araclari`,
     type: "website",
   },
 };
 
 const toolHighlights = [
-  "Kıdem tazminatı brüt/net döküm",
-  "İhbar süresi ve kesinti hesabı",
+  "İşe iade ve boşta geçen süre dökümü",
+  "İşçilik alacakları ve net-brüt maaş hesabı",
+  "Dava harcı, kira artışı ve infaz tahmini",
   "Araç değer kaybı Genel Şartlar formülü",
-  "İşe başlatmama ve kötüniyet aralığı",
 ];
 
 export default function CalculationToolsPage() {
@@ -40,7 +44,7 @@ export default function CalculationToolsPage() {
     name: "Hesaplama Araçları",
     url: `${site.url}/hesaplama-araclari`,
     description:
-      "Kıdem tazminatı hesaplama, ihbar tazminatı hesaplama, araç değer kaybı hesaplama ve işe başlatmama tazminatı hesaplama araçları.",
+      "İşe iade hesaplama, dava harcı hesaplama, işçilik alacakları, net brüt maaş, işsizlik ödeneği, infaz, kira artışı ve araç değer kaybı hesaplama araçları.",
     isPartOf: {
       "@type": "WebSite",
       name: "KARDAK Hukuk & Danışmanlık",
@@ -69,11 +73,11 @@ export default function CalculationToolsPage() {
                 <Calculator className="h-4 w-4 text-gold" />
                 KARDAK Hukuk · Genel bilgilendirme araçları
               </div>
-              <h1 className="mt-7 max-w-4xl font-serif text-5xl leading-[0.95] text-coffee-deep md:text-7xl">
-                Hesaplama <span className="italic text-coffee">Araçları</span>
+              <h1 className="mt-7 max-w-full break-words font-serif text-4xl leading-[1.02] text-coffee-deep sm:text-5xl md:text-7xl">
+                Hesaplama <span className="block italic text-coffee sm:inline">Araçları</span>
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-relaxed text-ink-soft md:text-xl">
-                Kıdem tazminatı, ihbar tazminatı, araç değer kaybı ve işe başlatmama tazminatı için pratik, mobil uyumlu ve kalem kalem döküm veren hesaplama araçları.
+                İşe iade, dava harcı, işçilik alacakları, net-brüt maaş, işsizlik ödeneği, infaz, kira artışı ve araç değer kaybı için pratik, mobil uyumlu ve kalem kalem döküm veren hesaplama araçları.
               </p>
             </div>
 

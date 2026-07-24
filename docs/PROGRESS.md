@@ -601,6 +601,20 @@ Bir sonraki görev olarak gerçek marka bilgileri netleştirilmeli; ardından `l
 - `npm.cmd run build`: geçti.
 - Lokal production HTTP kontrolünde makale `200` döndü, canonical `https://www.kardakhukuk.com/blog/arsamdan-elektrik-diregi-geciyor-ne-yapmaliyim` olarak doğrulandı, `noindex` yok ve sitemap içinde yeni URL var.
 
+### 2026-07-24 Hesaplama Araçları A-Z Genişletme
+
+- `/hesaplama-araclari` sayfası örnek referanstaki gibi araç menüsü + sol form + sağ koyu başlıklı hesap dökümü yapısına taşındı.
+- Yeni araç kapsamı: Tüm Araçlar, İşçilik Alacakları, Net ↔ Brüt Çevirici, İşe İade Hesaplama, İşsizlik Ödeneği, İnfaz Hesaplama, Dava Harcı Hesaplama, Kira Artış Hesaplama ve Araç Değer Kaybı.
+- `components/calculators/LegalCalculators.tsx` yeniden düzenlendi; tüm hesaplar client-side çalışıyor, veri kaydetmiyor ve sonuçlarda kalem kalem brüt/kesinti/net dökümü gösteriyor.
+- `components/calculators/calculator-config.ts` içine işsizlik ödeneği, dava harcı, kira artışı, infaz oranları ve ücret kesintisi değerleri eklendi; güncellenecek mevzuat değerleri tek config altında tutuluyor.
+- `components/calculators/calculator-utils.ts` işsizlik süresi, tarih ekleme, infaz gün/yıl-ay-gün dönüşümü ve sayı formatlama yardımcılarıyla genişletildi.
+- Navbar `Araçlar` bağlantısı desktop dropdown ve mobil alt bağlantılarla zenginleştirildi; örnekteki menü yapısına yakın hale getirildi.
+- `/hesaplama-araclari` metadata, description, keywords ve WebPage JSON-LD yeni araç isimlerini hedefleyecek şekilde güncellendi.
+- `npm.cmd run lint`: geçti.
+- `npm.cmd run build`: geçti.
+- Lokal production HTTP smoke: `/hesaplama-araclari` `200`, `noindex` yok, `sitemap.xml` içinde rota var, ana sayfa HTML'inde araç menüsü sinyali var.
+- Chrome headless desktop ve 390px mobil görsel kontrol yapıldı; mobil H1 kırpılması ve sonuç paneli başlık kontrastı düzeltildi.
+
 ### PrestigeScene Strateji Kartı Kaldırıldı
 
 - Kullanıcı 3D sahnenin sol alt köşesindeki "Strateji" cam rozetinin görsel olarak kötü durduğunu söyledi.

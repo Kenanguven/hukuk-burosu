@@ -1,5 +1,12 @@
 # Decisions
 
+## 2026-07-24 Hesaplama Araçları Genişletme Kararı
+
+- Hesaplama araçları ayrı rota açmadan `/hesaplama-araclari` altında tek hub olarak sürdürülecek; alt araçlar hash tabanlı seçimle (`#reemployment`, `#courtFee` vb.) erişilecek.
+- Navbar'daki `Araçlar` bağlantısı desktop dropdown, mobilde alt bağlantılar olarak çalışacak; bu sayede Google için ana rota korunurken kullanıcı örnekteki gibi doğrudan araca gidebilecek.
+- Hesaplayıcılar backend/database kullanmayacak; tüm hesaplar tarayıcıda yapılacak ve kullanıcı girdileri kaydedilmeyecek.
+- Dava harcı, işsizlik ödeneği, kira artışı, ücret kesintileri ve infaz oranları tek `CALCULATOR_CONFIG` bloğunda tutulacak; güncel mevzuat değişiklikleri bu dosyadan izlenecek.
+
 ## 2026-07-20 Hesaplama Araclari ve Canonical Karari
 
 - Hesaplama araclari yeni rota olarak `/hesaplama-araclari` altinda tutulacak.

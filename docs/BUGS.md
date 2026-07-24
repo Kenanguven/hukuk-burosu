@@ -30,6 +30,8 @@ Aktif doğrulanmış hata yok.
 
 ## Riskler ve Bilinmeyenler
 
+- 2026-07-24'te genişletilen hesaplama araçlarındaki dava harcı, kira artış oranı, işsizlik ödeneği üst sınırı, ücret kesinti oranları ve infaz oranları mevzuat/uygulama değişikliklerinden etkilenebilir. `CALCULATOR_CONFIG` düzenli kontrol edilmeli; özellikle harç tarifeleri yıl başında, kira TÜFE oranı aylık, kıdem/işsizlik/asgari ücret değerleri Ocak/Temmuz dönemlerinde güncellenmelidir.
+- İnfaz hesaplama aracı yalnızca kaba tahmin verir; suç vasfı, mükerrirlik, örgüt/terör hükümleri, denetimli serbestlik ve lehe kanun uygulaması ayrı hukuki inceleme gerektirir.
 - 2026-07-23'te eklenen TEDAŞ / elektrik direği / enerji nakil hattı makalesi genel bilgilendirme amaçlıdır. Kamulaştırmasız el atma, irtifak hakkı, görevli mahkeme ve zamanaşımı değerlendirmeleri dosyaya ve güncel içtihada göre değişebileceği için avukat son okuması yapılmalıdır.
 - Hesaplama araclarindaki kidem tavani, vergi oranlari ve arac deger kaybi katsayilari mevzuat degisikligiyle guncelligini kaybedebilir. Degerler CONFIG dosyasinda toplandi; Ocak/Temmuz ve SEDDK/Genel Sart degisikliklerinde yeniden kontrol edilmeli.
 - Arac deger kaybi hesabi Genel Sartlar formulune gore tahmini sonuc verir; kesin tutar eksper raporu, sigorta tahkim veya mahkeme dosyasindaki delillere gore degisebilir.
